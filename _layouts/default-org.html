@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    {% include head.html %}
+    
+    <script>
+        $(function () {
+			//alert(1);
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    {% if page.datatable == true %}
+    
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function(){
+			//alert(1);
+            $('table.datatable').DataTable( {
+                        paging: false,
+                        stateSave: true
+                    }
+            );
+		})
+    </script>
+    {% endif %}
+
+</head>
+<body>
+	{% include header.html %}
+    
+    <div class="ui-layout-west">
+            {% include sidebar.html %}
+    </div>
+    <div class="ui-layout-center">           
+        <p id="breadcrumbs">
+        </p> 
+         <p id="next" style="float:right;"></p>  
+         <p id="prev" style="float:right;padding-right:20px;"></p> 
+        {{content}}  
+    </div> 
+    {% include footer.html %}
+</body>
+{% if site.google_analytics %}
+{% include google_analytics.html %}
+{% endif %}
+</html>

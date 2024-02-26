@@ -1,0 +1,29 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: Release Notes
+      external_url: /rdp/releaseNotes/index.html    
+
+#Topnav dropdowns
+#topnav_dropdowns:
+#- title: Topnav dropdowns
+#  folders:
+#    - title: Guides
+#      folderitems:
+#        - title: Riversand Platform
+#          url: /index.html
+        
+#    - title: API Reference 
+#      folderitems:
+#        - title: UI Element Catalog
+#          external_url: http://mahirspub.riversand.com:3000/       
+#        - title: RESTful API
+#          url: /api_getting_started.html
+          
+#    - title: Videos
+#      folderitems:
+#        - title: Sample Video
+#          external_url: http://mahirspub.riversand.com/docportal/HowTo-Videos/Parallel_Processors/01_Introduction_Parallel_Processors.mp3
+        

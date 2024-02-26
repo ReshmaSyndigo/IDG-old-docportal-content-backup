@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    {% include head_index.html %}
+	<script>
+        $(document).ready(function(){
+			$('.play-bt').click(function(event){
+				event.preventDefault()
+				var getid = $(this).attr('data-url');
+				//alert(getid);
+				$('#video_modal iframe').attr("src", getid+"?autoplay=1");
+				$('#video_modal').modal('show');
+			})
+			$('#video_modal').on('hidden.bs.modal',function() {
+				$('#video_modal iframe').attr("src", "");
+			});
+			//same-height
+			$('.same-height').jQueryEqualHeight('.full-box .loop-box .blue-button');
+			$('.same-height').jQueryEqualHeight('.full-box .loop-box .title');
+			$('.same-height').jQueryEqualHeight('.full-box .loop-box .body-text');
+			$('.same-height').jQueryEqualHeight('.full-box');
+			///video-row
+			$("#sp-scroll").mCustomScrollbar({
+				setHeight:560,
+				theme:"dark"
+			});
+		
+			var imgH = $('#db_one').height();
+			$('#top-banner').css({'min-height':'218px'});
+			$('#developerTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				tabidentify: 'hor_1', // The tab groups identifier
+				activate: function(event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#nested-tabInfo');
+					var $name = $('span', $info);
+					var gname = $(this).attr('data-pic');
+					//alert(gname);
+					$('#top-banner .image-banner:not(#'+gname+')').fadeOut('fast');
+					$('#top-banner .image-banner#'+gname).fadeIn('fast');
+					//$name.text($tab.text());
+					//$info.show();
+				}
+			});
+			//
+			function makeSameHeight(getele){
+				var spDivH = 0;
+				$(getele).each(function( index ) {
+					console.log( index + ": " + $( this ).text() );
+					var th = $( this ).height();
+					if(th > spDivH){
+						spDivH = th;
+					}
+				});
+				
+				return spDivH;
+			}
+			var getHH = makeSameHeight('#developers-users ul li');
+			$('#developers-users ul li .link-box').css({'min-height':getHH});
+			///////
+			$('#cookie-notice .button.bootstrap').click(function(event){
+				event.preventDefault()
+				$('#cookie-notice').fadeOut('fast');
+			})
+			///////
+			//side-nav
+			var getSNH = $('.page-wapper').height();
+			//alert(getSNH);
+			if($(window).width() > 768){
+				$('.side-nav').css({'min-height':getSNH-20});
+			}
+			//
+			$('select').selectric();
+			//
+			$('#paragraphs').cascadingDivs();
+			var sph = 0;
+			$('.nav-content-holder > div').each(function( index ) {
+				console.log( index + ": " + $( this ).text() );
+				var th = $( this ).outerHeight();
+				if(th > sph){
+					sph = th;
+				}
+			});
+			$('.nav-content-holder > div').css({'position':'absolute'});
+			$('.nav-content-holder').css({'min-height':sph});
+			$('#paragraphs > div').click(function() {
+				var getid = $(this).attr('data-id');
+				//alert(getid);
+				$('.nav-content-holder > div').fadeOut('fast', function() {
+					$('.nav-content-holder > div#'+getid).fadeIn('fast');
+					//alert(getid);
+					var getHH_two = makeSameHeight('#'+getid+' ul li');
+					//alert(getHH_two);
+					//$('.nav-content-holder > div#'+getid).find('.link-box').css({'min-height':getHH_two});
+				});
+			})
+			//////
+        })
+		
+    </script>
+
+</head>
+<body class="white-bg">
+{% include header.html %}
+
+<div class="page-wapper give-height o-wrapper no-paading-top" id="o-wrapper">
+	
+    {{content}}
+    
+</div>
+{% include footer.html %}
+
+</body>
+</html>

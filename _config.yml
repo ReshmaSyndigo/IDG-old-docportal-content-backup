@@ -1,0 +1,270 @@
+name: Riversand Data Platform
+markdown: redcarpet
+
+output: web
+# this property is useful for conditional filtering of content that is separate from the PDF.
+
+topnav_title: Data Platform Documentation (Work-In-Progress Version)
+# this appears on the top navigation bar next to the home button
+
+site_title: Riversand Data Platform
+# this appears in the html browser tab for the site title (seen mostly by search engines, not users)
+
+company_name: Riversand Technologies Inc.
+# this appears in the footer
+
+github_editme_path: riversandtechnologies/dataplatform-sdk-docs
+# if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
+
+disqus_shortname: rsdp
+# if you're using disqus for comments, add the shortname here. if not, leave this value blank.
+
+disqus: false
+
+# The following set of links are applicable for Windows "internal"" docportal implementation.
+# home_url: http://mahirspub.riversand.com:8080/
+# # feedback_url: http://mahirspub.riversand.com:8080/feedback
+# # contact_url: http://mahirspub.riversand.com:8080/contact
+# main_url: /rdp
+# build: internal
+
+# The following set of links are applicable for Windows "internal 1.0"" docportal implementation.
+# home_url: http://mahirspub.riversand.com:8080/
+# # feedback_url: http://mahirspub.riversand.com:8080/feedback
+# # contact_url: http://mahirspub.riversand.com:8080/contact
+# main_url: /rdp1.0
+# build: internal
+
+# The following set of links are applicable for Windows "external"" docportal implementation.
+logout_url: https://docs.riversand.com:8080/action/admin/logout.html
+home_url: https://docs.riversand.com:8080/
+# pdf_url: http://docs.riversand.com:8080/generate/pdf
+feedback_url: https://docs.riversand.com:8080/feedback
+contact_url: https://docs.riversand.com:8080/contact
+is_logout_external: true
+main_url: /rdp
+build: external
+
+# The following set of links are applicable for Windows "external 1.0"" docportal implementation.
+# logout_url: http://docs.riversand.com:8080/action/admin/logout.html
+# home_url: http://docs.riversand.com:8080/
+# # pdf_url: https://docs.riversand.com:8080/generate/pdf
+# feedback_url: http://docs.riversand.com:8080/feedback
+# contact_url: http://docs.riversand.com:8080/contact
+# is_logout_external: true
+# main_url: /rdp1.0
+# build: external
+
+# The following set of links are applicable for AWS Auth0 implementation.
+# pdf_url: https://docs.riversand-dataplatform.com/generate/pdf
+# logout_url: https://docs.riversand-dataplatform.com/action/admin/logout.html
+# home_url: https://docs.riversand-dataplatform.com/
+# feedback_url: https://docs.riversand-dataplatform.com/feedback
+# contact_url: https://docs.riversand-dataplatform.com/contact
+# is_logout_ubuntu: true
+# main_url: /
+# build: external
+
+# The following set of links are applicable for AZURE Auth0 implementation.
+# # pdf_url: https://docs1.riversand.com/generate/pdf
+# logout_url: https://docs1.riversand.com/action/admin/logout.html
+# home_url: https://docs1.riversand.com/
+# feedback_url: https://docs1.riversand.com/feedback
+# contact_url: https://docs1.riversand.com/contact
+# is_logout_ubuntu: true
+# main_url: /
+# build: external
+
+# The following set of links are applicable for documentation review
+# home_url: http://mahirspub.riversand.com:8080/
+# feedback_url: http://mahirspub.riversand.com:8080/feedback
+# contact_url: http://mahirspub.riversand.com:8080/contact
+# main_url: /rdp-review
+# build: internal
+
+## The following set of links are applicable for Ascend
+
+# The following set of links are applicable for Windows "internal"" docportal implementation.
+# # logout_url: http://mahirspub.riversand.com:8080/action/admin/logout.html
+# home_url: http://mahirspub.riversand.com:8080/
+# # feedback_url: http://mahirspub.riversand.com:8080/feedback
+# contact_url: http://mahirspub.riversand.com:8080/contact
+# main_url: /DocLite
+# build: ascend
+
+# The following set of links are applicable for Windows "external"" docportal implementation.
+# logout_url: http://docs.riversand.com:8080/action/admin/logout.html
+# home_url: http://docs.riversand.com:8080/
+# # # pdf_url: https://docs.riversand.com:8080/generate/pdf
+# feedback_url: http://docs.riversand.com:8080/feedback
+# contact_url: http://docs.riversand.com:8080/contact
+# is_logout_external: true
+# main_url: /DocLite
+# build: ascend
+
+# The following set of links are applicable for Windows "external"" docportal implementation.
+# logout_url: http://docs1.riversand.com:8080/action/admin/logout.html
+# home_url: http://docs1.riversand.com:8080/
+# # # pdf_url: https://docs1.riversand.com:8080/generate/pdf
+# feedback_url: http://docs1.riversand.com:8080/feedback
+# contact_url: http://docs1.riversand.com:8080/contact
+# is_logout_external: true
+# main_url: /DocLite
+# build: ascend
+
+# The following set of links are applicable for Auth0 implementation.
+# pdf_url: https://docs.riversand-dataplatform.com/doclite/generate/pdf
+# logout_url: https://docs.riversand-dataplatform.com/doclite/action/admin/logout.html
+# home_url: https://docs.riversand-dataplatform.com/doclite/
+# feedback_url: https://docs.riversand-dataplatform.com/doclite/feedback
+# contact_url: https://docs.riversand-dataplatform.com/doclite/contact
+# is_logout_ubuntu: true
+# main_url: /
+# build: ascend
+
+# The following set of links are applicable for documentation review
+# home_url: http://mahirspub.riversand.com:8080/
+# feedback_url: http://mahirspub.riversand.com:8080/feedback
+# contact_url: http://mahirspub.riversand.com:8080/contact
+# main_url: /rdp-review/DocLite
+# build: ascend
+
+host: 127.0.0.13
+# the preview server used. Leave as is.
+
+port: 4005
+# the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
+
+# # # This is for external build
+exclude:
+  - .idea/
+  - .gitignore
+  - pages/*_internal.md
+  - pages/*_ascend.md
+
+# This is for ascend build
+# exclude:
+#   - .idea/
+#   - .gitignore
+#   - pages/*_internal.md
+#   - pages/*_ascend.md
+
+# This is for ascend build
+# exclude:
+#   - .idea/
+#   - .gitignore
+#   - pages/*_internal.md
+#   - pages/*_external.md 
+
+# This is for internal build
+# exclude:
+#   - .idea/
+#   - .gitignore
+
+# these are the files and directories that jekyll will exclude from the build
+
+feedback_subject_line: Riversand Documentation
+
+feedback_email: idg@riversand.com
+# used as a contact email for the Feedback link in the top navigation bar
+
+# feedback_disable: true
+# if you uncomment the previous line, the Feedback link gets removed
+
+# feedback_text: "Need help?"
+# if you uncomment the previous line, it changes the Feedback text
+
+# feedback_link: "http://helpy.io/"
+# if you uncomment the previous line, it changes where the feedback link points to
+
+highlighter: rouge
+# library used for syntax highlighting
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+ smart_quotes: ["apos", "apos", "quot", "quot"]
+# filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
+
+collections:
+  tooltips:
+    output: true
+# collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: rdp_sidebar
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      tooltip: true
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      search: true
+      sidebar: home_sidebar
+
+# these are defaults used for the frontmatter for these file types
+
+# picture:
+#   source: "images/rdp"
+#   output: generated
+#   markup: picture
+#   presets:
+#     # Full width pictures
+#     default:
+#       ppi: [1, 1.5]
+#       source_med:
+#         media: "(min-width: 30em)"
+#         width: 300       
+#       source_default:
+#         width: 450
+#         height: 300        
+#       source_lrg:
+#         media: "(min-width: 40em)"
+#         width: 750 
+
+# New Values for picture tag. Bumped up retina spec & source_lrg values.
+picture:
+  source: "images/rdp"
+  output: generated
+  markup: picture
+  presets:
+    # Full width pictures
+    default:
+      ppi: [1, 2]
+      source_med:
+        media: "(min-width: 30em)"
+        width: 300       
+      source_default:
+        width:  450
+        height: 300        
+      source_lrg:
+        media: "(min-width: 71.875em)"
+        width: 1150  
+
+sidebars:
+- rdp_sidebar
+
+description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
+# the description is used in the feed.xml file

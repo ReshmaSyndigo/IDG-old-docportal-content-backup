@@ -1,0 +1,48 @@
+---
+title: search
+layout: none
+search: exclude
+---
+{% include custom/sidebarconfigs.html %}
+
+[
+{% assign curlyend = '}' %}
+{% assign flag = false %}
+{% for page in site.pages %}
+{% if page.search != "exclude" %}
+
+{% if flag == true %},{% endif %}
+
+{% if page.url != 'search.html' %}
+
+{% assign content = page.content | markdownify | truncatewords: 20 | strip_html | strip | escape | remove: "**" | remove: '"' | remove: '*' | remove: '\' | remove: '&quot;' | strip_newlines | replace: '		', '' | replace: '	', ' ' | remove: '&#39;'  | remove: '&amp;' | remove: '&gt;' | remove: "include callout.html content=" | remove: ":start"  %}
+  
+{
+
+"title": "{{ page.title | escape }}",
+"url": "{{ page.url | remove: "/"}}",
+"keywords": "{{ page.keywords }}",
+"content": "{{ page.content | markdownify | strip_html | strip | escape | remove: "**" | remove: '"' | remove: '*' | remove: '\' | remove: '&quot;' | strip_newlines | replace: '		', '' | replace: '	', ' ' | remove: '&#39;' | remove: '&amp;' | remove: '&gt;'  | remove: "include callout.html content=" | remove: ":start=" | remove: "include snippets/" | remove: "%" | remove: curlyend | remove: '{' }}",
+"heading": "{{ page.content | markdownify | truncatewords: 20 | strip_html | strip | escape | remove: "**" | remove: '"' | remove: '*' | remove: '\' | remove: '&quot;' | strip_newlines | replace: '		', '' | replace: '	', ' ' | remove: '&#39;'  | remove: '&amp;' | remove: '&gt;' | remove: "include callout.html content=" | remove: ":start=" | remove: "include snippets/" | remove: "%" | remove: curlyend | remove: '{' }}"
+}
+{% endif %}
+
+{% if flag == false %}
+{% assign flag = true %}
+{% endif %}
+
+{% endif %}
+{% endfor %}
+
+{% for post in site.posts %}
+{
+"title": "{{ post.title | escape }}",
+"tags": "{{ post.tags }}",
+"keywords": "{{post.keywords}}",
+"url": "{{ post.url }}",
+"summary": "{{post.summary | strip }}",
+"date"     : "{{ post.date }}"
+}
+{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

@@ -1,0 +1,4220 @@
+title: Riversand AppDev Center
+children:
+
+- title: Developer's Documentation
+  url: /appdev_welcome_to_rs_appdev_intro.html
+  build: internal, external
+  output: web
+  children:
+
+    - title: Get Started
+      url: /appdev_getting_started.html
+      build: internal, external
+      output: web
+      children:
+
+        - title: Why App SDK? 
+          url: /appdev_why_rs_app_sdk.html
+          build: internal, external
+          output: web
+          
+        - title: What is an Riversand SDK, Add-on App, and Facets?
+          url: /appdev_what_app_sdk_add-ons.html
+          build: internal, external
+          output: web
+
+        - title: About Riversand SDK and Capabilities
+          url: /appdev_developing_apps_using_rs_sdk.html
+          build: internal, external
+          output: web
+
+        - title: About Integrating with the Riversand Platform
+          url: /appdev_integrate_with_rs.html
+          build: internal, external
+          output: web
+          children:
+          
+            - title: Templates, Samples and Packages
+              url: /appdev_templates_packages.html
+              build: internal, external
+              output: web
+
+            - title: Setup Pre-requisites for Developing Custom Extension (Integration and Connector)
+              url: /si_prereq.html
+              build: internal, external
+              output: web
+        
+        - title: Terminologies
+          url: /appdev_libraries_terminologies.html
+          build: internal, external
+          output: web
+
+    - title: Develop Apps
+      url: /appdev_develop_apps.html
+      build: internal, external
+      output: web
+      children:
+
+        - title: UI plugin Facet to Develop New User Interfaces
+          url: /sdk_interface_with_app.html
+          build: internal, external
+          output: web
+          children:
+
+            - title: Get Started with UI Plugin
+              url: /ui_get_started.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Setup Pre-requisites for UI Plugin Facet
+                  url: /appdev_initial_setup.html
+                  build: internal, external
+                  output: web
+
+                - title: Understand UI Template
+                  url: /ui_template.html
+                  build: internal, external
+                  output: web
+                
+                - title: Create your First App - Hello World Plug-in
+                  url: /appdev_helloworld_plugin.html
+                  build: internal, external
+                  output: web
+
+            - title: Plugin Docking Points
+              url: /sdk_docking_points.html
+              build: internal, external
+              output: web
+
+            - title: Plugin Functions
+              url: /sdk_plugins_functions.html
+              build: internal, external
+              output: web
+
+            - title: Plugin Localization
+              url: /sdk_plugins_localization.html
+              build: internal, external
+              output: web
+
+            - title: Call External APIs from UI Plugins
+              url: /sdk_call_external_apis_from_ui_plugins.html
+              build: internal, external
+              output: web
+
+            - title: Define Docking Host Config for Add-on Applications
+              url: /sdk_upd_docking_config_for_addon_apps.html
+              build: internal, external
+              output: web
+
+            - title: Define Locale Messages Bundle for Add-on Applications
+              url: /sdk_upd_locale_msg_bundle_for_addon_apps.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Define Locale Messages for Add-on Applications
+                  url: /sdk_upd_locale_msg_for_addon_apps.html
+                  build: internal, external
+                  output: web
+
+                - title: Update Cache Version in Application
+                  url: /sdk_upd_cache_ver_in_apps.html
+                  build: internal, external
+                  output: web
+
+        - title: Connector Facet to Integrate and Syndicate data 
+          url: /sdk_int_conn.html
+          build: internal, external
+          output: web
+          children:
+
+            - title: Get Started
+              url: /si_ext_get_started.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Key Components
+                  url: /si_ext_comp.html
+                  build: internal, external
+                  output: 'web'
+
+                - title: Understand Business Flow
+                  url: /si_ext_how_business.html
+                  build: internal, external
+                  output: 'web'
+
+                - title: Understand Technical Aspects
+                  url: /si_ext_how_technical.html
+                  build: internal, external
+                  output: 'web'
+
+                - title: Understand Profile
+                  url: /si_coa_comp.html
+                  build: internal, external
+                  output: web
+
+            - title: Understand Connector Facet
+              url: /si_connector_framework.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Know the Key Terminologies
+                  url: /si_coa_terms.html
+                  build: internal, external
+                  output: web
+
+                - title: Understand Connector Request and Message Activity Objects
+                  url: /si_conn_activity.html
+                  build: internal, external
+                  output: web
+
+            - title: Prerequisites for developing Custom Extension
+              url: /si_ext_set_pre.html
+              build: internal, external
+              output: 'web'
+
+            - title: Create Custom Extension
+              url: /si_ext_create_custom.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Create Extractor Class
+                  url: /si_ext_create_extractor_class.html
+                  build: internal, external
+                  output: web
+
+                - title: Create Transform Class
+                  url: /si_ext_create_transform_class.html
+                  build: internal, external
+                  output: web
+
+                - title: Create Loader Class
+                  url: /si_ext_create_loader_class.html
+                  build: internal, external
+                  output: web
+
+                - title: Update "Components" in Configuration File
+                  url: /si_ext_update_ext_config.html
+                  build: internal, external
+                  output: web
+
+                - title: Update Profile Details for Extensions
+                  url: /si_ext_update_profile.html
+                  build: internal, external
+                  output: web
+
+            - title: Prepare to Deploy Connector App
+              url: /deploy_connectorapp.html
+              build: internal, external
+              output: web
+
+        - title: Analytics Facet to Process the Data
+          url: /analytics_facet.html
+          build: internal, external
+          output: web
+          children:
+
+            - title: About Riversand Analytics Facet (RAF)
+              url: /sdk_analytics_framework.html
+              build: internal, external
+              output: web
+
+            - title: Understand Key Concepts
+              url: /analytics_keyconcepts.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Limit Concurrent Batch Jobs using Named Quotas
+                  url: /analytics_limit_concurrent_jobs.html
+                  build: internal
+                  output: web
+
+            - title: Set-Up Prerequisites
+              url: /analytics_prereq.html
+              build: internal, external
+              output: web
+
+            - title: Understand Batch Execution Environment
+              url: /setup_batchexecenv.html
+              build: internal, external
+              output: web
+
+            - title: Build Analytics Facet Components
+              url: /analytics_components.html
+              build: internal, external
+              output: web
+
+            - title: Launch and Test the Sample App
+              url: /analytics_build_test_app.html
+              build: internal, external
+              output: web
+
+            - title: How to build and deploy the Analytics App
+              url: /analytics_howtobuild.html
+              build: internal, external
+              output: web
+
+        - title: Visualization facet to create custom reports
+          url: /va_dashboards_reports.html
+          build: internal, external
+          output: web
+          children:
+
+            - title: View and Copy Report Widget Ids
+              url: /va_visualization_widget_id.html
+              build: internal, external
+              output: web
+
+            - title: Scenario - Create Self-serve Report
+              url: /va_scenario_create_selfserve_reports.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Brand - Widget Settings
+                  url: /va_brand_widget_settings.html
+                  build: internal, external
+                  output: web
+
+                - title: Brand - Tag Cloud Settings
+                  url: /va_tag_cloud_widget_settings.html
+                  build: internal, external
+                  output: web
+
+                - title: Hierarchy - Widget Settings
+                  url: /va_hierarchy_widget_settings.html
+                  build: internal, external
+                  output: web
+
+                - title: Workflow - Widget Settings
+                  url: /va_workflow_widget_settings.html
+                  build: internal, external
+                  output: web
+    
+                - title: Status - Widget Settings
+                  url: /va_status_widget_settings.html
+                  build: internal, external
+                  output: web
+
+                - title: Entity Type - Tabular Settings
+                  url: /va_entity_type_widget_settings.html
+                  build: internal, external
+                  output: web
+
+                - title: Context - Tabular Settings
+                  url: /va_context_tabular_settings.html
+                  build: internal, external
+                  output: web
+
+            - title: Create Self-serve report using Lens
+              url: /va_scenario_create_reports_using_lens.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Edit Self-serve report using Lens
+                  url: /va_edit_selfserve_report_lens.html
+                  build: internal, external
+                  output: web
+
+            - title: Manage Self-serve Report
+              url: /va_manage_report.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Edit and Share Self-serve Report
+                  url: /va_edit_share_selfserve_report.html
+                  build: internal, external
+                  output: web
+
+                - title: Download Self-serve Reports
+                  url: /va_download_reports.html
+                  build: internal, external
+                  output: web
+
+                - title: Delete Self-serve Report
+                  url: /va_delete_self_serve_report.html
+                  build: internal, external
+                  output: web
+
+        - title: REST API Facet to Develop new RESTful APIs
+          url: /rest_api_facet.html
+          build: internal
+          output: web
+          children:
+
+            - title: REST API Facet Components
+              url: /rest_api_facet_components.html
+              build: internal
+              output: web
+
+            - title: Prepare to Deploy Add-on REST API Service
+              url: /deploy_restapi_facet.html
+              build: internal
+              output: web                  
+
+        - title: Stream Processing Facet to create add-on Stream Processing Layer
+          url: /stream_facet.html
+          build: internal
+          output: web
+          children:
+
+            - title: Stream Processing Facet Components
+              url: /stream_facet_components.html
+              build: internal
+              output: web
+
+            - title: Prepare to Deploy Add-on Stream Processing Facet
+              url: /deploy_stream_facet.html
+              build: internal
+              output: web   
+
+        - title: Workflow for Build, Deploy, and Release Your Test Tenant App Provided by Riversand
+          url: /sdk_build_and_deploy_your_apps.html
+          build: internal, external
+          output: web
+          children:
+
+            - title: Build, Deploy, and Test Your Apps
+              url: /sdk_build_and_test_apps.html
+              build: internal, external
+              output: web
+              
+            - title: Release Your Apps
+              url: /sdk_build_deploy_and_enable_tenant_apps.html
+              build: internal, external
+              output: web
+                   
+    - title: References
+      url: /references_appdev.html
+      build: internal, external
+      output: web
+      tag: updated
+      children:
+
+        - title: UI SDK Storybook
+          url: /sdk_riversand_libraries.html
+          build: internal, external
+          output: web
+            
+        - title: Integration & Connector SDK - JavaDocs
+          url: /ref_int_conn.html
+          build: internal, external
+          output: web
+
+        - title: Analytics SDK - JavaDocs
+          url: /ref_analytics.html
+          build: internal, external
+          output: web
+
+        - title: Stream Processing SDK - JavaDocs
+          url: /ref_stream.html
+          build: internal
+          output: web
+          tag: new
+
+        - title: Riversand RESTful APIs
+          url: /api_getting_started.html
+          output: web
+          children:
+
+            - title: How to Access Riversand Restful API's
+              url: /api_access.html
+              build: internal, external
+              output: web
+
+            - title: Access Levels for Riversand RESTFul API
+              url: /api_access_levels_for_rs_api.html
+              build: internal, external
+              output: web
+
+            - title: Riversand JSON Schema Overview
+              url: /json_overview.html
+              build: internal, external
+              output: web
+              children:
+        
+                - title: Understand Riversand JSON Object Schema 
+                  url: /json_schema.html
+                  build: internal, external
+                  output: web
+                  children:
+                
+                    - title: AttributesObject Schema
+                      url: /json_attributes_str.html
+                      build: internal, external
+                      output: web                          
+
+                    - title: RelationshipsObject Schema
+                      url: /json_relationship_str.html
+                      build: internal, external
+                      output: web               
+
+                    - title: ContextObject Schema
+                      url: /json_context_schema.html
+                      build: internal, external
+                      output: web   
+
+                - title: Riversand JSON Object Schema Validations
+                  url: /json_schema_val_end_pnt.html
+                  build: internal, external
+                  output: web
+
+            - title: Validate JSON Object Schema during Import
+              url: /api_validate_schema.html
+              build: internal, external
+              output: web, pdf
+
+            - title: List of Operators used in API Queries
+              url: /api_operators.html
+              build: internal, external
+              output: web, pdf
+
+            - title: Authentication Services
+              url: /api_auth_service.html
+              build: internal, ascend
+              output: web
+              children:
+
+                - title: Before you Begin
+                  url: /api_auth_conf.html
+                  build: internal, ascend
+                  output: web
+
+                - title: Understanding Request Headers
+                  url: /api_understand_req_header.html
+                  build: internal, ascend
+                  output: web
+
+                - title: Sending API Request
+                  url: /api_sample_request_responses.html
+                  build: internal, ascend
+                  output: web
+
+            - title: Authorization Services
+              url: /api_authorization_service.html
+              build: internal, external, ascend
+              output: web
+              children:
+
+                - title: Authorization Object Structure
+                  url: /api_auth_object_structure.html
+                  build: internal, external, ascend
+                  output: web
+
+                - title: Compute Role using Role Compute Policy
+                  url: /api_compute_role.html
+                  build: internal, external, ascend
+                  output: web
+
+                - title: Compute Authorization Models
+                  url: /api_compute_auth_model.html
+                  build: internal, external, ascend
+                  output: web
+                  children:
+
+                    - title: User Role and Authorization Scenarios
+                      url: /api_user_role_auth_scenarios.html
+                      build: internal, external, ascend
+                      output: web
+
+            - title: Entity Model Services
+              url: /api_manage_data_model.html
+              output: web
+              children:
+
+                  - title: Create EntityType Data Model
+                    url: /api_create_entityType_data_model.html
+                    build: internal
+                    output: web
+                    children:
+
+                      - title: Create EntityType Data Model for Thing Domain
+                        url: /api_create_entityType_data_model_scenario1.html
+                        build: internal
+                        output: web
+
+                      - title: Create EntityType Data Model for Digital Asset Domain
+                        url: /api_create_entityType_data_model_scenario2.html
+                        build: internal
+                        output: web
+
+                      - title: Create EntityType Data Model for Party Domain
+                        url: /api_create_entityType_data_model_scenario3.html
+                        build: internal
+                        output: web
+
+                      - title: Create EntityType Data Model for Reference Data Domain
+                        url: /api_create_entityType_data_model_scenario4.html
+                        build: internal
+                        output: web
+
+                      - title: Create EntityType Data Model for Generic Domain
+                        url: /api_create_entityType_data_model_scenario5.html
+                        build: internal
+                        output: web
+
+                  - title: Create Data Model
+                    url: /api_create_data_model.html
+                    build: internal
+                    output: web
+                    children:
+
+                      - title: Create Manage Model for EntityType
+                        url: /api_create_data_model_scenario51.html
+                        build: internal
+                        output: web
+
+                      - title: Create Manage Model for Deeply Nested Attribute (DNA)
+                        url: /api_create_manage_model_dna.html
+                        build: internal
+                        output: web
+
+                      - title: Create Validation Model
+                        url: /api_create_data_model_scenario58.html
+                        build: internal
+                        output: web
+
+                      - title: Create Display Model
+                        url: /api_create_data_model_scenario60.html
+                        build: internal
+                        output: web
+
+                      - title: Create Display Model for Deeply Nested Attribute (DNA)
+                        url: /api_create_display_model_dna.html
+                        build: internal
+                        output: web
+
+                      - title: Create Default Value Model
+                        url: /api_create_data_model_scenario62.html
+                        build: internal
+                        output: web
+
+                      - title: Create Context Model for Thing Domain
+                        url: /api_create_data_model_scenario57.html
+                        build: internal
+                        output: web
+
+                      - title: Create Manage Model for Primary Context Instance - Country
+                        url: /api_create_data_model_scenario52.html
+                        build: internal
+                        output: web
+
+                      - title: Create Manage Model for Primary Context Instance - Channel
+                        url: /api_create_data_model_scenario53.html
+                        build: internal
+                        output: web
+
+                      - title: Create Manage Model for Additional Context Instance - Product Classification
+                        url: /api_create_data_model_scenario54.html
+                        build: internal
+                        output: web
+
+                      - title: Create Manage Model for Additional Context Instance - Web Classification
+                        url: /api_create_data_model_scenario55.html
+                        build: internal
+                        output: web
+
+                      - title: Create Manage Model for Additional Context Instance - Item Type
+                        url: /api_create_data_model_scenario56.html
+                        build: internal
+                        output: web
+
+                      - title: Create Manage Model for Additional Context Instance - Item Type with Trust Matrix
+                        url: /api_create_data_model_scenario56_1.html
+                        build: internal
+                        output: web
+
+                      - title: Create Attribute Model
+                        url: /api_create_data_model_scenario63.html
+                        build: internal
+                        output: web
+
+                      - title: Create Relationship Model
+                        url: /api_create_data_model_scenario64.html
+                        build: internal
+                        output: web
+
+                      - title: Create Manage Model for Locale
+                        url: /api_create_data_model_scenario66.html
+                        build: internal
+                        output: web
+
+                      - title: Create Value Mapping Manage Model
+                        url: /api_create_data_model_scenario8.html
+                        build: internal
+                        output: web
+
+                      - title: Set Permissions using Authorization Model
+                        url: /api_create_entity_auth_model.html
+                        build: internal
+                        output: web
+                        children:
+
+                          - title: Set Domain Permissions
+                            url: /api_create_data_model_scenario36.html
+                            build: internal
+                            output: web
+
+                          - title: Set Entity Type Permissions
+                            url: /api_create_data_model_scenario46.html
+                            build: internal
+                            output: web
+
+                          - title: Set User Role Mapping
+                            url: /api_create_data_model_scenario38.html
+                            build: internal
+                            output: web
+
+                          - title: Set Read Permission for Specific Attribute
+                            url: /api_create_data_model_scenario47.html
+                            build: internal
+                            output: web
+
+                          - title: Set Context Level Permissions
+                            url: /api_create_data_model_scenario39.html
+                            build: internal
+                            output: web
+
+                          - title: Set Authorization type - Accommodate/Reject
+                            url: /api_create_data_model_scenario40.html
+                            build: internal
+                            output: web
+
+                          - title: Set Write Permission for Specific Attribute
+                            url: /api_create_data_model_scenario41.html
+                            build: internal
+                            output: web
+
+                          - title: Set Owner Permission
+                            url: /api_create_data_model_scenario42.html
+                            build: internal
+                            output: web
+
+                          - title: Set OwnerEdit Permission
+                            url: /api_create_data_model_scenario49.html
+                            build: internal
+                            output: web
+
+                          - title: Set MultiValued Ownership Permission
+                            url: /api_create_data_model_scenario76.html
+                            build: internal
+                            output: web
+
+                          - title: Set Delete Permission
+                            url: /api_create_data_model_scenario43.html
+                            build: internal
+                            output: web
+
+                          - title: Get Nearest Matching Context from Authorization Model
+                            url: /api_create_data_model_scenario44.html
+                            build: internal
+                            output: web
+
+                          - title: Merge Permissions - Single User Multiple Roles
+                            url: /api_create_data_model_scenario45.html
+                            build: internal
+                            output: web
+
+                          - title: Set Read Permission for Specific Role in Locale
+                            url: /api_create_data_model_scenario65.html
+                            build: internal
+                            output: web
+
+                          - title: Set Read and Write Permissions for multiple Roles in different locales
+                            url: /api_create_data_model_scenario65_1.html
+                            build: internal
+                            output: web
+
+                      - title: Authorize Config Objects for various API Services
+                        url: /api_authorize_config_object.html
+                        build: internal
+                        output: web
+                        tag: 'new'
+                        children:
+
+                           - title: Create Authorization based on Entity Type
+                             url: /api_create_auth_type.html
+                             build: internal
+                             output: web
+
+                      - title: Create and Map Workflow using Governance Workflow Model
+                        url: /api_create_gov_workflow_model.html
+                        build: internal
+                        output: web
+                        children:
+
+                          - title: Create Entity Govern Model for Entity Type
+                            url: /api_create_data_model_scenario75.html
+                            build: internal
+                            output: web
+
+                          - title: Create Workflow Definition with Activities, Actions, and Allowed Users
+                            url: /api_create_data_model_scenario69.html
+                            build: internal
+                            output: web
+
+                          - title: Mapping Workflow to a Context
+                            url: /api_create_data_model_scenario70.html
+                            build: internal
+                            output: web
+
+                          - title: Map Workflow Assignment Rule Model
+                            url: /api_create_data_model_scenario74.html
+                            build: internal
+                            output: web
+
+                      - title: Create and Map Business Rules using Governance Business Rule Model
+                        url: /api_create_gov_business_rules_model.html
+                        build: internal
+                        output: web
+                        tag: 'updated'
+                        children:
+
+                          - title: Create Business Rule to Invoke Workflow
+                            url: /api_create_data_model_scenario71.html
+                            build: internal
+                            output: web
+
+                          - title: Create Business Rule to Update Attribute Value
+                            url: /api_create_data_model_scenario21.html
+                            build: internal
+                            output: web
+
+                          - title: Create Business Rule to Validate Basic Attributes
+                            url: /api_create_data_model_scenario22.html
+                            build: internal
+                            output: web
+
+                          - title: Create Business Condition with Validation Rules
+                            url: /api_create_data_model_scenario72.html
+                            build: internal
+                            output: web
+
+                          - title: Map Business Rules or Business Conditions to a Context
+                            url: /api_create_data_model_scenario73.html
+                            build: internal
+                            output: web
+
+                          - title: Qualify Business Rule based on Trigger Attributes and Relationships
+                            url: /api_create_data_model_scenario77.html
+                            build: internal
+                            output: web 
+                            tag: 'new' 
+
+                      - title: Create Graph Process Models to Link Nodes
+                        url: /api_create_graph_process_model.html
+                        build: internal
+                        output: web
+                        children:
+
+                          - title: Create Graph Process Model to Rollup SKU to Product
+                            url: /api_create_graph_process_model_scenario1.html
+                            build: internal
+                            output: web
+
+                          - title: Create Graph Process Model to Link SKU to Image
+                            url: /api_create_graph_process_model_scenario2.html
+                            build: internal
+                            output: web
+
+                          - title: Create Graph Process Model to Link Image to SKU
+                            url: /api_create_graph_process_model_scenario3.html
+                            build: internal
+                            output: web
+
+                      - title: Create Entity Variant Model
+                        url: /api_create_entity_variant_model.html
+                        build: internal
+                        output: web
+                        children:
+
+                          - title: Create Entity Variant Model Settings
+                            url: /api_create_entity_variant_model_scenario1.html
+                            build: internal
+                            output: web
+
+                          - title: Create Entity Variant Model with Self Dimension Attributes
+                            url: /api_create_entity_variant_model_scenario2.html
+                            build: internal
+                            output: web
+
+                          - title: Create Entity Variant Model with Self and Enhancer Given Dimension Attributes
+                            url: /api_create_entity_variant_model_scenario3.html
+                            build: internal
+                            output: web
+
+                          - title: Create Entity Variant Model with Primary Context Specific Dimension Attributes
+                            url: /api_create_entity_variant_model_scenario4.html
+                            build: internal
+                            output: web
+
+                      - title: Consolidate Models from Different Sources
+                        url: /api_create_data_model_scenario50.html
+                        build: internal
+                        output: web
+
+                      - title: Create Unit of Measure via Model
+                        url: /api_create_uom_model.html
+                        build: internal
+                        output: web
+                        children:
+                      
+                          - title: Create UOM as Entity Type
+                            url: /api_create_uom_entity_type.html
+                            build: internal
+                            output: web
+
+                          - title: Define Attribute for UOM via Manage Model
+                            url: /api_define_attribute_uom_manage_model.html
+                            build: internal
+                            output: web
+
+                          - title: Link UOM Attribute to SKU
+                            url: /api_link_uom_type_sku.html
+                            build: internal
+                            output: web
+
+                          - title: Add Multiple Unit Entities as UOM Type
+                            url: /api_add_multiple_unit_entities_uom_type.html
+                            build: internal
+                            output: web
+
+                          - title: Add UOM Validation via Model 
+                            url: /api_add_uom_validation_model.html
+                            build: internal
+                            output: web
+
+                          - title: Populate Default UOM Value for Attribute
+                            url: /api_populate_default_uom_value_attribute.html
+                            build: internal
+                            output: web
+
+                          - title: Create Entity with UOM Attribute
+                            url: /api_create_entity_uom_attribute.html
+                            build: internal
+                            output: web
+
+                          - title: Verify Entity with UOM Attribute
+                            url: /api_verify_entity_uom_attribute.html
+                            build: internal
+                            output: web
+
+                          - title: Validate UOM Attribute with defined Range Value
+                            url: /api_validate_sku_range.html
+                            build: internal
+                            output: web
+
+                  - title: Update Data Model
+                    url: /api_update_data_model.html
+                    build: internal
+                    output: web
+                    children:
+
+                      - title: Add New Attributes to Existing Manage Model
+                        url: /api_update_data_model_scenario1.html
+                        build: internal
+                        output: web
+
+                      - title: Add New Relationship to Existing Manage Model
+                        url: /api_update_data_model_scenario3.html
+                        build: internal
+                        output: web
+
+                      - title: Add New Relationship Attributes to Existing Manage Model
+                        url: /api_update_data_model_scenario4.html
+                        build: internal
+                        output: web
+
+                      - title: Delete Properties from an Existing Manage Model
+                        url: /api_update_data_model_scenario2.html
+                        build: internal
+                        output: web
+
+                  - title: Delete Data Model
+                    url: /api_delete_data_model.html
+                    build: internal
+                    output: web
+                    children:
+
+                      - title: Delete Data Model using Id
+                        url: /api_delete_data_model_scenario1.html
+                        build: internal
+                        output: web
+
+
+            - title: Entity App Model Services
+              url: /api_app_manage_data_model.html
+              build: internal, external
+              output: web
+              children:
+
+                  - title: Data Model Object Structure
+                    url: /api_data_model_object_structure.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                      - title: Lists
+                        url: /api_list_data_model.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                          - title: Classification
+                            url: /api_classification_list_data_model.html
+                            build: internal, external
+                            output: web
+
+                          - title: Country
+                            url: /api_country_list_data_model.html
+                            build: internal, external
+                            output: web
+
+                          - title: Channel
+                            url: /api_channel_list_data_model.html
+                            build: internal, external
+                            output: web
+
+                          - title: Colors
+                            url: /api_colors_list_data_model.html
+                            build: internal, external
+                            output: web
+
+                          - title: Locale
+                            url: /api_locale_list_data_model.html
+                            build: internal, external 
+                            output: web
+
+                      - title: Domains
+                        url: /api_domain_data_model.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                          - title: EntityType Model
+                            url: /api_entityType_data_model.html
+                            build: internal, external
+                            output: web
+                            children:
+
+                              - title: Entity Manage Model
+                                url: /api_manage_model.html
+                                build: internal, external
+                                output: web
+
+                              - title: Entity Manage Model for Reference Data Domain
+                                url: /api_reference_manage_model.html
+                                build: internal, external
+                                output: web
+
+                              - title: Entity Validation Model
+                                url: /api_validation_model.html
+                                build: internal, external
+                                output: web
+
+                              - title: Entity Display Model
+                                url: /api_display_model.html
+                                build: internal, external
+                                output: web
+
+                              - title: Entity Default Values Model
+                                url: /api_default_model.html
+                                build: internal, external
+                                output: web
+
+                          - title: Entity Context Model
+                            url: /api_context_data_model.html
+                            build: internal, external
+                            output: web
+                            children:
+
+                              - title: Primary Context
+                                url: /api_primary_context_data_model.html
+                                build: internal, external
+                                output: web
+
+                              - title: Primary Context Instance - Country
+                                url: /api_country_context_data_model.html
+                                build: internal, external
+                                output: web
+
+                              - title: Additional Context
+                                url: /api_additional_context_data_model.html
+                                build: internal, external
+                                output: web
+
+                          - title: Attribute Model
+                            url: /api_attribute_data_model.html
+                            build: internal, external
+                            output: web
+
+                          - title: Relationship Model
+                            url: /api_relationship_data_model.html
+                            build: internal, external
+                            output: web
+
+                      - title: Entity Authorization Model
+                        url: /api_entity_authorization_model.html
+                        build: internal
+                        output: web
+                        children:
+
+                          - title: System Roles Model
+                            url: /api_system_role_data_model.html
+                            build: internal
+                            output: web
+
+                          - title: System Users Model
+                            url: /api_system_user_data_model.html
+                            build: internal
+                            output: web
+
+                          - title: Authorization Model
+                            url: /api_security_model.html
+                            build: internal
+                            output: web
+
+                      - title: Govern Model
+                        url: /api_govern_data_model.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                          - title: Entity Govern Model for Entity Type 
+                            url: /api_governance_data_model.html
+                            build: internal, external
+                            output: web
+
+                          - title: Governance Workflow Definition Mapping Model 
+                            url: /api_workflow_mapping_model.html
+                            build: internal, external
+                            output: web
+                            children:
+
+                              - title: Governance Workflow Definition Data Model
+                                url: /api_workflow_defn_data_model.html
+                                build: internal
+                                output: web
+                                children:
+
+                                  - title: Governance Business Rule Definition Data Model 
+                                    url: /api_business_rule_defn_data_model.html
+                                    build: internal, external
+                                    output: web
+
+                                  - title: Governance Business Condition Data Model 
+                                    url: /api_business_condition_data_model.html
+                                    build: internal, external
+                                    output: web
+
+                              - title: Workflow Assignment Rule Model
+                                url: /api_workflow_assignment_rule_model.html
+                                build: internal
+                                output: web
+
+                          - title: Rule Context Mapping
+                            url: /api_rule_context_mapping_data_model.html
+                            build: internal, external
+                            output: web
+
+                      - title: Locales Model
+                        url: /api_locale_data_model.html
+                        build: internal, external
+                        output: web
+
+                      - title: Entity Variant Model
+                        url: /api_entity_variant_model.html
+                        build: internal, external
+                        output: web
+
+                      - title: Graph Process Model
+                        url: /api_graph_process_model.html
+                        build: internal, external
+                        output: web
+
+                      - title: Knowledge Rule Model
+                        url: /api_knowledge_rule_model.html
+                        build: internal, external
+                        output: web 
+                        tag: 'new' 
+
+
+                  - title: Get Data Model
+                    url: /api_get_data_model.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                      - title: Get Model Information in the Tenant
+                        url: /api_get_data_model_scenario2.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get all Domains
+                        url: /api_get_data_model_scenario11.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get all Entity Types of a Domain
+                        url: /api_get_data_model_scenario7.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get all Authorization Models
+                        url: /api_get_data_model_scenario12.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get all Users
+                        url: /api_get_data_model_scenario8.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get Model using Model Type and Id
+                        url: /api_get_data_model_scenario1.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get Reference Domain Data Model
+                        url: /api_get_entityType_data_model.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get Nearest Entity Variant Model
+                        build: internal
+                        url: /api_get_nearest_data_model_scenario1.html
+                        output: web
+
+                  - title: Model Coalesce
+                    url: /api_model_coalesce.html
+                    build: internal
+                    output: web
+                    children:
+
+                      - title: Model Coalesce - Primary Context and Additional Context
+                        url: /api_get_model_coalesce_scenario1.html
+                        build: internal
+                        output: web
+
+                      - title: Model Coalesce - Additional Context Given Data
+                        url: /api_get_model_coalesce_scenario2.html
+                        build: internal
+                        output: web
+
+                      - title: Model Coalesce - Precedence
+                        url: /api_get_model_coalesce_scenario3.html
+                        build: internal
+                        output: web
+
+                  - title: Get Composite
+                    url: /api_get_composite.html
+                    build: internal
+                    output: web
+
+            - title: Entity App Services
+              url: /api_app_service.html
+              output: web
+              build: internal, external, ascend
+              children:
+
+                - title: Understand Entity in a Context
+                  url: /api_entity_context.html
+                  build: internal, external, ascend
+                  output: web
+
+                - title: Data Type Summary
+                  url: /api_data_type_summary.html
+                  build: internal, external, ascend
+                  output: web
+
+                - title: Relationship Type Summary
+                  url: /api_rel_type_summary.html
+                  build: internal, external, ascend
+                  output: web
+
+                - title: Entity Object Structure
+                  url: /api_entity_object_structure.html
+                  build: internal, external, ascend
+                  output: web
+
+                - title: Create an Entity
+                  url: /api_app_create_entity.html
+                  build: internal
+                  output: web
+                  children:
+
+                    - title: Create Entity
+                      url: /api_app_create_entity_scenario1.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity with Attributes
+                      url: /api_app_create_entity_scenario2.html
+                      build: internal
+                      output: web
+
+                    - title: Create an Entity with Deeply Nested Attribute (DNA)
+                      url: /api_crt_dna_entities.html
+                      build: internal, external
+                      output: web    
+                      
+                    - title: Create Entity with Valid Path Attribute Value
+                      url: /api_app_create_val_path_attribute.html
+                      build: internal
+                      output: web 
+
+                    - title: Create Entity with Root Node Mismatch Error for Path Attribute
+                      url: /api_app_create_path_attribute.html
+                      build: internal, ascend
+                      output: web 
+
+                    - title: Create Entity with Leaf Node Violation Error for Path Attribute
+                      url: /api_app_create_leaf_node_path_attribute.html
+                      build: internal
+                      output: web 
+
+                    - title: Create Entity with UOM Attributes
+                      url: /api_app_create_entity_scenario3.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity with Nested Attributes
+                      url: /api_app_create_entity_scenario4.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity with Reference Attribute
+                      url: /api_app_create_entity_scenario5.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity with Relationship
+                      url: /api_app_create_entity_scenario6.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity with Multiple Relationships
+                      url: /api_app_create_entity_scenario7.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity with Relationship and Relationship Attributes
+                      url: /api_app_create_entity_scenario8.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity linked to a Single Context
+                      url: /api_app_create_entity_scenario9.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity with Relationship in a Specific Context
+                      url: /api_app_create_entity_scenario10.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity with Relationship and Relationship Attributes linked to a Specific Context
+                      url: /api_app_create_entity_scenario11.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity with Relationship and Matching Relationship Attribute
+                      url: /api_app_create_entity_scenario11_1.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity with Nested Attributes having Multiple Rows
+                      url: /api_app_create_entity_scenario12.html
+                      build: internal
+                      output: web
+
+                    - title: Create Entity linked to Multiple Contexts
+                      url: /api_app_create_entity_scenario14.html
+                      build: internal
+                      output: web
+
+                    - title: Create Country with Allowed Locales
+                      url: /api_app_create_entity_scenario19.html
+                      build: internal
+                      output: web
+
+                    - title: Create Locale with Fallback Locales
+                      url: /api_app_create_entity_scenario20.html
+                      build: internal
+                      output: web
+
+                    - title: Set Attribute(s) Value as Do Not Inherit
+                      url: /api_app_create_entity_attr_null.html
+                      build: internal
+                      output: web
+                      children:
+
+                        - title: Create Entity with Simple Attribute set as Do Not Inherit
+                          url: /api_app_create_entity_scenario15.html
+                          build: internal
+                          output: web
+
+                        - title: Create Entity with Multivalued Nested Attribute set as Do Not Inherit
+                          url: /api_app_create_entity_scenario16.html
+                          build: internal
+                          output: web
+
+                        - title: Create Entity with Enhancer given Attribute in a Context set as Do Not Inherit - Inheritance
+                          url: /api_app_create_entity_scenario17.html
+                          build: internal
+                          output: web
+
+                        - title: Create Entity with Attribute in a Locale set as Do Not Inherit
+                          url: /api_app_create_entity_scenario18.html
+                          build: internal
+                          output: web
+
+                        - title: Create Entity with Nested Attribute in a Locale set as Do Not Inherit
+                          url: /api_app_create_entity_scenario21.html
+                          build: internal
+                          output: web
+
+                        # - title: Configure Do Not Inherit Status
+                        #   url: /api_app_change_set_as_null_status.html
+                        #   build: internal
+                        #   output: web            
+                
+                - title: Update an Entity
+                  url: /api_app_update_entity.html
+                  build: internal
+                  output: web
+                  children:
+
+                    - title: Add New Attribute
+                      url: /api_app_update_entity_scenario1.html
+                      build: internal
+                      output: web
+
+                    - title: Add Attribute Value
+                      url: /api_app_update_entity_scenario2.html
+                      build: internal
+                      output: web
+
+                    - title: Add Attribute Value with UOM
+                      url: /api_app_update_entity_scenario3.html
+                      build: internal
+                      output: web
+
+                    - title: Add a Reference Attribute in a Specific Context
+                      url: /api_app_update_entity_scenario4.html
+                      build: internal
+                      output: web
+
+                    - title: Add Multiple Attributes in Multiple Contexts
+                      url: /api_app_update_entity_scenario8.html
+                      build: internal
+                      output: web
+
+                    - title: Add Single Row to a Nested Attribute
+                      url: /api_app_update_entity_scenario5.html
+                      build: internal
+                      output: web
+
+                    - title: Add New Relationship
+                      url: /api_app_update_entity_scenario6.html
+                      build: internal
+                      output: web
+                      
+                    - title: Add Relationship in Multiple Contexts
+                      url: /api_app_update_entity_scenario7.html
+                      build: internal
+                      output: web
+
+                    - title: Update an entity with Deeply Nested Attribute (DNA) values
+                      url: /api_updt_dna_entities.html
+                      build: internal
+                      output: web
+
+                - title: Delete an Entity
+                  url: /api_app_delete_entity.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Delete Entity
+                      url: /api_app_delete_entity_scenario1.html
+                      build: internal, external
+                      output: web
+
+                    - title: Delete Attribute
+                      url: /api_app_delete_entity_scenario2.html
+                      build: internal, external
+                      output: web
+
+                    - title: Delete UOM Attribute
+                      url: /api_app_delete_entity_scenario3.html
+                      build: internal, external
+                      output: web
+
+                    - title: Delete Nested Attribute
+                      url: /api_app_delete_entity_scenario4.html
+                      build: internal, external
+                      output: web
+
+                    - title: Delete Relationship Attribute
+                      url: /api_app_delete_entity_scenario5.html
+                      build: internal, external
+                      output: web
+
+                    - title: Delete Relationship
+                      url: /api_app_delete_entity_scenario6.html
+                      build: internal
+                      output: web
+
+                    - title: Delete Attribute from a Context
+                      url: /api_app_delete_entity_scenario7.html
+                      build: internal, external
+                      output: web
+
+                    - title: Delete Enhancer Attribute from a Context
+                      url: /api_app_delete_entity_scenario8.html
+                      build: internal, external
+                      output: web
+
+                    - title: Delete Deeply Nested Attribute (DNA) from an Entity
+                      url: /api_del_dna_entities.html
+                      build: internal, external
+                      output: web
+
+                - title: Process an Entity
+                  url: /api_app_process_entity.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Create Entity with Unique mdmid
+                      url: /api_app_process_entity_scenario1.html
+                      build: internal, external
+                      output: web
+
+                    - title: Create Entity with Duplicate mdmid
+                      url: /api_app_process_entity_scenario2.html
+                      build: internal, external
+                      output: web 
+
+                    - title: Preview Trust-based Merge with User Provided Value
+                      url: /api_feature_trust_matrix_scenario11.html
+                      build: internal, external
+                      output: web
+
+                    - title: Preview Trust-based Merge with Existing Source Value
+                      url: /api_feature_trust_matrix_scenario12.html
+                      build: internal, external
+                      output: web
+
+                    - title: Process Trust-based Merge
+                      url: /api_process_trust_based_merge.html
+                      build: internal, external
+                      output: web
+                      children:
+
+                        - title: Merge using Source Value
+                          url: /api_feature_trust_matrix_scenario1.html
+                          build: internal, external
+                          output: web
+
+                        - title: Merge using Sam Source Value
+                          url: /api_feature_trust_matrix_scenario2.html
+                          build: internal, external
+                          output: web
+
+                        - title: Merge using User Provided Value
+                          url: /api_feature_trust_matrix_scenario3.html
+                          build: internal, external
+                          output: web
+
+                        - title: Merge at Single Attribute Level
+                          url: /api_feature_trust_matrix_scenario4.html
+                          build: internal, external
+                          output: web
+
+                        - title: Merge at Collection Attribute Level using Aggregate
+                          url: /api_feature_trust_matrix_scenario5.html
+                          build: internal, external
+                          output: web
+
+                        - title: Merge at Collection Attribute Level using Override
+                          url: /api_feature_trust_matrix_scenario8.html
+                          build: internal
+                          output: web
+
+                        - title: Merge at Relationship Level
+                          url: /api_feature_trust_matrix_scenario10.html
+                          build: internal, external
+                          output: web
+
+                - title: Get Entities through Combined Get
+                  url: /api_app_get_combinedget.html
+                  build: internal
+                  output: web
+                  children:
+
+                    - title: Get Entities using Workflow Details, Attribute, and Keyword Criterion
+                      url: /api_app_get_combinedget_scenario14.html
+                      build: internal
+                      output: web
+
+                    - title: Get Entities using Business Condition, Status, and Attribute Criterion
+                      url: /api_app_get_combinedget_scenario15.html
+                      build: internal
+                      output: web
+
+                    - title: Get Workflow Entities using 10k Keywords
+                      url: /api_app_get_combined_scenario16.html
+                      build: internal
+                      output: web
+
+                - title: Get Entities
+                  url: /api_app_get_entity.html
+                  build: internal, external, ascend
+                  output: web
+                  children:
+
+                    - title: Get Entities by Type
+                      url: /api_app_get_entity_scenario1.html
+                      build: internal, ascend
+                      output: web
+
+                    - title: Get Entities using Multiple Types
+                      url: /api_app_get_entity_scenario2.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Entities using Multiple Ids
+                      url: /api_app_get_entity_scenario3.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Entities using Name
+                      url: /api_app_get_entity_scenario4.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get all Attributes of Entities
+                      url: /api_app_get_entity_scenario5.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Specific Attributes of Entities
+                      url: /api_app_get_entity_scenario6.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get All Relationships of an Entity
+                      url: /api_app_get_entity_scenario7.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Nested Attribute of an Entity
+                      url: /api_app_get_entity_scenario8.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Specific Relationships of an Entity
+                      url: /api_app_get_entity_scenario9.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Entities with Context Attributes in Value Context
+                      url: /api_app_get_entity_scenario12.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Entities Sorted in Descending Order
+                      url: /api_app_get_entity_scenario13.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Entities Sorted in Ascending Order
+                      url: /api_app_get_entity_scenario14.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Entities using Properties Criteria
+                      url: /api_app_get_entity_scenario15.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Entities using Properties Criterion - contains Wildcard(*)
+                      url: /api_app_get_entity_scenario37.html
+                      build: internal, external, ascend
+                      output: web
+                      
+                    - title: Get Entities using Keyword Criterion
+                      url: /api_app_get_entity_scenario17.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Entities using Keyword Criterion - contains Wildcard(*)
+                      url: /api_app_get_entity_scenario38.html
+                      build: internal, external, ascend
+                      output: web
+                      
+                    - title: Get Entities using Attribute Criterion - contains String
+                      url: /api_app_get_entity_scenario18.html
+                      build: internal, external, ascend
+                      output: web
+                      
+                    - title: Get Entities using Attribute Criterion - exact String
+                      url: /api_app_get_entity_scenario19.html
+                      build: internal, external, ascend
+                      output: web
+                      
+                    - title: Get Entities using Attribute Criterion - contains Integer
+                      url: /api_app_get_entity_scenario20.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Entities using Attribute Criterion - equals Wildcard(*)
+                      url: /api_app_get_entity_scenario36.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Entities using Attribute Criterion - "ALL" Attributes  
+                      url: /api_app_get_entity_scenario39.html
+                      build: internal, external, ascend
+                      output: web
+                      
+                    - title: Get Entities using Single Relationship Criterion
+                      url: /api_app_get_entity_scenario21.html
+                      build: internal, external, ascend
+                      output: web
+                      
+                    - title: Get Entities using Multiple Relationship Criteria
+                      url: /api_app_get_entity_scenario22.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Entities Pagewise
+                      url: /api_app_get_entity_scenario23.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Scroll Support for Entity App Services
+                      url: /api_app_scroll_support.html
+                      build: internal, external
+                      output: web
+                      children:
+
+                        - title: Prepare Scroll for Entity App Services Object Structure
+                          url: /api_app_prepare_scroll_object_structure.html
+                          build: internal, external
+                          output: web
+
+                        - title: Get Scroll ID and Delete Scroll ID using Clear Scroll for Entity App Service
+                          url: /api_app_scroll_id.html
+                          build: internal, external
+                          output: web
+
+                    - title: Get Entity History                   
+                      url: /api_app_get_entity_scenario28.html
+                      build: internal, external
+                      output: web
+                      children:
+
+                        - title: Get Entity History - Self
+                          url: /api_app_get_entity_scenario24.html
+                          build: internal, external
+                          output: web
+
+                        - title: Get Entity History - Context
+                          url: /api_app_get_entity_scenario29.html
+                          build: internal, external
+                          output: web
+                          children:
+
+                            - title: Get Entity History in All Contexts
+                              url: /api_app_get_entity_scenario30.html
+                              build: internal, external
+                              output: web
+
+                            - title: Get Entity History in Self Context
+                              url: /api_app_get_entity_scenario31.html
+                              build: internal, external
+                              output: web
+
+                            - title: Get Entity History in Specific Context
+                              url: /api_app_get_entity_scenario32.html
+                              build: internal, external
+                              output: web
+
+                    - title: Get Context of Entity
+                      url: /api_app_get_entity_scenario25.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Entities using Originating Source Information
+                      url: /api_app_get_entity_scenario26.html
+                      build: internal, external
+                      output: web
+                      children:
+
+                        - title: Get Originating Source Information of Entity
+                          url: /api_app_get_entity_scenario35.html
+                          build: internal, external
+                          output: web
+
+                        - title: Get Entities using Originating Source Information - Attribute Criterion "Specific" Attribute
+                          url: /api_app_get_entity_scenario34.html
+                          build: internal, external
+                          output: web
+
+                    - title: Get Entities with NULL Attribute
+                      url: /api_app_get_entity_scenario27.html
+                      build: internal, external, ascend
+                      output: web
+
+                    - title: Get Tenant Configuration Details for Do not inherit
+                      url: /api_app_get_tenant_configuration_for_set_as_null.html
+                      build: internal
+                      output: web
+
+                    - title: Get Entities with Mapped Values for Size Attribute  
+                      url: /api_app_get_mapped_self.html
+                      build: internal, external, ascend
+                      output: web
+ 
+                    - title: Get Related Entities
+                      url: /api_app_get_related.html
+                      build: internal, external, ascend
+                      output: web
+                      children:
+
+                        - title: Get Entities Related to Images  
+                          url: /api_app_get_related_owned.html
+                          build: internal, external, ascend
+                          output: web
+
+                        - title: Get Entities Related to Images in Specific Value Context  
+                          url: /api_app_get_related_uiquery.html
+                          build: internal, external, ascend
+                          output: web
+
+                        - title: Get Images Related to Entities
+                          url: /api_app_get_related_whereused.html
+                          build: internal, external, ascend
+                          output: web
+
+                    - title: Get Draft Entities by Type 
+                      url: /api_app_get_draft_entities.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Entities based on Single Valued UOM
+                      url: /api_sch_uom_single_value.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Entities based on Multiple Valued UOM
+                      url: /api_sch_uom_multiple_value.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Entities based on Exact Single Value UOM Match
+                      url: /api_sch_uom_single_value_exact_match.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Entities based on UOM Nested attribute
+                      url: /api_sch_uom_nested_attribute.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Entities based on UOM Range
+                      url: /api_sch_uom_range.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Valid Path Attribute Value
+                      url: /api_val_path_attr.html
+                      build: internal, external
+                      output: web  
+
+                    - title: Get Root Node Mismatch Value for Path Attribute
+                      url: /api_val_root_node_path_attr.html
+                      build: internal, external
+                      output: web   
+
+                    - title: Get Entity with Non-Leaf Node Value for Path Attribute
+                      url: /api_val_leaf_node_path_attr.html
+                      build: internal, external
+                      output: web    
+
+                    - title: Get Entities of Deeply Nested Attribute
+                      url: /api_get_dna_entities.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Entities using 10K Keywords
+                      url: /api_get_entities_on_tenk_keywords.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get entity based on Entity Type in Match Profile Standardization
+                      url: /api_get_entity_matchprofile.html
+                      build: internal, external
+                      output: web
+
+                    - title: Merge Source Record with Golden Record based on Survivorship Rules
+                      url: /api_get_merge_preview_v2_scenario40.html
+                      build: internal, external
+                      output: web
+
+                    - title: Merge Source Record with Golden Record based on 'MostRecentEntity' Strategy
+                      url: /api_get_merge_preview_v2_scenario41.html
+                      build: internal, external
+                      output: web
+
+                    - title: Merge Source Record with Golden Record based on 'SourceBasedScore' Strategy
+                      url: /api_get_merge_preview_v2_scenario43.html
+                      build: internal, external
+                      output: web
+
+                    - title: Merge Source Record with Golden Record based on 'DoNotMerge' Strategy
+                      url: /api_get_merge_preview_v2_scenario44.html
+                      build: internal, external
+                      output: web
+
+                    - title: Merge Source Record with Golden Record based on 'Replace' Strategy
+                      url: /api_get_merge_preview_v2_scenario45.html
+                      build: internal, external
+                      output: web
+
+                    - title: Flush and fill for Merge strategies
+                      url: /rdp_flush_and_fill_merge_strategies.html
+                      build: internal, external
+                      output: web
+            
+                    - title: Automerge Source Entity with Golden Record
+                      url: /api_get_automerge_sr_gr_scenario41.html
+                      build: internal, external
+                      output: web
+
+                    - title: Process Source Record and Golden Record
+                      url: /api_get_process_sr_scenario42.html
+                      build: internal, external
+                      output: web
+              
+                - title: Generate Entity Variants
+                  url: /api_app_generate_entity_variants.html
+                  build: internal
+                  output: web
+                  children:
+
+                    - title: Generate Variants - Self 
+                      url: /api_app_generate_variants_scenario2.html
+                      build: internal
+                      output: web
+
+                    - title: Generate Variants - Self and Enhancer 
+                      url: /api_app_generate_variants_scenario3.html
+                      build: internal
+                      output: web
+
+                    - title: Generate Variants in Primary Context 
+                      url: /api_app_generate_variants_scenario4.html
+                      build: internal
+                      output: web
+
+                    - title: Generate Variants - Get Nearest 
+                      url: /api_app_generate_variants_scenario5.html
+                      build: internal
+                      output: web
+
+                - title: Data Coalesce
+                  url: /api_data_coalesce.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Data Coalesce - Primary Context and Additional Context 
+                      url: /api_get_data_coalesce_scenario1.html
+                      build: internal, external
+                      output: web
+
+                    - title: Data Coalesce - Additional Context Given Data 
+                      url: /api_get_data_coalesce_scenario2.html
+                      build: internal, external
+                      output: web
+
+                    - title: Data Coalesce - Precedence 
+                      url: /api_get_data_coalesce_scenario3.html
+                      build: internal, external
+                      output: web
+
+                    - title: Data Coalesce - Relationship 
+                      url: /api_get_data_coalesce_scenario4.html
+                      build: internal, external
+                      output: web
+
+                    - title: Data Coalesce - Set as Do Not Inherit
+                      url: /api_get_data_coalesce_scenario5.html
+                      build: internal, external
+                      output: web
+
+                    - title: Data Coalesce - Reference Localization
+                      url: /api_get_data_coalesce_scenario6.html
+                      build: internal, external
+                      output: web
+
+                - title: Create Snapshots
+                  url: /api_app_create_snapshot.html
+                  build: internal
+                  output: web
+                  children:
+
+                    - title: Create Snapshot for SKU 
+                      url: /api_app_create_snapshot_scenario1.html
+                      build: internal
+                      output: web
+
+                    - title: Create Snapshot for an Entity in a Context 
+                      url: /api_app_create_snapshot_scenario2.html
+                      build: internal
+                      output: web
+
+                - title: Get Snapshots
+                  url: /api_app_get_snapshot.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Get Snapshots of an Entity
+                      url: /api_app_get_snapshot_scenario1.html
+                      build: internal, external
+                      output: web
+
+                - title: Restore Snapshots
+                  url: /api_app_restore_snapshot.html
+                  build: internal
+                  output: web
+                  children:
+
+                    - title: Restore Latest Snapshot for SKU in Specific Context
+                      url: /api_app_restore_snapshot_scenario1.html
+                      build: internal
+                      output: web
+
+                    - title: Restore Latest Snapshot for SKU in Multiple Contexts
+                      url: /api_app_restore_snapshot_scenario2.html
+                      build: internal
+                      output: web
+
+                    - title: Restore Latest Snapshot for SKU in Multiple Contexts and Specified Version
+                      url: /api_app_restore_snapshot_scenario3.html
+                      build: internal
+                      output: web
+
+                    - title: Restore Snapshot for SKU using snapshotId
+                      url: /api_app_restore_snapshot_scenario4.html
+                      build: internal
+                      output: web
+
+                - title: Authorize Relationships based on Ownership / Ownership Edit Data
+                  url: /api_auth_relationship.html
+                  build: internal, external
+                  output: web
+
+                - title: Configure Do Not Inherit Status
+                  url: /api_app_change_set_as_null_status.html
+                  build: internal, external
+                  output: web
+
+                - title: Validate Deeply Nested Attribute (DNA) errors
+                  url: /api_get_data_model_for_dna_scenario4.html
+                  build: internal
+                  output: web       
+
+            - title: Bulk Entity Services
+              url: /api_bulk_entity_service.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Bulk Entity Object Structure
+                  url: /api_bulk_entity_object_strcuture.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Bulk Entity Object Structure without using Query
+                      url: /api_bulk_entity_process_object_structure_wout_query.html
+                      build: internal, external
+                      output: web
+
+                    - title: Bulk Entity Object Structure using Query
+                      url: /api_bulk_entity_process_object_structure_with_query.html
+                      build: internal, external
+                      output: web
+
+                - title: Process Bulk Entities
+                  url: /api_bulk_process_entity.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Update Bulk Entities to add a Relationship Attribute
+                      url: /api_bulk_entity_scenario1.html
+                      build: internal, external
+                      output: web
+
+                    - title: Update Bulk Entities with a Self Attribute
+                      url: /api_bulk_entity_scenario2.html
+                      build: internal, external
+                      output: web
+
+                    - title: Update Bulk Entities without using Query
+                      url: /api_bulk_entity_scenario3.html
+                      build: internal, external
+                      output: web
+
+                - title: Workflow Assignments for Bulk Entities
+                  url: /api_bulk_change_assignments.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Bulk Change Assignments using KeyWord Criterion in Query
+                      url: /api_bulk_entity_scenario4.html
+                      build: internal, external
+                      output: web
+
+                    - title: Bulk Change Assignments using Entity IDs in Query
+                      url: /api_bulk_entity_scenario5.html
+                      build: internal, external
+                      output: web
+
+                    - title: Bulk Change Assignments using Attribute Criterion in Query
+                      url: /api_bulk_entity_scenario6.html
+                      build: internal, external
+                      output: web
+
+                - title: Workflow Transitions for Bulk Entities
+                  url: /api_bulk_transitions.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Bulk Transitions using KeyWord Criterion in Query
+                      url: /api_bulk_entity_scenario7.html
+                      build: internal, external
+                      output: web
+
+                    - title: Bulk Transitions using Entity IDs in Query
+                      url: /api_bulk_entity_scenario8.html
+                      build: internal, external
+                      output: web
+
+                    - title: Bulk Transitions using Attribute Criterion in Query
+                      url: /api_bulk_entity_scenario9.html
+                      build: internal, external
+                      output: web
+
+                - title: Update Bulk Entities using Multiple Queries
+                  url: /api_bulk_entities_with_multi_queries.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Bulk Transitions using Multiple Queries
+                      url: /api_bulk_entity_scenario10.html
+                      build: internal, external
+                      output: web
+
+                    - title: Bulk Change Assignments using Multiple Queries
+                      url: /api_bulk_entity_scenario11.html
+                      build: internal, external
+                      output: web
+
+                - title: Delete Bulk Entities
+                  url: /api_bulk_delete_entities.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Delete Bulk Entities using Keyword and Attribute Criterion
+                      url: /api_bulk_entity_scenario12.html
+                      build: internal, external
+                      output: web
+
+                    - title: Delete Bulk Entities using Properties, Keyword, and Attribute Criterion
+                      url: /api_bulk_entity_scenario13.html
+                      build: internal, external
+                      output: web
+
+                    - title: Delete Bulk Entities using Entity IDs
+                      url: /api_bulk_entity_scenario14.html
+                      build: internal, external
+                      output: web
+
+                - title: Track the status of Bulk Entities using Client Attributes
+                  url: /api_bulk_entities_using_client_attr.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Track the status of Bulk Change Assignments
+                      url: /api_bulk_entity_scenario16.html
+                      build: internal, external
+                      output: web
+
+                    - title: Track the status of Bulk Transitions
+                      url: /api_bulk_entity_scenario17.html
+                      build: internal, external
+                      output: web
+                  
+            - title: Entity Govern Services
+              url: /api_manage_govern_data.html
+              build: internal, external
+              output: web
+              children:
+                
+                - title: Entity Govern Object Structure
+                  url: /api_entity_govern_object_structure.html
+                  build: internal, external
+                  output: web
+
+                - title: Get Entity Govern Data
+                  url: /api_get_govern_data.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                        - title: Get Workflow Status of an Entity
+                          url: /api_govern_get_scenario1.html
+                          build: internal, external
+                          output: web
+
+                        - title: Get Workflow Activity Status
+                          url: /api_govern_get_scenario4.html
+                          build: internal, external
+                          output: web
+
+                        - title: Get Status of Workflow Activity Assigned to a User
+                          url: /api_govern_get_scenario6.html
+                          build: internal, external
+                          output: web
+
+                        - title: Get Business Condition Status of an Entity
+                          url: /api_govern_get_scenario2.html
+                          build: internal, external
+                          output: web
+
+                        - title: Get Status of a Business Condition in a Workflow
+                          url: /api_govern_get_scenario5.html
+                          build: internal, external
+                          output: web
+
+                        - title: Get related entities of Pending Business Condition
+                          url: /api_govern_get_scenario10.html
+                          build: internal, external
+                          output: web 
+                          
+                        - title: Get related entities of Invalid Business Condition
+                          url: /api_govern_get_scenario11.html
+                          build: internal, external
+                          output: web   
+
+                        - title: Get Validation Rules Status of an Entity
+                          url: /api_govern_get_scenario3.html
+                          build: internal, external
+                          output: web
+
+                        - title: Get Business Conditions for Multiple Entity Types
+                          url: /api_govern_get_scenario7.html
+                          build: internal, external
+                          output: web
+
+                        - title: Get Root Node Mismatch Error for Path Attribute Value
+                          url: /api_govern_get_scenario8.html
+                          build: internal, external, ascend
+                          output: web
+
+                        - title: Get Leaf Node Violation Error for Path Attribute Value
+                          url: /api_govern_get_scenario9.html
+                          build: internal, external, ascend
+                          output: web  
+
+                - title: Validate Data Synchronously
+                  url: /api_sync_validate.html
+                  build: internal
+                  output: web
+                  children:
+
+                    - title: Validate Business Rules and Model Rules Synchronously
+                      url: /api_sync_validate_scenario1.html
+                      build: internal
+                      output: web
+
+                - title: Start Workflow
+                  url: /api_start_workflow.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Start Workflow for an Entity
+                      url: /api_start_workflow_scenario1.html
+                      build: internal, external
+                      output: web
+
+                - title: Transition Workflow
+                  url: /api_transition_workflow.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Transition Workflow for an Entity
+                      url: /api_transition_workflow_scenario1.html
+                      build: internal, external
+                      output: web
+
+                - title: Terminate Workflow
+                  url: /api_govern_terminate_workflow_instance.html
+                  build: internal, external
+                  output: web
+
+                - title: Delete Entity Govern Data
+                  url: /api_govern_delete_entity.html
+                  build: internal
+                  output: web
+                  children:
+
+                    - title: Delete Entity From Workflow
+                      url: /api_govern_delete_scenario1.html
+                      build: internal
+                      output: web
+
+                    - title: Delete Entity From All Workflows
+                      url: /api_govern_delete_scenario2.html
+                      build: internal
+                      output: web
+
+                - title: Reevaluate Govern Data
+                  url: /api_govern_reevaluate.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Reevaluate Deleted Govern Data of an Entity
+                      url: /api_govern_reevaluate_scenario1.html
+                      build: internal, external
+                      output: web
+
+            - title: Model Govern Services
+              url: /api_model_govern_service.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Model Govern Validate
+                  url: /api_model_govern_validate.html
+                  build: internal, external
+                  output: web
+                
+            - title: Entity Import Services
+              url: /api_imp_entity_service.html
+              build: internal, external
+              output: web
+              tag: 'updated'
+              children:
+
+                - title: Entity Import Object Structure
+                  url: /api_imp_entity_object_structure.html
+                  build: internal, external
+                  output: web
+
+                - title: Collect Data
+                  url: /api_imp_collect_data.html
+                  build: internal, external
+                  output: web
+
+                - title: Upload Data Model
+                  url: /api_imp_data_model.html
+                  build: internal
+                  output: web
+
+                - title: Upload Data in Excel Format
+                  url: /api_imp_data_file.html
+                  build: internal
+                  output: web
+
+                - title: Upload Data in JSON format
+                  url: /api_imp_data_file_json.html
+                  build: internal
+                  output: web
+                  
+                - title: Upload Data in DSV format
+                  url: /api_imp_data_file_dsv.html
+                  build: internal
+                  output: web
+
+                - title: Upload Binary Object
+                  url: /api_imp_binary_object.html
+                  build: internal
+                  output: web
+
+                - title: Upload Generic Object
+                  url: /api_exp_gen_obj_str.html
+                  build: internal
+                  output: web
+
+                - title: Get Header Fields
+                  url: /api_imp_get_header_fields.html
+                  build: internal
+                  output: web
+                
+                - title: Save Mappings
+                  url: /api_save_mappings.html
+                  build: internal
+                  output: web
+                  
+                - title: Get Mappings
+                  url: /api_get_mappings.html
+                  build: internal
+                  output: web
+
+                - title: Delete Entities using JSON Import
+                  url: /api_imp_delete_entity.html
+                  build: internal
+                  output: web
+
+                - title: Import Data using Multi-Blob Container
+                  url: /api_imp_multi_blob.html
+                  build: internal, external
+                  output: web
+                  tag: 'new'
+
+                - title: Import from Custom Blob Container
+                  url: /api_imp_frm_cust_blob_conter.html
+                  build: internal, external
+                  output: web
+
+            - title: Entity Export Services
+              url: /api_exp_entity_service.html
+              build: internal, external
+              output: web
+              children:
+
+                  - title: Entity Export Object Structure
+                    url: /api_exp_entity_object_structure.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                        - title: Export File Name Formats
+                          url: /api_exp_filename_format.html
+                          build: internal, external
+                          output: web
+
+                  - title: Publish Data - Excel
+                    url: /api_exp_publish_data.html
+                    build: internal, external
+                    output: web
+
+                  - title: Download Data Job
+                    url: /api_exp_down_data_job.html
+                    build: internal
+                    output: web
+
+                  - title: Download Service Data
+                    url: /api_exp_down_service_data.html
+                    build: internal, external
+                    output: web
+
+                  - title: Download Data in Excel Format 
+                    url: /api_exp_down_data_excel.html
+                    build: internal
+                    output: web
+
+                  - title: Download Data in Excel Format in Specified Locale
+                    url: /api_exp_down_data_job_1.html
+                    build: internal
+                    output: web
+
+                  - title: Download Data in Excel Format in Specified Locale and Context
+                    url: /api_exp_down_data_job_2.html
+                    build: internal
+                    output: web
+
+                  - title: Download Data in JSON Format 
+                    url: /api_exp_down_data_json.html
+                    build: internal
+                    output: web
+
+                  - title: Download Data in DSV Format 
+                    url: /api_exp_down_data_dsv.html
+                    build: internal
+                    output: web
+
+                  - title: Download Model Excel
+                    url: /api_exp_down_mod_excel.html
+                    build: internal
+                    output: web
+
+                  - title: Download Generic Object
+                    url: /api_imp_gen_obj_str.html
+                    build: internal, external
+                    output: web
+                                     
+            - title: Configuration Services
+              url: /api_configuration_service.html
+              build: internal, external
+              output: web
+              children:
+
+                  - title: Configuration Object Structure
+                    url: /api_config_object_structure.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                      - title: Profile Configuration Object Structure
+                        url: /api_profile_object_structure.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                          - title: Seed Connect Profiles
+                            url: /api_profile_seed.html
+                            build: internal
+                            output: web
+
+                          - title: Out-of-the-box (OOTB) Connectors 
+                            url: /api_profile_ootb.html
+                            build: internal
+                            output: web
+
+                          - title: Supported Integration Patterns
+                            url: /api_profile_integration_patterns.html
+                            build: internal
+                            output: web
+
+                          - title: Profile Configuration Object Structure for Import Service
+                            url: /api_profile_object_structure_import.html
+                            build: internal
+                            output: web
+
+                          - title: Profile Configuration Object Structure for Export Service
+                            url: /api_profile_object_structure_export.html
+                            build: internal
+                            output: web
+
+                      - title: Match Configuration Object Structure
+                        url: /api_match_object_structure.html
+                        build: internal, external
+                        output: web
+
+                      - title: Machine-Learning (ML) based Match Object Structure
+                        url: /api_match_object_structure_ml.html
+                        build: internal, external
+                        output: web
+
+                  - title: Create Configuration
+                    url: /api_create_configuration.html
+                    build: internal, ascend
+                    output: web
+                    tag: 'updated'
+                    children:
+
+                      - title: Create Configuration linked to a Context
+                        url: /api_create_config_scenario1.html
+                        build: internal
+                        output: web
+  
+
+                      - title: Create Match Configuration 
+                        url: /api_create_config_scenario2.html
+                        build: internal
+                        tag: 'updated'
+                        output: web
+                        children:
+
+                            - title: Create Match Configuration to Match Vendor Details (Deterministic and ML)                          
+                              url: /api_match_config_scenario1.html
+                              build: internal
+                              output: web
+
+                            - title: Create Deterministic Match Configuration to Match mdmid
+                              url: /api_match_config_scenario3.html
+                              build: internal
+                              output: web
+
+                            - title: Create Deterministic Match Configuration to Match mdmid or mdmname
+                              url: /api_match_config_scenario2.html
+                              build: internal
+                              output: web
+
+                            - title: Create Deterministic Match Configuration to Match mdmid and mdmname
+                              url: /api_match_config_scenario4.html
+                              build: internal
+                              output: web
+
+                            - title: Create Deterministic Match Configuration for an Asset
+                              url: /api_match_config_scenario5.html
+                              build: internal
+                              output: web
+
+                            - title: Create Deterministic Match Configuration to match any UOM attribute
+                              url: /api_match_config_scenario6.html
+                              build: internal
+                              output: web
+
+                            - title: Define multiple algorithms per family for Machine Learning (ML)
+                              url: /api_match_config_scenario7.html
+                              build: internal
+                              output: web
+
+                            - title: Filter entities based on specific attributes
+                              url: /api_match_config_scenario8.html
+                              build: internal
+                              tag: 'new'
+                              output: web
+
+                      - title: Create Role Compute Policy 
+                        url: /api_create_role_compute_policy.html
+                        build: internal
+                        output: web
+
+                      - title: Configure Docportal Role to Role Compute Policy
+                        url: /api_configure_docportal_role.html
+                        build: internal
+                        output: web
+
+                      - title: Configure to generate Image Renditions and Thumbnail based on Asset File Size
+                        url: /api_create_image_renditions_thumbnail_asset_filesize.html
+                        build: external, ascend
+                        output: web
+
+                      - title: Create Integration Profiles
+                        url: /api_create_int_profiles.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                            - title: Create Import Profile
+                              url: /api_create_imp_profile_config.html
+                              build: internal
+                              output: web
+
+                            - title: Create Import Profile for Migration
+                              url: /api_create_imp_profile_config1.html
+                              build: internal
+                              output: web
+
+                            - title: Create Import Profile for Importing Image from URL
+                              url: /api_create_imp_profile_config2.html
+                              build: internal
+                              output: web
+
+                            - title: Create Import Profile for Importing Binary Object
+                              url: /api_create_imp_profile_config3.html
+                              build: internal
+                              output: web
+
+                            - title: Create Import Profile for Importing DSV Files
+                              url: /api_create_imp_profile_config4.html
+                              build: internal
+                              output: web
+
+                            - title: Create Configuration to Enable Taxonomy and Classifications
+                              url: /api_create_imp_profile_config5.html
+                              build: internal
+                              output: web
+
+                            - title: Create Export Profile
+                              url: /api_create_exp_profile_config.html
+                              build: internal
+                              output: web
+
+                            - title: Create Export Profile for Excel Export
+                              url: /api_create_exp_profile_config_excel.html
+                              build: internal
+                              output: web
+
+                            - title: Create Export Profile for JSON Export
+                              url: /api_create_exp_profile_config_json.html
+                              build: internal
+                              output: web
+
+                            - title: Create Export Profile for DSV Export (Relationships in the Same File)
+                              url: /api_create_exp_profile_config_dsv.html
+                              build: internal
+                              output: web
+
+                            - title: Create Export Profile for DSV Export (Relationships in Separate Files)
+                              url: /api_create_exp_profile_config_dsv_relsep.html
+                              build: internal
+                              output: web
+
+                            - title: Create Export Profile - Reference List
+                              url: /api_create_exp_profile_config_referencelist.html
+                              build: internal
+                              output: web
+
+                            - title: Create Export Profile to Prevent Export of Attributes not Present in the Model
+                              url: /api_create_exp_profile_config_non_model_attributes.html
+                              build: internal
+                              output: web
+                              
+                            - title: Create Export Profile to Export Attributes with No Value
+                              url: /api_create_exp_profile_config_null_value_attributes.html
+                              build: internal
+                              output: web
+
+                            - title: Create Export Profile to Export Assets
+                              url: /api_create_exp_profile_config_asset.html
+                              build: internal
+                              output: web  
+
+                            - title: Create Export Profile to Export Entities with Assets
+                              url: /api_create_exp_profile_config_entity_asset.html
+                              build: internal
+                              output: web
+
+                            - title: Create Export Profile to disable Pop-up Messages in Smart Excel
+                              url: /api_disable_excel_tooltip_excel.html
+                              build: internal, external
+                              output: web 
+                              tag: "new"   
+
+                            - title: Create Export Profile to auto-resize Header Column in Smart Excel
+                              url: /api_fit_column_headers_excel.html
+                              build: internal, external
+                              output: web 
+                              tag: "new"   
+
+                      - title: Create Email Notification Configuration 
+                        url: /api_create_email_notfn_configuration.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                          - title: Create Template Email Notification Configuration
+                            url: /api_template_email_notfn.html
+                            build: internal, external
+                            output: web
+
+                          - title: Create Email Notification Configuration for Task
+                            url: /api_email_notfn_task.html
+                            build: internal, external
+                            output: web
+
+                          - title: Create Email Notification Configuration for Bulk Task
+                            url: /api_email_notfn_bulk_task.html
+                            build: internal, external
+                            output: web
+
+                          - title: Create Email Notification Configuration for Automatic Assignment or Assignment Change
+                            url: /api_email_notfn_auto_assign.html
+                            build: internal, external
+                            output: web
+
+                          - title: Create Digest Email Notification Configuration for Workflow Auto Assignment or Assignment Change
+                            url: /api_digest_email_notfn_assignment.html
+                            build: internal, external
+                            output: web
+
+                          - title: Create Digest Email Notification Configuration for Task
+                            url: /api_digest_email_notfn_task.html
+                            build: internal, external
+                            output: web
+
+                          - title: User based Email Notification Configuration
+                            url: /api_custom_email_notfn_config.html
+                            build: internal, external
+                            output: web
+                            children:
+
+                              - title: Create User specific Email Notification Configuration for Task
+                                url: /api_custom_email_notfn_config_task.html
+                                build: internal, external
+                                output: web
+
+                              - title: Create User specific Email Notification Configuration for Workflow Auto Assignment
+                                url: /api_custom_email_notfn_config_work.html
+                                build: internal, external
+                                output: web
+
+                          - title: Create Email Notification for Tenant Details
+                            url: /api_create_email_notfn_tenant_details.html
+                            build: internal, external
+                            output: web
+                            tag: 'new'
+
+                      - title: Create and Update Channel
+                        url: /api_create_update_channel.html
+                        build: internal
+                        output: web
+
+                      - title: Enable Ownership Data for Visualization
+                        url: /api_enable_ownership_data_visualization.html
+                        build: internal
+                        output: web
+
+                      - title: Create rendition for large file size
+                        url: /api_create_image_renditions_thumnail_asset_filesize.html
+                        build: internal
+                        output: web
+
+                      - title: Enable Attributes to Filter Data
+                        url: /api_enable_attributes_filter_data.html
+                        build: internal, external, ascend
+                        output: web
+
+                      - title: Enable Properties to Filter Data
+                        url: /api_enable_properties_filter_data.html
+                        build: internal, external, ascend
+                        output: web
+
+                      - title: Get SAS URL to access Original Media Asset while Export through Downstream System
+                        url: /api_get_sas_url_exprt_dwnstrm_sys.html
+                        build: internal, ascend
+                        output: web 
+                        
+                  - title: Enable Partial Value (Contains) Search Capability
+                    url: /api_enable_contains_search.html
+                    build: internal
+                    output: web   
+                        
+                  - title: Disable Null Option from the Attributes Drop-down in Entity Excel
+                    url: /api_remove_null_option_entity_excel.html
+                    build: internal, external
+                    output: web  
+                        
+                  - title: Set Session Timeout for a Tenant
+                    url: /api_set_session_timeout.html
+                    build: internal, external
+                    output: web 
+
+                  - title: Map Pre-Existing Users to Client ID for API Request Authentication
+                    url: /api_create_config_client_id.html
+                    build: internal, external
+                    output: web 
+                    tag: new  
+
+                  - title: Enable Next Generation Workflow
+                    url: /api_enable_workflow_activity_excel.html
+                    build: internal, external
+                    output: web
+
+                  - title: Get Configuration
+                    url: /api_get_configuration.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                      - title: Get Configuration using Id
+                        url: /api_get_config_scenario1.html
+                        build: external
+                        output: web
+
+                      - title: Get Tenant Configuration Details
+                        url: /api_get_config_scenario3.html
+                        build: external
+                        output: web  
+  
+                      - title: Get Image Renditions using ID
+                        url: /rdp_feature_get_image_renditions.html
+                        build: internal
+                        output: web
+
+                      - title: Get Tenant Configurations to disable 'no change' Entity Data Filter
+                        url: /api_app_get_tenant_configuration_for_nochange_filter.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get the Details of Profiles with same Context
+                        url: /api_get_config_overriden_profile.html
+                        build: internal, external
+                        output: web
+
+                  - title: Get Nearest Configuration
+                    url: /api_get_nearest_configuration.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                      - title: Get Nearest Configuration using Id
+                        url: /api_get_config_scenario2.html
+                        build: internal
+                        output: web
+
+                  - title: Enable Locale Permissions for a Role
+                    url: /api_enable_locale_permissions.html
+                    build: internal, external
+                    output: web 
+                    tag: "new"   
+
+                  - title: Delete Configuration
+                    url: /api_delete_configuration.html
+                    build: internal
+                    output: web
+                    children:
+
+                      - title: Delete Configuration using Id
+                        url: /api_delete_config_scenario1.html
+                        build: internal
+                        output: web
+
+            - title: Notification Services
+              url: /api_notfn_service.html
+              build: internal
+              output: web
+              children:
+
+                - title: Notification Object Structure
+                  url: /api_notfn_object_structure.html
+                  build: internal
+                  output: web
+
+                - title: Send Email Notification
+                  url: /api_notfn_sendemail_with_template.html
+                  build: internal
+                  output: web
+
+            - title: Scheduler Services
+              url: /api_sch_service.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Schedule Object Structure
+                  url: /api_sch_object_structure.html
+                  build: internal, external
+                  output: web
+
+                - title: Schedule Info Object Structure
+                  url: /api_sch_info_object_structure.html
+                  build: internal, external
+                  output: web
+
+                - title: Create a Schedule Object using Scheduler Service
+                  url: /api_sch_create.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Create a schedule to generate title for entity 
+                      url: /api_sch_create_scenario1.html
+                      build: internal, external
+                      output: web
+
+                    - title: Create a schedule to link entity to a product 
+                      url: /api_sch_create_scenario2.html
+                      build: internal, external
+                      output: web
+
+                    - title: Create a schedule to link entity to an image 
+                      url: /api_sch_create_scenario12.html
+                      build: internal, external
+                      output: web
+
+                    - title: Create a schedule to identify notifications for digest emails  
+                      url: /api_sch_create_scenario3.html
+                      build: internal, external
+                      output: web
+
+                    - title: Create a schedule to execute notifications for digest emails  
+                      url: /api_sch_create_scenario4.html
+                      build: internal, external
+                      output: web
+
+                    - title: Create a schedule to export entity data  
+                      url: /api_sch_create_scenario9.html
+                      build: internal, external
+                      output: web
+
+                    - title: Create a schedule to identify impacted data objects  
+                      url: /api_sch_create_scenario5.html
+                      build: internal, external
+                      output: web
+
+                    - title: Create a schedule to execute model changes to impacted data objects  
+                      url: /api_sch_create_scenario6.html
+                      build: internal, external
+                      output: web
+
+                    - title: Create a schedule to identify auth model impacted data objects  
+                      url: /api_sch_create_scenario7.html
+                      build: internal, external
+                      output: web
+
+                    - title: Create a schedule to execute auth model changes to impacted data objects  
+                      url: /api_sch_create_scenario8.html
+                      build: internal, external
+                      output: web
+
+                - title: Update a Schedule Object using Scheduler Service
+                  url: /api_sch_update.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Update the interval of a schedule
+                      url: /api_sch_update_scenario3.html
+                      build: internal, external
+                      output: web
+
+                    - title: Update the task payload of a schedule
+                      url: /api_sch_update_scenario4.html
+                      build: internal, external
+                      output: web
+
+                    - title: Update the task URL of a schedule
+                      url: /api_sch_update_scenario5.html
+                      build: internal, external
+                      output: web
+
+                - title: Get a Schedule Object using Scheduler Service
+                  url: /api_sch_get.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Get a particular schedule object using Id
+                      url: /api_sch_get_scenario6.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get a schedule object performing a particular task
+                      url: /api_sch_get_scenario7.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get schedule objects which are Inactive
+                      url: /api_sch_get_scenario8.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get all schedule Info objects
+                      url: /api_sch_get_scenario9.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get a particular schedule Info object using schedule Id
+                      url: /api_sch_get_scenario10.html
+                      build: internal, external
+                      output: web
+
+                - title: Delete a Schedule Object using Scheduler Service
+                  url: /api_sch_delete.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Delete schedule objects which are Inactive
+                      url: /api_sch_delete_scenario11.html
+                      build: internal, external
+                      output: web
+
+                - title: Schedule a Task based on the Start and Stop Time
+                  url: /api_schedule_start_stop.html
+                  build: internal, external
+                  output: web
+
+                - title: Create/Update Scheduled Jobs
+                  url: /api_create_update_scheduled_jobs.html
+                  build: internal, external
+                  output: web
+
+                - title: Enable/Disable Scheduled Jobs
+                  url: /api_enable_disable_list_scheduled_jobs.html
+                  build: internal, external
+                  output: web
+
+                - title: List Scheduled Jobs
+                  url: /api_list_scheduled_jobs.html
+                  build: internal, external
+                  output: web
+
+                - title: Golden Record Management and Address Record Management Batch App
+                  url: /api_enable_arm_grm.html
+                  build: internal, external
+                  output: web
+                  children: 
+
+                    - title: Smarty Street for Address Record Management (ARM)
+                      url: /api_smarty_street_arm.html
+                      build: internal, external
+                      output: web
+
+                - title: Schedule Email Notifications for Pending Tasks  
+                  url: /api_sch_email_notification_assigned_work.html
+                  build: internal, external
+                  output: web
+                  children:  
+
+                    - title: Schedule Workflow Step based Notifications
+                      url: /api_scheduled_workflow_notifications.html
+                      build: internal, external
+                      output: web 
+
+                    - title: Schedule Notifications based on Business Conditions
+                      url: /api_scheduled_bc_notifications.html
+                      build: internal, external
+                      output: web 
+                      
+                    - title: Schedule Notifications based on Entity Manage Attribute/Relationship query 
+                      url: /api_scheduled_entity_attribute_relationship_notifications.html
+                      build: internal, external
+                      output: web   
+
+            - title: Generic Object Manage Services
+              url: /api_gen_obj_man_service.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Generic Object Structure
+                  url: /api_gen_object_structure.html
+                  build: internal, external
+                  output: web
+
+                - title: Create a Generic Object
+                  url: /api_gen_obj_create.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Create a Generic Object to Import the Entities  
+                      url: /api_gen_obj_create_scenario1.html
+                      build: internal, external
+                      output: web
+
+                - title: Update a Generic Object
+                  url: /api_gen_obj_update.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Update the Status of a Generic Object  
+                      url: /api_gen_obj_update_scenario2.html
+                      build: internal, external
+                      output: web
+
+                - title: Delete a Generic Object
+                  url: /api_gen_obj_delete.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Delete Generic Objects of Particular Type 
+                      url: /api_gen_obj_delete_scenario3.html
+                      build: internal, external
+                      output: web
+
+                - title: Get Generic Objects
+                  url: /api_gen_obj_get.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Get Generic Objects using dataObjectId 
+                      url: /api_gen_obj_get_scenario4.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Generic Objects performing a Particular Task with the Status as "completed" 
+                      url: /api_gen_obj_get_scenario5.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Generic Objects by Sorting
+                      url: /api_gen_obj_get_scenario6.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Generic Objects for Impact Processing Identification
+                      url: /api_gen_obj_get_scenario7.html
+                      build: internal, external
+                      output: web
+
+                    - title: Get Generic Objects for Impact Processing Execution
+                      url: /api_gen_obj_get_scenario8.html
+                      build: internal, external
+                      output: web
+                      
+                    - title: Configure Search Generic Object Column
+                      url: /sdk_plugin_api_configure_search_generic_objects_column.html
+                      build: internal, external
+                      output: web                    
+
+            - title: Match Search Services
+              url: /api_match_service.html
+              build: internal, external
+              output: web
+              children:
+
+                  - title: Search Entities
+                    url: /api_get_match_results.html
+                    build: internal
+                    output: web
+                    children:
+
+                      - title: Search Entities based on Vendor Details
+                        url: /api_get_match_results_scenario3.html
+                        build: internal
+                        output: web
+                        children:
+
+                          - title: Deterministic Match (vendoruniqueId)
+                            url: /api_get_ml_det_match.html
+                            build: internal
+                            output: web
+
+                          - title: ML based Match (Create Threshold < Match Score < Merge Threshold)
+                            url: /api_get_ml_between_match.html
+                            build: internal
+                            output: web
+
+                          - title: ML based Match (Match Score < Create Threshold)
+                            url: /api_get_ml_create_match.html
+                            build: internal
+                            output: web
+
+                          - title: ML based Match (Match Score > Merge Threshold)
+                            url: /api_get_ml_merge_match.html
+                            build: internal
+                            output: web
+      
+                      - title: Search Entities based on mdmid
+                        url: /api_get_match_results_scenario1.html
+                        build: internal
+                        output: web
+
+                      - title: Search Entities based on mdmid or mdmname
+                        url: /api_get_match_results_scenario2.html
+                        build: internal
+                        output: web
+
+                      - title: Match Entities based on Multiple Attribute Values
+                        url: /api_get_pm_multiple_attribute_values.html
+                        build: internal
+                        output: web
+
+                      - title: Machine Learning (ML) Match Response Enhancements
+                        url: /api_get_match_response_enhancements.html
+                        build: internal
+                        output: web
+
+                      - title: Configure fallback attributes in match profile 
+                        url: /api_get_configure_fallback_attributes_matchprofile.html
+                        build: internal
+                        tag: 'new'
+                        output: web
+
+            - title: Request Tracking Services
+              url: /api_request_tracking_service.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Request Tracking Object Structure
+                  url: /api_request_tracking_object_structure.html
+                  build: internal
+                  output: web
+
+                - title: Create Request Tracking Object 
+                  url: /api_create_request_tracking_object_scenario1.html
+                  build: internal
+                  output: web
+
+                - title: Update Request Tracking Object 
+                  url: /api_update_request_tracking_object_scenario1.html
+                  build: internal
+                  output: web
+
+                - title: Track Requests using Request Tracking Object 
+                  url: /api_get_request_tracking_object.html
+                  build: internal, external
+                  output: web
+                  children:
+          
+                    - title: Track Create Entity Request Using Request Id
+                      url: /api_get_request_tracking_object_scenario1.html
+                      build: internal, external
+                      output: web
+
+                    - title: Track all Requests Related to Create Entity Request Using Request Id
+                      url: /api_get_request_tracking_object_scenario2.html
+                      build: internal, external
+                      output: web
+
+                    - title: Track Create, Update and Delete Entity Requests Using Entity Id and Entity Action
+                      url: /api_get_request_tracking_object_scenario3.html
+                      build: internal, external
+                      output: web
+
+                    - title: Track Task Summary Object using Task Id and typesCriterion
+                      url: /api_get_request_tracking_object_scenario4.html
+                      build: internal, external
+                      output: web
+
+                    - title: Track Govern Errors and Status in Task Summary Object
+                      url: /api_get_request_tracking_object_scenario7.html
+                      build: internal, external
+                      output: web
+
+                    - title: Track Requests using Task ID and Service Name
+                      url: /api_get_request_tracking_object_scenario8.html
+                      build: internal, external
+                      output: web
+
+                    - title: Track Govern Requests of an Entity
+                      url: /api_get_request_tracking_object_scenario5.html
+                      build: internal, external
+                      output: web
+
+                    - title: Export Entity Data with No Records
+                      url: /api_get_request_tracking_object_scenario6.html
+                      build: internal, external
+                      output: web
+
+                - title: Delete Request Tracking Object 
+                  url: /api_delete_request_tracking_object_scenario1.html
+                  build: internal
+                  output: web
+
+                - title: Delete Request Tracking Objects using Query 
+                  url: /api_deletebyquery_request_tracking_object_scenario1.html
+                  build: internal
+                  output: web
+
+                - title: Track Graph Operations using Request Object Service  
+                  url: /api_request_graph_operations.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Track Graph Operations with Success Status
+                      url: /api_request_graph_operations_scenario1.html
+                      build: internal, external
+                      output: web
+
+                    - title: Track Graph Operations with Queued Status
+                      url: /api_request_graph_operations_scenario2.html
+                      build: internal, external
+                      output: web  
+
+                    - title: Track Graph Operations with Error Status
+                      url: /api_request_graph_operations_scenario3.html
+                      build: internal, external
+                      output: web  
+                      
+                    - title: Track Multiple Graph Operations with Request Status
+                      url: /api_request_graph_operations_scenario4.html
+                      build: internal, external
+                      output: web
+                      
+                - title: Metrics to Track Manage Activities  
+                  url: /api_work_done_manage_app.html
+                  build: internal
+                  output: web
+                  children:
+
+                    - title: Metrics to Track appMetrics in Manage App
+                      url: /api_request_appMetrics_manage_app.html
+                      build: internal
+                      output: web
+
+                    - title: Track ARC Count Metrics in Manage App
+                      url: /api_request_arc_count_manage_app.html
+                      build: internal
+                      output: web
+
+                    - title: Track Data Resolution Metrics in Manage App
+                      url: /api_request_data_resolution_count_manage_app.html
+                      build: internal
+                      output: web  
+                    
+                    - title: Get the Details of Work done in Entity Manage App
+                      url: /api_request_work_done_manage_app.html
+                      build: internal
+                      output: web
+
+                    - title: Get the Details of Work done by the Elasticsearch and Kafka in Entity Manage App
+                      url: /api_request_work_done_kafka.html
+                      build: internal
+                      output: web   
+
+                - title: Metrics to Track Govern Activities   
+                  url: /api_work_done_govern_app.html
+                  build: internal
+                  output: web
+                  children: 
+
+                    - title: Metrics to Track appMetrics in Govern App
+                      url: /api_request_appMetrics_govern_app.html
+                      build: internal
+                      output: web
+
+                    - title: Track ARC Count Metrics in Govern App
+                      url: /api_request_arc_count_govern_app.html
+                      build: internal
+                      output: web
+
+                    - title: Track Invalid Data Validation Metrics in Govern App
+                      url: /api_request_invalid_data_validation_govern_app.html
+                      build: internal
+                      output: web  
+
+                    - title: Track Model Rule Validation Metrics in Govern App
+                      url: /api_request_model_rule_validation_govern_app.html
+                      build: internal
+                      output: web   
+
+                    - title: Get the Details of Work done in Govern App
+                      url: /api_request_work_done_govern_app.html
+                      build: internal
+                      output: web
+
+                    - title: Get the Details of Work done by the Elasticsearch and Kafka in Govern App
+                      url: /api_request_work_done_kafka_govern.html
+                      build: internal
+                      output: web    
+           
+                - title: Metrics to Track Post-Process Activities   
+                  url: /api_work_done_post_process.html
+                  build: internal
+                  output: web
+                  children:  
+
+                    - title: Metrics to Track appMetrics in Post-Process App   
+                      url: /api_request_appMetrics_post_process_app.html
+                      build: internal
+                      output: web
+                  
+                    - title: Track ARC Count Metrics in Post-Process App
+                      url: /api_request_arc_count_post_process_app.html
+                      build: internal
+                      output: web
+
+                    - title: Track Data Resolution Count Metrics in Post-Process App
+                      url: /api_request_data_resolution_count_post_process_app.html
+                      build: internal
+                      output: web    
+                    
+                    - title: Get the Details of Work done in Post-Process App  
+                      url: /api_request_post_process_rules_computed.html
+                      build: internal
+                      output: web 
+
+                    - title: Get the Details of Work done by the Elasticsearch and Kafka in Post-Process App
+                      url: /api_request_work_done_kafka_Post-Process.html
+                      build: internal
+                      output: web  
+  
+                - title: Metrics to Track Graph Operations   
+                  url: /api_work_done_graph_operations.html
+                  build: internal
+                  output: web
+                  children: 
+                    
+                    - title: Get the Details of Work done in Graph Process App
+                      url: /api_request_graph_operations_computed.html
+                      build: internal
+                      output: web  
+
+                    - title: Get the Details of Work done by the Elasticsearch and Kafka in Graph Process App
+                      url: /api_request_work_done_kafka_graph_process.html
+                      build: internal
+                      output: web 
+    
+                - title: Metrics to Track Entity App Service   
+                  url: /api_work_done_entity_app_service.html
+                  build: internal
+                  output: web
+                  children: 
+                    
+                    - title: Track Data Resolution Count Metrics in Entity App Service   
+                      url: /api_request_data_resolution_count_entity_app_service.html
+                      build: internal
+                      output: web 
+
+                    - title: Get the Details of Work done in Entity App Service  
+                      url: /api_request_work_done_entity_app.html
+                      build: internal
+                      output: web   
+
+                - title: Metrics to Track Event Service App  
+                  url: /api_work_done_event_service.html
+                  build: internal
+                  output: web
+                  children: 
+                    
+                    - title: Get the Details of Work done in Event Service App
+                      url: /api_request_work_done_event_service.html
+                      build: internal
+                      output: web 
+
+                - title: Metrics to Track Elasticsearch  
+                  url: /api_work_done_elastic.html
+                  build: internal
+                  output: web
+
+                - title: Metrics to Track Kafka  
+                  url: /api_work_done_kafka.html
+                  build: internal
+                  output: web
+      
+                - title: Sample Scenarios to Track Measurement of Work done by Various Apps  
+                  url: /api_work_done_various_app.html
+                  build: internal
+                  output: web 
+
+            - title: Event Services
+              url: /api_event_service.html
+              build: internal, external, ascend
+              output: web
+              children:
+
+                  - title: Event Object Structure
+                    url: /api_event_object_structure.html
+                    build: internal, external
+                    output: web
+
+                  - title: Change Types of an Event
+                    url: /api_event_change_types.html
+                    build: internal, external
+                    output: web
+
+                  - title: Get Events
+                    url: /api_events_get.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                      - title: Entity Manage Events
+                        url: /api_events_get_manage.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                          - title: Get Events of an Entity when a Context is Added
+                            url: /api_event_get_scenario1.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Events of an Entity when an Attribute is Added to a Context
+                            url: /api_event_get_scenario3.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Events of an Entity when an Attribute is Updated in a Context (Entity History)
+                            url: /api_event_get_scenario4.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Events of an Entity when a Relationship is Added to a Context
+                            url: /api_event_get_scenario6.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Events when an Entity is Deleted
+                            url: /api_event_get_scenario11.html
+                            build: internal, external, ascend
+                            output: web
+
+                      - title: Entity Govern Events
+                        url: /api_events_get_govern.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                          - title: Get All Govern Events in the System
+                            url: /api_event_get_scenario14.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Workflow History of an Entity
+                            url: /api_event_get_scenario13.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Workflow History of an Entity for a particular Workflow Activity
+                            url: /api_event_get_scenario15.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Workflow History of one Entity without Sort on startdatetime
+                            url: /api_event_get_scenario18.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Govern Events for a particular Entity Type
+                            url: /api_event_get_scenario16.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Govern Events for an Entity based on Creation Date, Entity Type, and Entity Id
+                            url: /api_event_get_scenario17.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Workflow History of an Entity for a particular Workflow Activity and Business Condition
+                            url: /api_event_get_scenario19.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Workflow History of an Entity for a particular Business Condition and Business Condition Status
+                            url: /api_event_get_scenario20.html
+                            build: internal, external
+                            output: web
+
+                      - title: Get Schema Validation Event
+                        url: /api_event_get_schema_validation_event.html
+                        build: internal, external
+                        output: web
+
+                      - title: Events
+                        url: /api_events_get_ext.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                          - title: Get all External Events
+                            url: /api_event_get_scenario21.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get External Events by FileName attribute
+                            url: /api_event_get_scenario22.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get External Events by ID
+                            url: /api_event_get_scenario23.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get External Events by filtering the Attributes
+                            url: /api_event_get_scenario24.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get External Events by Event Type
+                            url: /api_event_get_scenario25.html
+                            build: internal, external
+                            output: web
+
+                  - title: Get Task Details
+                    url: /api_bulk_entity_get_task_details.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                      - title: Get Task Details using Task ID
+                        url: /api_bulk_entity_scenario18.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get Task Details using Event Type
+                        url: /api_bulk_entity_scenario19.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get Task Details using Task ID, Task Status, and User ID
+                        url: /api_bulk_entity_scenario20.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get Task Details using Event Type and Event SubType and Task ID
+                        url: /api_bulk_entity_scenario21.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get Task Details where Task Status is "not Queued"
+                        url: /api_bulk_entity_scenario22.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get Task Details using Task ID and Entity ID
+                        url: /api_bulk_entity_scenario23.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get Task Details of Events whose Event Type Contains an Input String
+                        url: /api_bulk_entity_scenario26.html
+                        build: internal, external
+                        output: web
+
+                      - title: Get Errors of Task Details using ID
+                        url: /api_event_get_scenario12.html
+                        build: internal, external
+                        output: web
+
+                  - title: Delete Events
+                    url: /api_events_delete.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                      - title: Entity Manage Events
+                        url: /api_events_delete_manage.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                          - title: Delete Entity Manage Event
+                            url: /api_event_delete_scenario1.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Manage History for Entity
+                            url: /api_event_delete_scenario2.html
+                            build: internal, external
+                            output: web
+
+                      - title: Entity Govern Events
+                        url: /api_events_delete_govern.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                          - title: Delete Entity Govern Event
+                            url: /api_event_delete_scenario3.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Govern History for Entity
+                            url: /api_event_delete_scenario4.html
+                            build: internal, external
+                            output: web
+
+                      - title: Events
+                        url: /api_events_delete.html
+                        build: internal, external
+                        output: web
+                        children:
+
+                          - title: Delet Events
+                            url: /api_event_delete_scenario5.html
+                            build: internal, external
+                            output: web
+
+                          - title: Get Scroll ID and Delete Scroll ID using Clear Scroll
+                            url: /api_event_delete_scenario6.html
+                            build: internal, external
+                            output: web
+
+                  - title: Delete Events using Query
+                    url: /api_event_delete_scenario7.html
+                    build: internal, external 
+                    output: web
+
+                  - title: Scroll Support for Event Services
+                    url: /api_event_scroll_support.html
+                    build: internal, external 
+                    output: web
+                    children:
+
+                      - title: Prepare Scroll for Event Services Object Structure
+                        url: /api_event_scroll_object_structure.html
+                        build: internal, external 
+                        output: web
+
+                      - title: Get Scroll ID and Delete Scroll ID using Clear Scroll
+                        url: /api_event_scroll_support_scenario1.html
+                        build: internal, external 
+                        output: web
+
+            - title: Bulk Event Services
+              url: /api_bulk_event_service.html
+              build: internal
+              output: web
+
+            - title: Bulk Request Services
+              url: /api_bulk_request_service.html
+              build: internal
+              output: web
+
+            - title: Bulk Generic Services
+              url: /api_bulk_generic_service.html
+              build: internal, external
+              output: web
+
+            - title: Ingest Metrics
+              url: /api_ingest_metrics.html
+              build: internal, external
+              output: web
+
+            - title: Get Metrics
+              url: /api_get_metrics.html
+              build: internal, external
+              output: web
+
+            - title: View Match Standardized Data
+              url: /api_match_standardization.html
+              build: internal
+              output: 
+              
+            - title: Define Attributes for an Entity Type to auto-merge Source Record and Golden Record
+              url: /api_automerge_sr_gr.html
+              build: external
+              output: web
+              tag : 'new'
+
+            - title: Get Match Feedback Event
+              url: /api_event_get_match_feedback.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Get Matched Entities with standardized data for Match Feedback Collection
+                  url: /api_match_sample_feedback_collection.html
+                  build: internal, external
+                  output: web
+
+            - title: Binary Stream Object Service
+              url: /api_binary_stream_service.html
+              build: internal, external
+              output: web
+              tag: 'updated'
+              children:
+
+                  - title: Binary Stream Object Structure
+                    url: /api_binary_stream_object_structure.html
+                    build: internal, external
+                    output: web
+
+                  - title: Prepare Upload
+                    url: /api_prepare_upload.html
+                    build: internal, external
+                    output: web
+                    tag: 'updated'
+                    children:
+
+                      - title: Prepare to Upload an Image
+                        url: /api_prepare_upload_scenario1.html
+                        build: internal, external
+                        output: web
+
+                  - title: Upload Continuous
+                    url: /api_upload_continuous.html
+                    build: internal, external
+                    output: web
+                    tag: 'updated'
+
+                  - title: Prepare Download
+                    url: /api_prepare_download.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                        - title: Prepare to Download an Image
+                          url: /api_prepare_download_scenario1.html
+                          build: internal, external
+                          output: web
+
+                        - title: Download Asset Based on an Entity Id
+                          url: /api_prepare_download_scenario2.html
+                          build: internal, external
+                          output: web
+
+                  - title: Create Binary Stream Object
+                    url: /api_create_binary_stream_object.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                        - title: Create Binary Stream Object after Uploading Image
+                          url: /api_create_binary_stream_scenario1.html
+                          build: internal, external
+                          output: web
+
+                        - title: Create Binary Stream Object after Uploading Video
+                          url: /api_create_binary_stream_scenario2.html
+                          build: internal, external
+                          output: web
+
+                  - title: Update Binary Stream Object
+                    url: /api_update_binary_stream_scenario1.html
+                    build: internal, external
+                    output: web
+
+                  - title: Get Binary Stream Object
+                    url: /api_get_binary_stream_object.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                        - title: Get Binary Stream Object using Id
+                          url: /api_get_binary_stream_scenario1.html
+                          build: internal, external
+                          output: web
+
+                        - title: Get Metadata Details of Asset Thumbnail
+                          url: /api_get_metadata_asset_thumbnail.html
+                          build: internal, external
+                          output: web
+                          children:
+
+                            - title: Get Metadata Details of Image Thumbnail
+                              url: /api_get_metadata_image_thumbnail.html
+                              build: internal, external
+                              output: web
+
+                            - title: Get Metadata Details of Audio Thumbnail
+                              url: /api_get_metadata_audio_thumbnail.html
+                              build: internal
+                              output: web
+
+                            - title: Get Metadata Details of Document Thumbnail
+                              url: /api_get_metadata_document_thumbnail.html
+                              build: internal
+                              output: web
+
+                            - title: Get Metadata Details of Video Thumbnail
+                              url: /api_get_metadata_video_thumbnail.html
+                              build: internal
+                              output: web
+
+                  - title: Delete Binary Stream Object
+                    url: /api_delete_binary_stream_object.html
+                    build: internal
+                    output: web
+                    children:
+
+                        - title: Delete Binary Stream Object using Id
+                          url: /api_delete_binary_stream_scenario1.html
+                          build: internal
+                          output: web
+
+            - title: Asset Services
+              url: /api_asset_services.html
+              build: internal, external, ascend
+              output: web
+              children:
+
+                - title: Overview of Asset Creation
+                  url: /api_asset_creation_overview.html
+                  build: internal, external
+                  output: web
+
+                - title: Asset Object Structure
+                  url: /api_asset_obj_structure.html
+                  build: internal, external, ascend
+                  output: web
+
+                - title: Map Asset Metadata Fields to Attributes
+                  url: /api_map_asset_metadata_fields.html
+                  build: external, ascend
+                  output: web
+
+                - title: Ignore processing Assets used in Add-on apps
+                  url: /api_ignore_processing_assets.html
+                  build: external, ascend
+                  output: web
+
+                - title: Get Asset Details using Asset Id
+                  url: /api_dam_get_scenario1.html
+                  build: external, ascend
+                  output: web
+
+                - title: Get Details of Asset Linked to an Entity
+                  url: /api_dam_get_scenario2.html
+                  build: external, ascend
+                  output: web
+
+                - title: Create or Update Asset Renditions
+                  url: /api_create_update_image_renditions.html
+                  build: external, ascend
+                  output: web
+
+            - title: Entity Graph Service
+              url: /api_entity_graph_service.html
+              build: internal, external
+              output: web
+              children:
+
+                  - title: Create Link between Related Nodes
+                    url: /api_create_link.html
+                    build: internal, external
+                    output: web
+                    children:
+
+                        - title: Rollup SKU to Product
+                          url: /api_create_link_scenario1.html
+                          build: internal, external
+                          output: web
+
+                        - title: Rolldown Product to SKU
+                          url: /api_create_link_scenario4.html
+                          build: internal, external
+                          output: web
+
+                        - title: Link SKU to an Image
+                          url: /api_create_link_scenario2.html
+                          build: internal, external
+                          output: web
+
+                        - title: Link Image to a SKU
+                          url: /api_create_link_scenario3.html
+                          build: internal, external
+                          output: web
+  
+
+            - title: Diagnostic Services
+              url: /api_diag_services.html
+              build: internal
+              output: web
+              children:
+
+                - title: Diagnose System Uptime  
+                  url: /api_diag_get_system_uptime_intro.html
+                  build: internal
+                  output: web
+                  children:
+
+                    - title: Get System Uptime Report
+                      url: /api_diag_get_system_uptime_scenario1.html
+                      build: internal
+                      output: web
+
+                    - title: Understand Uptime Report Results
+                      url: /api_diag_get_understand_results.html
+                      build: internal
+                      output: web
+
+            - title: Admin Services
+              url: /api_adminservice.html
+              build: internal, external
+              output: web
+              tag: 'updated'
+              children:
+
+                - title: Admin Object Structure
+                  url: /api_admin_object_structure.html
+                  build: internal, external
+                  output: web
+
+                - title: Deploy Topology
+                  url: /api_admin_deploy_topology.html
+                  build: internal, external
+                  output: web
+
+                - title: Deploy New Tenant
+                  url: /api_admin_deploy_tenant.html
+                  build: internal, external
+                  output: web
+
+                - title: Deploy Seed Data
+                  url: /api_admin_deploy_seed_data.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                      - title: Deploy Platform Seed Data
+                        url: /api_admin_deploy_platform_seed.html
+                        build: internal, external
+                        output: web
+
+                      - title: Deploy Tenant Seed Data
+                        url: /api_admin_deploy_tenant_seed.html
+                        build: internal, external
+                        output: web
+
+                - title: Deploy Artifact
+                  url: /api_admin_deploy_artifact.html
+                  build: internal, external
+                  output: web
+
+                - title: Deploy Tenant Seed Data through API
+                  url: /api_ci_cd_for_tenant_seed_data.html
+                  build: internal, external
+                  output: web
+
+                - title: Check App SDK Version Compatibility
+                  url: /api_admin_check_sdk_compatibility.html
+                  build: internal
+                  output: web
+
+                - title: Validate App SDK Facets for the Add-on App
+                  url: /api_validate_sdk_facet.html
+                  build: internal
+                  output: web
+                  tag: 'new'
+
+                - title: Unsubscribe App SDK Facets for the Add-on App
+                  url: /api_unsubscribe_sdk_facet.html
+                  build: internal
+                  output: web
+                  tag: 'new'
+
+            - title: Connector Services
+              url: /api_connectorservice.html
+              build: internal, external
+              output: web
+              children:
+
+                - title: Create, Update and Get Connector Objects
+                  url: /api_crud.html
+                  build: internal, external
+                  output: web
+
+                - title: Get Channels
+                  url: /api_getchannels.html
+                  build: internal, external
+                  output: web
+
+                - title: Publish Entity
+                  url: /api_publish.html
+                  build: internal, external
+                  output: web
+
+                - title: Syndicate Entity or Classification
+                  url: /api_syndicate.html
+                  build: internal, external
+                  output: web
+
+                - title: Schedule Publish Entity
+                  url: /api_scheduleprocess.html
+                  build: internal, external
+                  output: web
+
+                - title: Withdraw Entity
+                  url: /api_withdraw.html
+                  build: internal, external
+                  output: web
+
+                - title: Get Syndication Status
+                  url: /api_getstatus.html
+                  build: internal, external
+                  output: web
+
+                - title: Get Item Status
+                  url: /api_get_itemstatus.html
+                  build: internal, external
+                  output: web
+
+                - title: Get Entity ID
+                  url: /api_getentityid.html
+                  build: internal, external
+                  output: web
+
+                - title: Get Entity State
+                  url: /api_getentitystatus.html
+                  build: internal, external
+                  output: web
+
+                - title: Get and Set Connector State
+                  url: /api_get_set_connectorstate.html
+                  build: internal, external
+                  output: web
+
+                - title: Get Connector History
+                  url: /api_gethistory.html
+                  build: internal, external
+                  output: web
+
+                - title: Download Connector State
+                  url: /api_download_connstate.html
+                  build: internal, external
+                  output: web
+
+                # - title: Import Generic Objects
+                #   url: /api_import_genericobject.html
+                #   build: internal, external
+                #   output: web
+
+                # - title: Export Generic Objects
+                #   url: /api_export_genericobject.html
+                #   build: internal, external
+                #   output: web
+
+            - title: RSHub Service
+              url: /api_rshubservice.html
+              build: internal, external
+              output: web
+
+            - title: D&B Service
+              url: /api_d_b_service.html
+              build: external
+              output: web
+              tag: 'new'
+               
+            - title: Troubleshooting Tips
+              url: /api_troubleshooting_tips.html
+              build: internal, external, ascend
+              output: web
+              children:
+
+                - title: Error Message Codes and Descriptions
+                  url: /api_troubleshooting_msg_codes.html
+                  build: internal, external, ascend
+                  output: web
+
+                - title: Supportability Troubleshooting Queries
+                  url: /api_troubleshooting_queries.html
+                  build: internal, external
+                  output: web
+
+                - title: Troubleshoot the Scheduler Services
+                  url: /api_troubleshoot_sch.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Troubleshoot the Scheduler Services using Get query on Schedule Objects
+                      url: /api_troubleshoot_sch_using_get_sch.html
+                      build: internal, external
+                      output: web
+
+                    - title: Troubleshoot the Scheduler Services using Get query on Schedule Info Objects
+                      url: /api_troubleshoot_sch_using_get_sch_info.html
+                      build: internal, external
+                      output: web
+
+                    - title: Troubleshoot the Scheduler Services using Kibana logs
+                      url: /api_troubleshoot_sch_kib_logs.html
+                      build: internal, external
+                      output: web
+
+                - title: Healthcheck Services
+                  url: /api_troubleshooting_healthcheck.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: List of Healthcheck APIs
+                      url: /api_troubleshooting_healthcheckAPI.html
+                      build: internal, external
+                      output: web
+
+                    - title: Sensu Healthcheck Alerts
+                      url: /api_troubleshooting_healthcheck_sensu_alerts.html
+                      build: internal, external
+                      output: web
+
+                - title: Slowness in REST API calls
+                  url: /api_troubleshooting_rest_api_calls_being_slow.html
+                  build: internal
+                  output: web
+
+                - title: Seed Load Errors for Tenants
+                  url: /api_troubleshooting_seed_load_errors_for_tenants.html
+                  build: internal, external
+                  output: web
+                  children:
+
+                    - title: Task Based Metrics
+                      url: /api_troubleshooting_task_based_metrics.html
+                      build: internal, external
+                      output: web
+                    
+                    - title: Failed Record Details
+                      url: /api_troubleshooting_failed_record_details.html
+                      build: internal, external
+                      output: web

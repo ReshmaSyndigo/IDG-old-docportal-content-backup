@@ -1,0 +1,166 @@
+---
+layout: default
+---
+
+<div class="post-header">
+   <h1 class="post-title-main">{{ page.title }}
+        {% unless jekyll.environment == "production" %} 
+            {% if site.github_editme_path %}
+                {% if page.url == "/index.html" %}
+                <a target="_blank" href="https://github.com/{{site.github_editme_path}}/edit/master/{{page.folder}}/{{page.url |  remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button">Edit this Topic</a>
+                {% else %}
+                <a target="_blank" href="https://github.com/{{site.github_editme_path}}/edit/master/pages/{{page.folder}}/{{page.url |  remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button">Edit this Topic</a>
+                {% endif %} 
+            {% endif %}
+        {% endunless %} 
+    </h1>          
+</div>
+
+{% if page.simple_map == true %}
+
+<script>
+    $(document).ready ( function(){
+        $('.box{{page.box_number}}').addClass('active');
+    });
+</script>
+
+{% include custom/{{page.map_name}}.html %}
+
+{% elsif page.complex_map == true %}
+
+<script>
+    $(document).ready ( function(){
+        $('.modalButton{{page.box_number}}').addClass('active');
+    });
+</script>
+
+{% include custom/{{page.map_name}}.html %}
+
+{% endif %}
+
+<div class="post-content">
+   {% if page.summary %}
+    <div class="summary">{{page.summary}}</div>
+   {% endif %}            
+   
+   {{content}}
+
+    <div class="tags">
+        <!--
+        {% if page.tags != null %}
+        <b>Tags: </b>
+        {% assign projectTags = site.data.tags.allowed-tags %}
+        {% for tag in page.tags %}
+        {% if projectTags contains tag %}
+        <a href="{{ "tag_" | append: tag | append: ".html" }}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+        -->
+    </div>
+
+    <div id = "nextTag" class="tags" style="float:right">
+    </div>
+
+    <div id = "prevTag" class="tags" style="float:left">
+    </div>
+
+    <p id="next_bottom" style="float:right;"></p>  
+    <p id="prev_bottom" style="float:right;padding-right:20px;"></p>  
+	
+<!--<div class="container no-print" id="feed-form">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="was-this-helpful">
+                <p class="was-this-helpful-question-text">Is this page helpful?</p>
+                <a class="was-this-helpful-yes" id="yes_btn" >Yes</a>
+
+                <div class="was-this-helpful-no-reason-menu">
+                    <a class="was-this-helpful-no" id="no_btn">No</a>
+                    <div class="was-this-helpful-no-reason-dropdown">
+                        <form>
+                            <radiogroup>
+                                <div class="reason-radio-box">
+                                    <label><input type="radio" name="was-this-helpful-no-reason" value="It wasn't accurate"> It wasn't accurate</label>
+                                </div>
+
+                                <div class="reason-radio-box">
+                                    <label><input type="radio" name="was-this-helpful-no-reason" value="It wasn't clear"> It wasn't clear</label>
+                                </div>
+
+                                <div class="reason-radio-box">
+                                    <label><input type="radio" name="was-this-helpful-no-reason" value="It wasn't relevant"> It wasn't relevant</label>
+                                </div>
+                            </radiogroup>
+                        </form>
+
+                    </div>
+                </div>
+
+                <a class="report-a-problem" onclick="showBox()">Provide feedback about this article</a>
+            </div>
+            <div id="hide-text">
+                <form action="{{ site.feedback_url }}" method="post" id="feedback_form">
+                    <input type="hidden" name="url" value="{{ page.url }}">
+                    <input type="hidden" name="title" value="{{ page.title }}">
+                    <input type="hidden" name="helpfull" id="helpfull" value="yes_but">
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleTextarea" rows="3" name="description"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</div>-->
+    <!--<form action="{{ site.feedback_url }}" method="post">
+        <input type="hidden" name="url" value="{{ page.url }}">
+        <input type="hidden" name="title" value="{{ page.title }}">
+        <div class="group">
+            <div class="radio-group">
+                <input type="radio" name="helpfull" value="yes" id="yes">
+                <label for="yes">Yes</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="helpfull" value="yes" id="yes_but">
+                <label for="yes_but">Yes But</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="helpfull" value="yes" id="no">
+                <label for="no">No</label>
+            </div>
+            <div>
+                <textarea name="description"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>-->
+ 
+    <div class="hidden-print">
+    {% if site.disqus %}
+        {% include disqus.html %}
+    {% endif %}
+    </div>
+
+</div>
+
+<!--{{site.data.alerts.hr_shaded}}-->
+<!--{% include rating.html %}-->
+<!--{% include footer.html %}-->
+<script>
+    $(document).ready(function() {
+        $('#yes_btn').click(function() {
+            $('#feedback_form #helpfull').val('yes');
+            $('#feedback_form').submit();
+        });
+        $('#no_btn').click(function() {
+            $('#feedback_form #helpfull').val('no');
+            $('#feedback_form').submit();
+        });
+    });
+    function showBox(){
+        document.getElementById("hide-text").style.display = "block";
+    }
+
+</script>

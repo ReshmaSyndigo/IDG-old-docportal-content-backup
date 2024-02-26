@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <title>Riversand Platform Help</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/meanmenu.css">
+        <link rel="stylesheet" href="css/selectric.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/nav_style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" type="text/css" media="all" href="css/styles1.css" />
+      <link rel="stylesheet" href="css/example.css" type="text/css" />
+      <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.js"></script>
+      <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />
+      <script type="text/javascript" src="js/search-results.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function () {
+              var myArr = [];
+              $('body').keypress(function (e) {
+                  if (e.keyCode == '13') {
+                      var query = $('#query').val();
+                      if (query.length == 0) {
+                          return;
+                      }
+                      window.location.href = "Searchresults.html?q=" + query;
+                  }
+              });
+
+              $.ajax({
+                  type: "GET",
+                  url: "js/Titles.xml", // change to full path of file on server
+                  dataType: "xml",
+                  success: parseXml,
+                  complete: setupAC,
+                  failure: function (data) {
+                      alert("XML File could not be found");
+                  }
+              });
+
+              function parseXml(xml) {
+                  //find every query value
+                  $(xml).find("Title").each(function () {
+                      if ($.inArray($(this).text(), myArr) == -1)
+                          tocTitle = $(this).text().replace(/&quot;/g, "\"").replace(/&amp;quot;/g, "\"").replace(/&apos;/g, "'");
+                      myArr.push(tocTitle);
+                  });
+              }
+
+              function setupAC() {
+                  $("#query").autocomplete({
+                      source: myArr,
+                      minLength: 1,
+                      appendTo:$(".search-holder"),
+                      select: function (event, ui) {
+                          $("#query").val(ui.item.value);
+                          var query = ui.item.value;
+                          if (query.length == 0) {
+                              return;
+                          }
+                          window.location.href = "Searchresults.html?q=" + query;
+                      }
+                  });
+              }
+          });
+      </script>
+      <!-- Load the tabber code -->
+      <script type="text/javascript" src="js/tabber.js"></script>
+   </head>
+   <body>
+   <div id="hand-over"></div>
+      <header class="no-print">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12 col-sm-2 col-md-2">
+                  <div class="hamburger" style="display: none;">
+                     <a href="#" id="c-button--push-left">
+                     <img src="images/hamburger.svg" width="32" height="32"/>
+                     </a>
+                  </div>
+                  <div class="logo-holder"><a href="/rdp"><img src="images/logo.png" width="203" height="38"/></a></div>
+               </div>
+               <div class="col-xs-12 col-sm-6 col-md-6">
+                   <div class="search-holder">  
+                        <button type="submit">search</button>                    
+                        <input type="text" id="query" placeholder="Search documentation..."/>                  
+                    </div>
+               </div>
+               <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="others-holders">
+                     <div class="language-holder">
+                        <select id="select-language">
+                           <option>EN</option>
+                           <option>BN</option>
+                           <option>CN</option>
+                        </select>
+                     </div>
+                     <!--<div class="after-login-holder">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="pp"><img src="images/default-user.jpg" width="32" height="32"></div>
+                        <div class="pro-info">Super Admin<br>
+                                                  <span>Super Admin</span>
+                                              </div></a>
+                        <div class="dropdown-menu" role="menu">
+                            <div class="content">
+                                <ul>
+                                    <li><a href="action/super-admin/logout.html" class="more">Logout</a></li>
+                                    <li><a href="https://docs.riversand-dataplatform.com" class="more">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>-->
+                     <div class="contact-holder">
+                        <a href="contact.html">Contact</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- END: Sticky Header -->
+      <!-- BEGIN: Page Content -->
+     <div class="container">
+        <div class="row justify-content-md-end">
+            <div class="col-xs-12 col-sm-12 col-md-12 make-small">
+                   <div class="left-search">
+                        <div class="refine-search" style="margin-top: 30px;width: 60%;height:40px;font-size: 18px;line-height: 40px;">Refine Search</div>
+                        <div class="loop-search" id="persona">
+                        </div>                 
+                        <div class="loop-search" id="topics">
+                        </div>
+                  </div>
+                    <div class="right-side">   
+                  <div class="search-full-box" style="margin-left:-50px;">
+                     <!--<div class="search-box" style="margin-bottom: 20px;">Results :
+                        <strong id="result-count">0</strong> found for <strong id="result-title"></strong> 
+                    </div>-->                 
+                    
+                    <div class="full-page-box" id="results">
+                        
+                    </div>
+
+                     <div id="pages"></div>
+                        
+                    </div>
+                    </div>
+                   
+                    
+                </div>                
+            </div>
+         </div>
+      </div>
+
+      
+      <!-- END: Page Content -->
+      <!-- BEGIN: Sticky Footer-->
+     <div class="footer-sp site-footer nomargine">
+   <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                
+                <h2>Solutions</h2>
+                <div class="menu-footer">
+                   <ul>
+                      <li><a target="_blank" href="http://www.riversand.com/solutions/riversand-mdm/">Multi-Domain Master Data Management</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/solutions/riversand-pim/">Product Information Management (PIM)</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/solutions/riversand-dam/">Digital Asset Management</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/solutions/riversand-print/">Print Solution</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/solutions/riversand-connect/">Data Integration and Syndication</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/solutions/riversand-customermdm/">Customer Information Management</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/solutions/riversand-vendordata/">Vendor Portal</a></li>                      
+                   </ul>
+                </div>
+                
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2">
+                
+                <h2>Industries</h2>
+                <div class="menu-footer">
+                   <ul>
+                      <li><a target="_blank" href="http://www.riversand.com/industries/retail/retail-industry-overview/">Retail</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/industries/manufacturing/">Manufacturing</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/industries/distribution/">Distribution</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/industries/energy/">Energy</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/industries/healthcare/">Healthcare</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/industries/food-services/">Food Services</a></li>                      
+                   </ul>
+                </div>
+                
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2">
+                
+                <h2>Company</h2>
+                <div class="menu-footer">
+                   <ul>
+                      <li><a target="_blank" href="http://www.riversand.com/company/">History</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/company/#team">Leadership Team</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/clients/">Clients</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/partners/">Partners</a></li>
+                      <li><a target="_blank" href="http://riversandcolors.com/">Riversand Colors</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/company/#newssection">News &#038; Events</a></li>
+                      <li><a target="_blank" href="http://www.riversand.com/news-events/#webinars">Webinars</a></li>                      
+                   </ul>
+                </div>
+                
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2">
+                
+                <h2>Support</h2>
+                <div class="menu-footer">
+                   <ul>
+                    <li><a target="_blank" href="http://www.riversand.com/careers/">Careers</a></li>
+                    <li><a target="_blank" href="http://www.riversand.com/contact/">Contact Us</a></li>
+                    <li><a target="_blank" href="http://www.riversand.com/sitemap/">Sitemap</a></li>
+                    <li><a target="_blank" href="http://www.riversand.com/privacy-policy/">Privacy Policy</a></li>
+                   </ul>
+                </div>
+                
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                
+                <div class="footer-widgets">
+                   <div class="row logo"><a target="_blank" href="index.html" class="logo-footer"></a></div>
+                   <div class="row">
+                      <p class="email"><a target="_blank" href="mailto:sales@riversand.com">sales@riversand.com</a></p>
+                   </div>
+                   <div class="row">
+                      <p class="phone"><a target="_blank" href="tel:17139348899">+1 713.934.8899</a></p>
+                   </div>
+                   <div class="row social">
+                      <a target="_blank" href="https://www.facebook.com/RiversandTechnologies/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon-facebook-light.svg" height="30" width="30">
+                      </a>
+                      <a target="_blank" href="https://plus.google.com/+Riversandmdm" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon-googleplus-light.svg" height="30" width="30">
+                      </a>
+                      <a target="_blank" href="https://twitter.com/riversandmdm" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon-twitter-light.svg" height="30" width="30">
+                      </a>
+                      <a target="_blank" href="https://www.youtube.com/user/riversandpim" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon-youtube-light.svg" height="30" width="30">
+                      </a>
+                      <a target="_blank" href="https://www.linkedin.com/company/riversand-technologies" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon-linkedin-light.svg" height="30" width="30">
+                      </a>
+                   </div>
+                   <div class="row">
+                      <p class="copyright">&copy; 2017 Riversand All Rights Reserved.</p>
+                   </div>
+                </div>
+                
+            </div>
+        </div>
+
+      
+   </div>
+</div>
+      <!-- END: Sticky Footer -->
+      <!--<script type="text/javascript">tabberAutomatic(tabberOptions);
+         </script>--> 
+   </body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html><head>
+  {% include head.html %}
+    
+<script>
+	$(document).ready(function(){
+		//alert(1);
+        $('[data-toggle="tooltip"]').tooltip();
+		//////
+        $('#breadcrumbs, .sidebarTitle').scrollToFixed({ 
+            marginTop: 0, 
+            //limit: $($('h2')[5]).offset().top 
+        });
+        $('.hamburger').css({'display':'none'});
+        //////
+        $(".sidebarTitle .dropdown-menu").mCustomScrollbar({
+			theme:"dark"
+		});
+
+        {% if site.build != "ascend" %}
+            //////
+            $('#openFeedbackContainer .feedbody #feed-close').click(function(event){
+                event.preventDefault();
+                $('#openFeedbackContainer').fadeOut('fast');
+            });
+            $('#openFeedbackContainer .feedbody .was-helpful-yes').click(function(event){
+                event.preventDefault();
+                //alert(1);
+                $('#step-two .if-yes').css({'display':'block'});
+                 $('#step-one').css({'display':'none'});
+                $('#step-two').css({'display':'block'});
+            });
+            $('#openFeedbackContainer .feedbody .was-helpful-no').click(function(event){
+                event.preventDefault();
+                 //alert(1);
+                $('#step-two .if-no').css({'display':'block'});
+                 $('#step-one').css({'display':'none'});
+                $('#step-two').css({'display':'block'});
+            });
+            $('#openFeedbackContainer #step-two a').click(function(event){
+                event.preventDefault();
+                 //alert(1);
+                 $('#step-two').css({'display':'none'});
+                 $('#openFeedbackContainer').css({'width':'230px'})
+                $('#step-three').css({'display':'block'});
+                var getval = $(this).attr('data-value');
+                $('#step-three #feed-yes-no').val(getval);
+            });
+
+        {% endif %}    
+        //yes_btn
+        $(document).on('click', '.post-content a.copy-code', function(event){
+            event.preventDefault();
+            var $temp = $("<input>");
+            $("body").append($temp);
+            var getdata = $(this).parent().parent().find('code').text();
+            //alert(getdata);
+            $temp.val(getdata).select();
+            document.execCommand("copy");
+            $temp.remove();
+            // var copyText = document.getElementById("myInput");
+            // copyText.select();
+            // document.execCommand("Copy");
+            // alert("Copied the text: " + copyText.value);
+        })
+        
+		// $(".post-content figure pre").mCustomScrollbar({
+		// 	theme:"dark",
+		// 	axis:"x"
+		// });
+        //pdf
+        var doc = new jsPDF();
+        var specialElementHandlers = {
+            '.githubEditButton': function (element, renderer) {
+                return true;
+            }
+        };
+        /////
+        //collapse-expand
+        //var geH = ($(window).height()-$('#collapse-expand').height())/2;
+        //$('#collapse-expand').css({'top':geH})
+        //alert(geH)
+        //////
+        //#collapse-expand
+        
+        //make-fix
+        function makePos(){
+            var getpos = $(window).scrollTop();
+            var winh = $(window).height();
+            var pp = (winh/2)+getpos;
+            console.log(pp);
+           $( ".make-fix" ).css({'padding-top':pp});
+        }
+        makePos();
+        $( window ).scroll(function() {
+            makePos();
+        });
+        $('#collapse-expand').click(function(event){
+            event.preventDefault();
+            var getA = $('.left-side').outerWidth()+15;
+            var getW = $('.sp-container').innerWidth();
+            var getWC = ($('.sp-container').innerWidth()/100)*75;
+            console.log('collapse menu');
+            //
+            var getC = $(this).attr('class');
+            //alert(getC)
+            if(getC == 'nav-closed'){
+                $('.sidebarTitle').scrollToFixed({ 
+                    marginTop: 0, 
+                    //limit: $($('h2')[5]).offset().top 
+                });
+                //$('#collapse-expand').removeClass('nav-closed');
+                //$('.right-side').removeClass('no-pad');
+                $(".right-side").animate({
+                    width: getWC+'px'
+                }, 500, function(){
+                    //alert(1)
+                    $(".right-side").css({'width':'75%'});
+                    $('#collapse-expand').removeClass('nav-closed');
+                    $(".left-side").animate({
+                        marginLeft: '0px'
+                    }, 500);
+                    ////
+                });
+                
+            }else{
+                $('.sidebarTitle').trigger('detach.ScrollToFixed');
+                //$('.right-side').addClass('no-pad');
+                
+                ////
+                $(".left-side").animate({
+                    marginLeft: '-'+getA+'px'
+                }, 500, function(){
+                    //alert(1)
+                    $('#collapse-expand').addClass('nav-closed');
+                    $(".right-side").animate({
+                        width: getW+'px'
+                    }, 200, function(){
+                        $(".right-side").css({'width':'100%'});
+                    });
+                });
+            }
+            
+        });
+        //edit-topics
+        $('#edit-topics').click(function(event){
+            event.preventDefault();
+            console.log('edit page');
+            var getlink = $('.post-header .post-title-main a').attr('href');
+            console.log(getlink);
+            window.open(getlink, '_blank');
+        });
+
+
+        /******************************************
+         |              PDF And Print             |
+         ******************************************/
+
+        // Single PDF
+        $('.pdf-bt').click(function (event) {
+            event.preventDefault();
+            generatePDF('.full-box');
+        });
+
+        // Single Print
+        $('.print-bt').click(function(event){
+            event.preventDefault();
+
+            window.print();
+        });
+
+        // Book Level PDF Print Modal 
+        $('.all-pdf-print-bt').click(function(event){
+            event.preventDefault();
+            $('#mysidebar').find('.page-link').each(function(e, a){
+                $.ajax({
+                    url: a.href, 
+                    success: function(result) {
+                        html = $(result).find('.full-box');
+                        html.find('#feed-form').remove();
+                        $('#modal-body').append('<div class="page-break"></div>');
+                        $('#modal-body').append("<mark id='href'>"+a.href+"</mark>");
+                        $('#modal-body').append(html);
+                    }
+                });
+            });
+            $("#pdf-print-modal").modal('show');
+        });
+
+        $('#print-modal').on('click', function() {
+           window.print(); 
+        });
+
+        $('#pdf-modal').on('click', function() {
+            generatePDF('#modal-body');
+        });
+
+        $('#pdf-print-modal').on('hide.bs.modal', function (e) {
+          $('#modal-body').html('');
+        });
+
+        // General Function to Generate PDF
+        function generatePDF(id) {
+            var pdf = new jsPDF('p', 'pt', 'letter', true);
+            source = $(id).html();
+
+            specialElementHandlers = {
+                '.githubEditButton': function (element, renderer) {
+                    return true
+                },
+
+                '#feed-form': function (element, renderer) {
+                    return true
+                }
+            };
+            margins = {
+                top: 80,
+                bottom: 60,
+                left: 40,
+                width: 522
+            };
+            pdf.fromHTML(
+                source,
+                margins.left,
+                margins.top, 
+                { 
+                    'width': margins.width,
+                    'elementHandlers': specialElementHandlers
+                },
+                function (dispose) {
+                    pdf.save('Riversand.pdf');
+                }, margins
+            );
+        }
+	})
+		
+</script>
+    {% if page.datatable == true %}
+    
+	
+	
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.5/css/.jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function(){
+			//alert(1);
+            $('table.datatable').DataTable( {
+                        paging: false,
+                        stateSave: true
+                    }
+            );
+		});
+    </script>
+    {% endif %}
+<!-- Style Used for PDF and Print -->
+<style>
+    .modal-dialog {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      max-width:inherit;
+    }
+
+    .modal-content {
+      height: auto;
+      min-height: 100%;
+      border-radius: 0;
+    }
+    #modal-body pre {
+        width: 100% !important;
+    }
+    .page-break { display: none; }
+    @media print {
+        .modal {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            overflow: visible!important;
+        }
+        .modal-header {
+            display: none;
+        }
+        mark#href {
+            page-break-after: always !important;
+        }
+        .page-break { display: block; page-break-before: always; }
+    }
+</style>
+</head>
+<body class="topic_page">
+
+{% if site.build != "ascend" %}
+
+<div id="openFeedbackContainer" class="hidden-print">
+    <div class="feedbody">
+        <a href="#" id="feed-close">X</a>
+        <div id="step-one">
+            <p class="was-this-helpful-question-text">Is this page helpful?</p>
+            <div class="yes-no">
+                <a href="#" class="was-helpful-yes">Yes</a>
+                <a href="#" class="was-helpful-no">No</a>
+            </div>
+        </div>
+        <div id="step-two">
+            <div class="if-yes">
+                <span>Thanks for the feedback! Comments or suggestions?</span> <a href="#" dats-target="#step-yes" data-value="yes" id="yes-feedback">Tell us here.</a>
+            </div>
+            <div class="if-no">
+                <span>Thanks for the feedback! Comments or suggestions?</span> <a href="#" dats-target="#step-no" data-value="no" id="no-feedback">Tell us here.</a>
+            </div>
+        </div>
+
+        <div id="step-three">
+            <p>
+                It's great to hear you find this page helpful. If you see anything that should be fixed, please let us know.
+            </p>
+            <h3>How can we improve?</h3>
+            <form action="{{ site.feedback_url }}" method="post">
+                <input type="hidden" id="feed-yes-no" name="helpfull">
+                <input type="hidden" name="url" value="{{ page.url }}">
+                <input type="hidden" name="title" value="{{ page.title }}">
+                <input type="hidden" name="role" value="Developer">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="topics[fix_inaccurate_or_outdated_content]">
+                        Fix inaccurate or outdated content
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="topics[add_information_or_more_detail]">
+                        Add information or more detail
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="topics[fix_typos_or_broken_links]">
+                        Fix typos or broken links
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="topics[add_or_fix_code_samples]">
+                        Add or fix code samples
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="topics[improve_illustrations_or_images]">
+                        Improve illustrations or images
+                    </label>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleTextarea" rows="3" name="description"></textarea>
+                </div>
+                <button type="submit" class="">Submit</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+ {% endif %}
+
+<!-- PDF Print for All Page Modal -->
+<div id="pdf-print-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="btn btn-group">
+            <!--<button class="btn btn-default" id="pdf-modal"><img src="images/pdf-icon.png"> PDF</button>-->
+            <button class="btn btn-default" id="print-modal"><img src="images/print-icon.png">Print PDF</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% include header.html %}
+
+
+<div class="page-wapper give-height o-wrapper" id="o-wrapper"> 
+	   
+    <section>
+    	<div class="container doc-box">
+            <div class="row justify-content-md-end">
+                <div class="col-xs-12 col-sm-12 col-md-12 make-small make-same make-hide">
+                    <div class="sp-container">
+                    <div class="left-side">
+                        <a href="#" id="collapse-expand"><div class="make-fix"><img src="images/collapes-icon.png"></div></a>
+                        <div class="color-left-scroller">
+                            <div class="side-nav">
+                              {% include sidebar.html %}
+							</div>
+                        </div>
+                    
+                    
+                    <div class="right-side">
+                    	<div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="breadcrumbs" id="breadcrumbs">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Developer</a></li>
+                                        <li><a href="#">Doc <i class="fa fa-caret-down" aria-hidden="true"></i></a></i>
+                                            <div class="arrow_box">
+                                                <ul>
+                                                    <li><a href="#">Developer</a></li>
+                                                    <li><a href="#">Developer</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class="other-options">
+                                        <div id="prev">
+                                            <!--<a href="#" class="prev-next" title="Previous Page"><img src="images/prev-icon.png"></a>-->
+                                        </div>
+                                        <div id="next">
+                                            <!--<a href="#" class="prev-next" title="Next Page"><img src="images/next-icon.png"></a>-->
+                                        </div>
+                                        <!--<div class="print-option"><a href="#" title="Edit" id="edit-topics" class="edit-bt"><img src="images/edit-icon.png"></a></div>
+                                        <div class="print-option"><a href="#" title="Print" class="print-bt"><img src="images/print-icon.png"></a></div>-->
+                                        <!--<div class="pdf-option"><a href="{{ site.pdf_url }}?title={{page.title}}&file={{page.url | remove: '/'}}&type=business-admin" title="PDF"><img src="images/pdf-icon.png"></a></div>-->
+                                    </div>
+                                </div>
+                                <div id="sp-left" class="print-full">
+                                    <div class="full-box">
+                                    {{content}}                         
+                                    </div>
+                                </div>
+                                <div id="sp-right" class="hidden-print">
+                                    <div class="new-site-bar">
+                                	<div class="new-site-inner">
+                                	<h2>On This Page</h2>
+                                    <div class="new-site-content"></div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    
+</div>
+{% include footer.html %} 
+</body>
+{% if site.google_analytics %}
+{% include google_analytics.html %}
+{% endif %}
+</html>

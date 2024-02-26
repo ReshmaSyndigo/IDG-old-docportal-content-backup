@@ -1,0 +1,31 @@
+# The following set of configuration is applicable for Windows internal docportal implementation.
+ADM: "rdp/sa"
+APP: "rdp/ba"
+APPU: "rdp/bu"
+SDK: "rdp/dev"
+SI: "rdp/si"
+RN: "rdp/rn"
+
+# The following set of configuration is applicable for Windows internal 1.0 docportal implementation.
+# ADM: "rdp1.0/sa"
+# APP: "rdp1.0/ba"
+# APPU: "rdp1.0/bu"
+# SDK: "rdp1.0/dev"
+# SI: "rdp1.0/si"
+# RN: "rdp1.0/rn"
+
+# The following set of configuration is applicable for Auth0 implementation.
+# ADM: "sa"
+# APP: "ba"
+# APPU: "bu"
+# SDK: "dev"
+# SI: "si"
+# RN: "rn"
+
+# The following set of configuration is applicable for documentation review
+# ADM: "rdp-review/sa"
+# APP: "rdp-review/ba"
+# APPU: "rdp-review/bu"
+# SDK: "rdp-review/dev"
+# SI: "rdp-review/si"
+# RN: "rdp-review/rn"

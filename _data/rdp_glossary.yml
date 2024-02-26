@@ -1,0 +1,302 @@
+DMD: "A template used for defining the data model elements such as Entities, Attributes, Relationships, Contexts, and mapping between these elements."
+
+RDP: "An SDK that is used to build Apps and Plugins. Broadly, Riversand Platform comprises Riversand Data Framework (RDF), Riversand User Interface Framework (RUF), and a set of core Apps."
+
+RDF: "A set of services that exposes all of the platform functionality for any App to be able to consume."
+
+RUF: "A set of user interface components and elements, used to build Apps or Plugins."
+
+RTS: "A set of services that abstract out the specific technologies in Riversand Platform, by exposing a set of abstracted services to do elemental functions such as entity search."
+
+RFS: "A set of services that orchestrate the get and set of data into various repositories."
+
+RES: "Lowest level services that knows how to interact with a specific technology or engine inside Riversand Platform such as Gremlin services and ElasticSearch services."
+
+RDS: "A set of services finally exposed to the App or Plugins for the developers to consume."
+
+MDM: is a process of defining and managing an organization's master data to best meet business goals, processes, and standards.
+
+Offering: "A collection of Apps and Plugins."
+
+Realms: "Riversand internal terminology to identify a combination of Industry Vertical and Offerings such as 'Retail SMB PIM'."
+
+Pods: "A Pod is commissioned to work for a pre-determined set of Offerings. There can be multiple Pods. Each Pod has the same software and version available for all the tenants."
+
+App: "A self-contained program or piece of software designed for a particular business requirement. 
+Apps can work stand alone and are available in App store and deployed to the Pod based on the 
+Offerings configured for the Pod. Apps can use Plugins and extend other Apps. 
+Tenants can buy or subscribe to Apps."
+
+Plugin: "Has all the qualities of an App, except that Plugins cannot be stand alone; 
+they can only work in the context of an App and Plugins cannot use other Plugins or extend other Plugins."
+
+IntegrationSystems: "Systems that exchanges data between tenant specific systems 
+both on-premise and on cloud. Each tenant can make use of an external 
+Integration Platform as a Service (iPaaS) or the basic Platform Integration Pipeline 
+to exchange data with Riversand Offering."
+
+Pipeline: "System provided along with Riversand Offering that is used to exchange the data in specific formats such as CSV and JSON from and to external tenant systems."
+
+DataService: "Provides a list of services that are exposed as REST API to the Apps or external systems to consume.
+These are the actual edge-facing services." 
+
+PlatformService: "Provides a list of services that are common across all the other services in the system 
+such as Configuration Services and Diagnostic Services. These services do not refer to any other services. 
+However, they can refer to other services within the Platform Services."
+
+FrameworkService: "Provides a list of services that are presented to the data services. 
+All services that are exposed as Data Services are implemented at this layer."
+
+TechnologyService: "Provides a list of services responsible for getting the business functionality 
+done at a specific technology layer."
+
+EngineService: "Provides a list of services responsible for actually implementing the services 
+required by the Technology Service. These services are vendor specific."
+
+appcreateentity: "{TenantURL or ID}/api/entityappservice/create"
+
+appdeleteentity: "{TenantURL or ID}/api/entityappservice/delete"
+
+appupdateentity: "{TenantURL or ID}/api/entityappservice/update"
+
+appprocessentity: "{TenantURL or ID}/api/entityappservice/process"
+
+appgetentity: "{TenantURL or ID}/api/entityappservice/get"
+
+appgetcontext: "{TenantURL or ID}/api/entityappservice/getcontext"
+
+appgetentityhistory: "{TenantURL or ID}/api/entityappservice/getentityhistory"
+
+appcombinedget: "{TenantURL or ID}/api/entityappservice/getcombined"
+
+appgetcoalesce: "{TenantURL or ID}/api/entityappservice/getcoalesce"
+
+apprelatedget: "{TenantURL or ID}/api/entityappservice/getrelated"
+
+appmappedget: "{TenantURL or ID}/api/entityappservice/getmappedvalues"
+
+createentity: "{TenantURL or ID}/api/entityservice/create"
+
+updateentity: "{TenantURL or ID}/api/entityservice/update"
+
+deleteentity: "{TenantURL or ID}/api/entityservice/delete"
+
+diaggetlag: "{TenantURL or ID}/api/diagnosticservice/get"
+
+getentity: "{TenantURL or ID}/api/entityservice/get"
+
+getContext: "{TenantURL or ID}/api/entityservice/getcontext"
+
+getcoalesce: "{TenantURL or ID}/api/entityservice/getcoalesce"
+
+createdatamodel: "{TenantURL or ID}/api/entitymodelservice/create"
+
+getdatamodel: "{TenantURL or ID}/api/entityappmodelService/get"
+
+updatedatamodel: "{TenantURL or ID}/api/entitymodelService/update"
+
+deletedatamodel: "{TenantURL or ID}/api/entitymodelService/delete"
+
+creategoverndata: "{TenantURL or ID}/api/entitygovernservice/create"
+
+updategoverndata: "{TenantURL or ID}/api/entitygovernservice/update"
+
+getgoverndata: "{TenantURL or ID}/api/entitygovernservice/get"
+
+syncValidate: "{TenantURL or ID}/api/entitygovernservice/validate"
+
+startworkflow: "{TenantURL or ID}/api/entitygovernservice/startWorkflow"
+
+changeassignworkflow: "{TenantURL or ID}/api/entitygovernservice/workflowChangeAssignment"
+
+transitionworkflow: "{TenantURL or ID}/api/entitygovernservice/transitionworkflow"
+
+createconfig: "{TenantURL or ID}/api/configurationservice/create"
+
+getconfig: "{TenantURL or ID}/api/configurationservice/get"
+
+updateconfig: "{TenantURL or ID}/api/configurationservice/update"
+
+getnearestconfig: "{TenantURL or ID}/api/configurationservice/getnearest"
+
+deleteconfig: "{TenantURL or ID}/api/configurationservice/delete"
+
+createbinary: "{TenantURL or ID}/api/binaryobjectservice/create"
+
+getbinary: "{TenantURL or ID}/api/binaryobjectservice/get"
+
+deletebinary: "{TenantURL or ID}/api/binaryobjectservice/delete"
+
+getmatch: "{TenantURL or ID}/api/matchservice/search"
+
+matchstandardize: "{TenantURL or ID}/api/matchservice/standardize"
+
+getrequesttrackingobject: "{TenantURL or ID}/api/requesttrackingservice/get"
+
+createrequesttrackingobject: "{TenantURL or ID}/api/requesttrackingservice/create"
+
+updaterequesttrackingobject: "{TenantURL or ID}/api/requesttrackingservice/update"
+
+deleterequesttrackingobject: "{TenantURL or ID}/api/requesttrackingservice/delete"
+
+deletebyquery: "{TenantURL or ID}/api/requesttrackingservice/deletebyquery"
+
+processmodel: "{TenantURL or ID}/api/rsConnectService/processmodel" 
+
+process: "{TenantURL or ID}/api/rsConnectService/process"
+
+transform: "{TenantURL or ID}/api/rsConnectService/transform"
+
+getevent: "{TenantURL or ID}/api/eventservice/get"
+
+bulkentityservices: "{TenantURL or ID}/api/bulkentityservice/createtask"
+
+publishdata: "{TenantURL or ID}/api/rsConnectService/publish"
+
+downloadDataJob: "{TenantURL or ID}/api/rsConnectService/downloadDataJob"
+
+downloadDataExcel: "{TenantURL or ID}/api/rsConnectService/downloadDataExcel"
+
+downloadDataDSV: "{TenantURL or ID}/api/rsConnectService/downloadDataDSV"
+
+downloadModelExcel: "{TenantURL or ID}/api/rsConnectService/downloadModelExcel"
+
+generaterendition: "{TenantURL or ID}/api/rsAssetService/generaterendition"
+
+collectdata: "{TenantURL or ID}/api/rsConnectService/collect"
+
+assetupload: "{TenantURL or ID}/api/assetservice/upload"
+
+createbinarystream: "{TenantURL or ID}/api/binarystreamobjectservice/create"
+
+updatebinarystream: "{TenantURL or ID}/api/binarystreamobjectservice/update"
+
+getbinarystream: "{TenantURL or ID}/api/binarystreamobjectservice/get"
+
+deletebinarystream: "{TenantURL or ID}/api/binarystreamobjectservice/delete"
+
+prepareUpload: "{TenantURL or ID}/api/binarystreamobjectservice/prepareUpload"
+
+prepareDownload: "{TenantURL or ID}/api/binarystreamobjectservice/prepareDownload"
+
+creategraphlink: "{TenantURL or ID}/api/entitygraphservice/create"
+
+deletegraphlink: "{TenantURL or ID}/api/entitygraphservice/delete"
+
+saveoverrides: "{TenantURL or ID}/api/rsConnectService/saveoverrides"
+
+getoverride: "{TenantURL or ID}/api/rsconnectservice/getprofile"
+
+schcreate: "{TenantURL or ID}/api/schedulerservice/create"
+
+schget: "{TenantURL or ID}/api/schedulerservice/get"
+
+schupdate: "{TenantURL or ID}/api/schedulerservice/update"
+
+schdelete: "{TenantURL or ID}/api/schedulerservice/delete"
+
+genobjcreate: "{TenantURL or ID}/api/genericobjectmanageservice/create"
+
+genobjupdate: "{TenantURL or ID}/api/genericobjectmanageservice/update"
+
+genobjdelete: "{TenantURL or ID}/api/genericobjectmanageservice/delete"
+
+genobjget: "{TenantURL or ID}/api/genericobjectmanageservice/get"
+
+generatevariants: "{TenantURL or ID}/api/entityappservice/generatevariants"
+
+appcreatesnapshot: "{TenantURL or ID}/api/entityappservice/createsnapshot"
+
+appgetsnapshot: "{TenantURL or ID}/api/entityappservice/getsnapshot"
+
+apprestoresnapshot: "{TenantURL or ID}/api/entityappservice/restoresnapshot"
+
+updatedatamodel: "{TenantURL or ID}/api/entitymodelservice/update"
+
+deletedatamodel: "{TenantURL or ID}/api/entitymodelservice/delete"
+
+getdatamodel: "{TenantURL or ID}/api/entitymodelservice/get"
+
+deletegoverndata: "{TenantURL or ID}/api/entitygovernservice/deleteEntityFromWorkflow"
+
+deletegovernalldata: "{TenantURL or ID}/api/entitygovernservice/deleteEntityFromAllWorkflows"
+
+revaluategoverndata: "{TenantURL or ID}/api/entitygovernservice/reevaluate"
+
+getusername: "{TenantURL or ID}/api/entitygovernservice/getUserNameForAutoAssignment"
+
+evaluateworkflowcriteria: "{TenantURL or ID}/api/entitygovernservice/evaluateWorkflowCriteria"
+
+terminateWorkflowInstance: "{TenantURL or ID}/api/entitygovernservice/terminateWorkflowInstance"
+
+computerole: "{TenantURL or ID}/api/authorizationservice/computerole"
+
+computeauthmodel: "{TenantURL or ID}/api/authorizationservice/computeauthorizationmodels"
+
+getnearestentity: "{TenantURL or ID}/api/entityservice/getnearest"
+
+deleteentityfromallworkflows: "{TenantURL or ID}/api/entitygovernservice/deleteEntityFromAllWorkflows"
+
+getusername: "{TenantURL or ID}/api/entitygovernservice/getUserNameForAutoAssignment"
+
+bulkeventservices: "{TenantURL or ID}/api/bulkeventservice/createtask"
+
+bulkrequestservices: "{TenantURL or ID}/api/bulkrequestservice/createtask"
+
+deleteevent: "{TenantURL or ID}/api/eventservice/delete"
+
+eventdeletebyquery: "{TenantURL or ID}/api/eventservice/deletebyquery"
+
+eventclearscroll: "{TenantURL or ID}/api/eventservice/clearscroll"
+
+entityclearscroll: "{TenantURL or ID}/api/entityappservice/clearscroll"
+
+modelgovernservice: "{TenantURL or ID}/api/modelgovernservice/validate"
+
+getHeaderFields: "{TenantURL or ID}/api/rsConnectService/getHeaderFields"
+
+getmappings: "{TenantURL or ID}/rsConnectService/getmappings"
+
+savemappings: "{TenantURL or ID}/rsConnectService/savemappings"
+
+evaluateworkflowcriteria: "{TenantURL or ID}/api/entitygovernservice/evaluateworkflowcriteria"
+
+deploytenantseed: "{TenantURL or ID}/api/adminservice/deploytenantseed"
+
+deployplatformseed: "{TenantURL or ID}/api/adminservice/deployplatformseed"
+
+deploytopology: "{TenantURL or ID}/api/adminservice/deploytopology"
+
+checkdependency: "{TenantURL or ID}/api/adminService/checkdependency"
+
+deploytenant: "{TenantURL or ID}/api/adminservice/deploytenant"
+
+deployartifact: "{TenantURL or ID}/api/adminservice/deployartifact"
+
+getmodelcoalesce: "{TenantURL or ID}/api/entityappmodelservice/getcoalesce"
+
+getdatacoalesce: "{TenantURL or ID}/api/entityappservice/getcoalesce"
+
+getcomposite: "{TenantURL or ID}/api/entityappmodelservice/getcomposite"
+
+entityservice: "{TenantURL or ID}/api/entityservice/get"
+
+getnearest: "{TenantURL or ID}/api/entitymodelservice/getnearest"
+
+getlinkedasseturl: "{TenantURL or ID}/api/rsAssetService/getlinkedasseturl"
+
+getasseturl: "{TenantURL or ID}/api/rsAssetService/getasseturl"
+
+mlmatchurl: "{TenantURL or ID}/api/matchservice/match"
+
+matchurl: "{TenantURL or ID}/api/matchservice/search"
+
+matchservice: "{TenantURL or ID}/api/matchservice/processsourcerecord"
+
+getById: "{TenantURL or ID}api/binaryobjectservice/getById"
+
+existsById: "{TenantURL or ID}api/binaryobjectservice/existsById"
+
+diaguptime: "{TenantURL or ID}api/diagnosticservice/getuptimereport"
+
+
