@@ -1,0 +1,136 @@
+<!-- Navigation -->
+<div id="hand-over"></div>
+<div id="google_translate_element" align="right"></div><script>
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+    pageLanguage: 'en'
+    }, 'google_translate_element');
+    }
+    </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>    
+<header class="no-print">
+	<div class="container">
+        <div class="row justify-content-md-end">
+            <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="hamburger" style="display: none;">
+                    <a href="#" id="c-button--push-left">
+                        <img src="images/hamburger.svg" width="32" height="32">
+                    </a>
+                </div>
+                <div class="logo-holder"><a href="{{ site.main_url }}"><img src="images/logo.png" width="203" height="38"></a></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            	<div class="search-holder">    
+                    <button type="submit">search</button>               
+                    <input type="text" id="query" placeholder="Search documentation..."/>                  
+                </div>
+                
+                
+            </div>
+            
+            <div class="col-xs-12 col-sm-4 col-md-4">
+            	<div class="others-holders">
+            	<div class="language-holder">
+                	<select id="select-language">
+                        <option>EN</option>
+                        <option>BN</option>
+                        <option>CN</option>
+                    </select>
+                </div>
+                <div class="after-login-holder logout" style="display:none">
+                    {% if site.is_logout_ubuntu==true %}
+                	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="pp"><img src="images/default-user.jpg" width="32" height="32"></div>
+                    <div class="pro-info">Developer<br><span>Role</span></div></a>
+                    <div class="dropdown-menu" role="menu">
+                    	<div class="content">
+                  			<ul>
+                            	<li><a href="{{ site.logout_url }}" class="more">Logout</a></li>
+                                <!--<li><a href="{{ site.home_url }}" class="more">Home</a></li>-->
+                                
+                            </ul>
+                  		</div>
+                  </div>
+                  {% endif %}
+                </div>
+                
+                {% if site.build != "ascend" %}
+                    <div class="contact-holder">
+                        {% if site.is_logout_ubuntu==true %}
+                            <a href="/rn/rn_whats_new.html">What's New</a>
+                        {% else %}
+                            <a href="/rdp/rn/rn_whats_new.html">What's New</a>
+                        {% endif %} 
+                    </div>
+                    
+                    <div class="contact-holder">                          	
+                        {% if site.is_logout_external==true %}
+                            <a href="contact.html" class="contact" style="display:none;">Contact</a> 
+                            <a href="/rdp/Login.aspx" class="logout" style="display:none;">Logout</a>
+                        {% endif %}
+                    </div>
+                {% endif %}     
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        if(window.location == window.parent.location){
+            $('.contact').show();
+            $('.logout').show();
+        }
+        var myArr = [];
+        $('body').keypress(function (e) {
+            if (e.keyCode == '13') {
+                var query = $('#query').val();
+                if (query.length == 0) {
+                    return;
+                }
+                window.location.href = "Searchresults.html?q=" + query;
+            }
+        });
+
+        $.ajax({
+            type: "GET",
+            url: "js/Titles.xml", // change to full path of file on server
+            dataType: "xml",
+            success: parseXml,
+            complete: setupAC,
+            failure: function (data) {
+                alert("XML File could not be found");
+            }
+        });
+
+        function parseXml(xml) {
+            //find every query value
+            $(xml).find("Title").each(function () {
+                if ($.inArray($(this).text(), myArr) == -1)
+                    tocTitle = $(this).text().replace(/&quot;/g, "\"").replace(/&amp;quot;/g, "\"").replace(/&apos;/g, "'");
+                myArr.push(tocTitle);
+            });
+        }
+
+        function setupAC() {
+            $("#query").autocomplete({
+                source: myArr,
+                minLength: 1,
+                appendTo:$(".search-holder"),
+                select: function (event, ui) {
+                    $("#query").val(ui.item.value);
+                    var query = ui.item.value;
+                    if (query.length == 0) {
+                        return;
+                    }
+                    window.location.href = "Searchresults.html?q=" + query;
+                }
+            });
+        }
+    });
+</script>
+<!-- <style media="screen">
+    div#openFeedbackContainer {
+        display: none;
+    }
+</style> -->

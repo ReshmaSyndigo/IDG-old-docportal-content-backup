@@ -1,0 +1,9 @@
+<div class="dropdown-menu">
+	<ul>
+{% for page in site.pages %}
+    {% if page.folder %}
+		<li><a href="{{page.url | remove: '/'}}" title="{{page.title}}">{{page.title}}</a></li>    
+    {% endif %}
+{% endfor %}
+	</ul>
+</div>

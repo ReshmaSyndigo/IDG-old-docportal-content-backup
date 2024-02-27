@@ -1,0 +1,24 @@
+{% include custom/sidebarconfigs.html %}
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+
+<div class="sidebarTitle">
+
+		
+
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>All Doc </span></a>
+        {% if site.build != "ascend" %}
+        	<a href="index.html" title="Home" style="float: right;"><img src="images/home.png"></a>  
+        {% endif %}
+
+        {% if site.build == "ascend" %}
+        	<a href="{{ site.main_url }}/index.html" title="Home" style="float: right;"><img src="images/home.png"></a>  
+        {% endif %}
+        <!--<a href="#" title="Print" class="all-pdf-print-bt" style="float: right;"><img src="images/print-icon.png"></a>        -->
+        {% include alldocs.html %}
+        
+</div>
+	<div class="navTitle"><strong>{{sidebar.title}}</strong></div>
+	<ul id="mysidebar" class="nav-list">
+	  {% include {{the_sidebar}} menuitems=sidebar.children %}
+	</ul>
+</div>	

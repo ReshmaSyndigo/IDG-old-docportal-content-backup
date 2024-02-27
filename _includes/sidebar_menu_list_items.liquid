@@ -1,0 +1,31 @@
+{% for item in include.menuitems %}
+
+  {% comment %} Is this supposed to be output on the `web`site?{% endcomment %}
+  {% if item.output contains "web" %}
+
+  {% if controllers contains item.url %}
+
+    <li class="{% if item.children.size > 0 %} tree-parent {%else%} leaf-node {% endif %} {% if page.url == item.url %}active{% endif %}">
+      {% if item.children.size > 0 %}<a class="show-hide" href="#" data-push="true"> {% endif %}
+
+      {% if item.tag == "new" %}
+        <a class="page-link" href="{{item.url | remove: "/"}}" data-push="true" title="{{item.title}}">{{ item.title }} <span style="background-color: rgb(9, 192, 33);color:white;font-weight:bold;padding:2px 8px 2px 8px;text-align:center;border-radius:20px;font-size:13px;font-family:Calibri;letter-spacing: 0.05em;">New</span></a>
+      {% elsif item.tag == "updated" %}
+        <a class="page-link" href="{{item.url | remove: "/"}}" data-push="true" title="{{item.title}}">{{ item.title }} <span style="background-color: rgb(247, 142, 30);color:white;font-weight:bold;padding:2px 8px 2px 8px;text-align:center;border-radius:20px;font-size:13px;font-family:Calibri;letter-spacing: 0.05em;">Updated</span></a>  
+      {% else %}  
+        <a class="page-link" href="{{item.url | remove: "/"}}" data-push="true" title="{{item.title}}">{{ item.title }}</a>  
+      {% endif %}
+
+      {% if item.children.size > 0 %}
+        <ul class="nav-list">
+            {% include sidebar_menu_list_items.liquid menuitems=item.children %}
+        </ul>
+      {% endif %}
+    </li>
+  
+
+  {% endif %}{% comment %} /"if controllers" {% endcomment %}
+
+  {% endif %}{% comment %} /"if web" {% endcomment %}
+
+{% endfor %}{% comment %} /each item {% endcomment %}

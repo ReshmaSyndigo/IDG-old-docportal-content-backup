@@ -1,0 +1,24 @@
+<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+  <button class="c-menu__close">&larr; Close Menu</button>
+
+    <div class="right-panel">
+        <div class="link-block">
+
+            {% for menu in site.data.sidebars.burger-sidebar.children %}
+                <div class="link-loop">
+                    <h2>{{ menu.title }}</h2>
+                    <ul>
+                        {% for item in menu.children %}
+                            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+
+        </div>
+        <div class="links-massage">
+            <a href="#"><img src="images/left-massage-icon.jpg" width="47" height="47"></a>
+        </div>
+        
+    </div>
+</nav>
