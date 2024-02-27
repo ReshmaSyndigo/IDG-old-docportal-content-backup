@@ -1,0 +1,13 @@
+| [Main App](dm_config_main_app.html) | [Theme](dm_config_theme.html) |  Tenant | <a href="files/configs/global-settings_tenant.json" download> global-settings_tenant.json</a> | Specify themeName for tenant. |
+|  | [Default Data](dm_config_theme.html) | Tenant | <a href="files/configs/global-settings_tenant.json" download> global-settings_tenant.json</a> | Specify dataDefaults such as default entityNameAttribute and entityTypes. |
+|  | [Header > Logo Details](dm_config_logo.html) | Tenant | <a href="files/configs/rock-tenant-logo_tenant.json" download> rock-tenant-logo_tenant.json</a> | Set the logo of your business. |
+|  | [Header > Quick Actions](dm_config_header_quick_actions.html) | Tenant | <a href="files/configs/rock-quick-actions_tenant.json" download>rock-quick-actions_tenant.json</a> | Add new actions as required or set visibility to false to remove actions. |
+|  |  | Vendor Role | <a href="files/configs/rock-quick-actions_vendor.json" download>rock-quick-actions_vendor.json</a> | Add new actions as required or set visibility to false to remove actions. |
+|  | [Header > Access to Hotline](dm_config_hotline.html) | Role |  <a href="files/configs/hotline-settings_admin.json" download>hotline-settings_admin.json</a> | Set enabled to true for the hotline-settings component. |
+|  | [Header > Access to Role Specific Help](dm_config_docportal.html) | Tenant | <a href="files/configs/060-doc-portal-role-to-role-compute-policy.json" download>060-doc-portal-role-to-role-compute-policy.json</a> | Set enabled to true. |
+|  | [Header > Documentation Portal (DocPortal) URL](dm_config_doc_url.html) | Tenant | <a href="files/configs/help-settings-tenant.json" download>help-settings-tenant.json</a> | Specify the URL of the DocPortal. |
+|  | [Access to Apps](dm_config_access.html) | Tenant | <a href="files/configs/rock-navmenu_tenant.json" download> rock-navmenu_tenant.json</a> | visible - Configure the visibility of Apps as required. |
+|  |  | Admin Role | <a href="files/configs/rock-navmenu_admin.json" download> rock-navmenu_admin.json</a> | Configure the visibility of Apps as required. |
+|  |  | Vendor Role | <a href="files/configs/rock-navmenu_vendor.json" download> rock-navmenu_vendor.json</a> | Configure the visibility of Apps as required. |
+|  | [Disclaimer Details](dm_config_disclaimer.html) | Role |<a href="files/configs/rock-disclaimer_vendor.json" download> rock-disclaimer_vendor.json</a> | Set enabled to true for the disclaimer-settings component. |
+|  | [Icon Details](dm_config_icons.html) | Tenant |<a href="files/configs/rock-icons-manage_tenant.json" download> rock-icons-manage_tenant.json</a> | Add new icons to the application, as required. |

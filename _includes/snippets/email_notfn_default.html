@@ -1,0 +1,32 @@
+
+### Configure Default Configuration for Email Notification Task
+
+When the configuration is created, all the context types defined in the context must have an explicit value or the fall back value _DEFAULT. _DEFAULT value can be specified for component, subcomponent, profilename and status. 
+
+**Example**
+
+{% highlight json %}
+{
+  "contexts": [
+    {
+      "context": {
+        "app": "emailNotification",
+        "service": "task",
+        "component": "ENTITY_IMPORT",
+        "subcomponent": "_DEFAULT",
+        "profilename": "_DEFAULT",
+        "status": "_DEFAULT"
+      }
+       
+      ...
+    }
+  ]
+}
+{% endhighlight %}
+
+{% include callout.html content="**Note**:
+Email notification framework uses [getnearest](#api_get_nearest_configuration.html)
+to get the configuration. The getnearestPath for task is:
+component &gt; &gt; subcomponent &gt; &gt; profilename &gt; &gt; status if &gt; &gt; is 
+the context delimiter specified for the tenant.
+" type="primary" %}

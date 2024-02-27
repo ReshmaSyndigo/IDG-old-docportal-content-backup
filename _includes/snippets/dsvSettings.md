@@ -1,0 +1,5 @@
+| Property | Description | Default Value | Example | Required | 
+|----------|-------------|----------|--------------|----------|
+| delimiter | Indicates a character used to separate a list of attributes, attribute values, relationships and relationship values. The delimiter used as field separator can be of one character only. Most commonly used delimiters as field separators are 'comma', 'tab' and 'pipe'. Note that "//" cannot be used as a delimiter. | comma (,) |Type,Name<br/>sku,aircomfortmattresses029 | Yes |
+| quotechar | Indicates a character used when attribute value has a character that is used for field separator. | double quote (") | Description,Item Type<br/>"Good Quality, Long Lasting", Shirt | Yes | 
+| startLine | Indicates line number from where the data actually starts. | 0 | | Yes |

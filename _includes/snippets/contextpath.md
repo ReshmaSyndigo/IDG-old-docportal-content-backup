@@ -1,0 +1,2 @@
+{% include callout.html content="**Note**: A context path value (contextPathValue in configuration file) defines the value in the context path such as tenant, domain, app, entityType, relationshipType, and role for which the configuration is applicable.
+" type="primary" %}

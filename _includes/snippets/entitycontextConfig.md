@@ -1,0 +1,1 @@
+|  | [Context Settings](dm_config_context_settings.html) | Tenant | <a href="files/configs/config-context-settings.json" download>config-context-settings.json</a> | Specify coalescePath and contextSchema. |

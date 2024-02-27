@@ -1,0 +1,2 @@
+| scheduleObjectManageService &nbsp; &nbsp; | I0011 | Schedule has been submitted for create with schedule Id : {}. Please check back after one minute | INFO | Indicates that a schedule object has been submitted for creation |
+| | I0013 | Schedule has been submitted for update with schedule Id : {}. Schedule changes will take affect within one minute | INFO | Indicates that a schedule object has been submitted for update |

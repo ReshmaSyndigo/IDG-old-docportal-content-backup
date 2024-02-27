@@ -1,0 +1,2 @@
+{% include callout.html content="**Note**: By default, the Reference Lookups sheet in each model template is populated with a default set of values that is used for validating drop-down column values. You can unhide the sheet and edit these values. However, it is recommended to edit the values sparingly.
+" type="primary" %}

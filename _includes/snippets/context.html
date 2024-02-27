@@ -1,0 +1,6 @@
+Context must be in the format _type:_path. **Type** can be any user defined type such as self, list, classification, channel. **Path** is the actual value of the context. Path and Type are data model specific details and it is recommended to refer to your data model before specifying the details.
+
+You can also specify _ALL for the **Path** value. Example: _ALL for classification indicates that the attribute errors must be checked in all the classifications for the qualified context.
+
+{% include callout.html content="**Note**: When **Classification** is specified in the **Type**, system uses it as a StartsWith match or _ALL match.
+" type="primary" %} 

@@ -1,0 +1,27 @@
+<ol>
+<li> Login to one of the manager node.</li>
+<p> <b>Result</b>: "home" directory of manager node is displayed. You can see the "tenant_onboarding.sh" file present.</p>
+{% picture tenant-onboard_n.png alt="tenant_onboard.sh File" %}
+<li> The "tenant_onboarding.sh" does the following activities:
+<ul>
+<li> Creates elastic search indices with custom mapping.</li>
+<li> Applies templates and executes the scripts to configure Elasticsearch.</li>
+<li> Creates aliases for indices.</li>
+<li> Creates HDFS folders.</li> 
+<li> Creates HBase tables.</li>
+<li> Starts storm topologies.</li>
+<li> Submits topologies based on the value provided for <b>SUBMIT_TOPOLOGIES</b> in the  tenant_onboarding.sh script.</li>
+</ul>
+</li>
+<li> Depending on your requirement, update the "tenant_onboarding.sh" script by providing the values for following keys:
+<ul>
+<li> RDP_INSTANCE_ID: Provide the instance name in the "rdp_'ID'" format.</li>
+<li> DEPLOY_VERSION: Provide "rdp_deploy" version.</li>
+<li> STACK_TYPE: Provide the the details for which operation this deployment is intended. The suggested values are <b>dev</b>, <b>prod</b>, and <b>qa</b>.</li>
+<li> TENANT_ID: Provide the required tenant name. </li>
+<li> SUBMIT_TOPOLOGIES: Provide the value as "1" for the fresh deployment. If you are creating new tenant on existing instance, provide the value as "0". </li>
+</ul>
+</li>
+{% picture tenant-onboard-sh_n.png alt="Parameters for tenant-onboard.sh File" %}
+<li> Execute the script tenant_onboarding.sh by issuing <b>./tenant_onboarding.sh</b> command.</li> 
+</ol>

@@ -1,0 +1,3 @@
+| [Validation Post-Process](ddg_riversand_business_language_scenarios_valpost.html)| | | 
+| | Resume a workflow on relationship change | [Resume Workflow](ddg_riversand_business_language_scenarios_valpost1.html) |  [IsEntityInWorkflow](ddg_core_keyword_IsEntityInWorkflow.html)<br/> [HaveRelationshipsChanged](ddg_core_keyword_HaveRelationshipsChanged.html)<br/> [RelationshipsCountInContext](ddg_core_keyword_RelationshipsCountInContext.html)<br/> [ResumeWorkflow](ddg_post_process_keyword_ResumeWorkflow.html) | 
+| | Capture a snapshot during exit of SKU submission | [Capture Snapshot during the exit of SkU Submission](ddg_riversand_business_language_scenarios_valpost2.html) |  [CreateSnapshot](ddg_post_process_keyword_CreateSnapshot.html) |

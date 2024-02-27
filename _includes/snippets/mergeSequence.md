@@ -1,0 +1,1 @@
+Indicates the precedence order of different external sources considered while merging the data. External sources are separated by the symbol ">>". <br/> Example: S1>>S2>>S3 <br/> Highest precedence is given to external source S1 followed by S2 and S3. If there is no incoming data from external source S1, then incoming data of external source S2 is merged. <br/>

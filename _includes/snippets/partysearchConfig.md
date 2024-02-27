@@ -1,0 +1,1 @@
+| [Party Domain Search App](dm_config_party_search_app.html) | [Saved Search Icon](dm_party_saved_search_icon.html) | Domain | <a href="files/configs/rock-entity-search-discovery_party.json" download> rock-entity-search-discovery_party.json</a> | Configure the icon displayed to the left of a saved search. |

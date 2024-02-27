@@ -1,0 +1,2 @@
+| binaryStreamObjectService | T0013 | Sending binary stream notification for clientURI {} and payload {} | TRACE | Has two parameters |
+| | E0039 | Unable to send binary stream notification to DAM Service as binary stream object with id {} not found | TRACE | Has two parameters |

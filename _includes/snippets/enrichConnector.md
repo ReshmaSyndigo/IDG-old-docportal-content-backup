@@ -1,0 +1,2 @@
+| Enrichment & Validation Connectors | Dun and Bradstreet | * Company Data API 2.0 <br/> * Corporate Identity API 2.0 <br/> * People Data API 2.0 <br/> * Ratings API 2.0 <br/> * Small Business API 2.0 <br/> * Get Company Comparison Data | 
+| | Smarty Streets | Local and International address validation | 

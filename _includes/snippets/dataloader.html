@@ -1,0 +1,99 @@
+The data loader tool helps you to load the data model definition in the JSON format into the application. The recommended sequence of loading the models includes Foundation, Authorization, all other models, and in the last load UI Configuration model.
+In this topic, you will find the information on where to find the data loader tool, how to use the tool to load the data models, and how to verify the data flow in Elasticsearch, Postman, or in log files to ensure that the loading of data is successful.
+
+## Load the data model
+**To load the data model into the environment**:
+
+1. Navigate to the folder, where you have cloned or downloaded the Data Loader Tool.
+2. Open the **config.js** file.
+3. Update the following details in config.js: 
+* webUrl: Provide URL of the Netty server to connect to for loading models and data.
+* templateVariables: Provide template variables and their values for each option. All template variable should be present in file content with pattern {{TEMPLATE_VARIABLE}}. Example: {{ENVNAME}}.
+  * ENVNAME - Specify the name of the AWS environment such as qa-eu1.
+  * AWSREGIONNAME - Specify the name of the region where AWS is located such as eu-central-1.  
+  * AWSCREDENTIALSTYPE - Specify the name of AWS instance profile such as AMAZON_EC2_INSTANCE_PROFILE.  
+  * TENANT - Specify the name of the tenant such as infodev.
+* scheduledtasks: Provide the name of the tenant such as infodev. This is used by "scheduledtasks" sub-folder in the data model folder to substitute the value for "TENANT" variable.
+* governancemodel: Provide the name of the tenant such as infodev. This is used by "governancemodel" sub-folder in the data model folder to substitute the value for "TENANT" variable.
+* delay: This is the wait or sleep time in milliseconds used by the data loader tool between each file load. 
+* delayBetweenModelObjects: This is the wait or sleep time in milliseconds used by the data loader tool between each folder load. 
+
+{% include callout.html content="**Note**: In case, you are facing issues during loading, you can increase the delay and delayBetweenModelObjects values, to allow more time to load objects to the servers. 
+" type="primary" %} 
+
+{% highlight json %}
+var toolConfig = {
+	"webUrl": "http://manage.qa4.riversand-dataplatform.com:8085",
+	"templateVariables": {
+	  "rsconnectprofiles": {
+		"ENVNAME": "qa-eu-central-1",
+		"AWSREGIONNAME": "eu-central-1",
+		"AWSCREDENTIALSTYPE": "AMAZON_EC2_INSTANCE_PROFILE",
+		"TENANT": "infodev"
+	  },
+	  "scheduledtasks": {
+		"TENANT": "infodev"
+	  },
+	  "governancemodel": {
+		"TENANT": "infodev"
+	  }
+	},
+	"delay": 100,
+	"delayBetweenModelObjects": 2000
+  }
+{% endhighlight %}
+{:start="4"}
+4. In "quiteLoadConfig" set the following values:
+* enabled: Specify true, to minimize the logs generated in Netty.
+* sourcePaths: Specify the comma separate list of paths from where the data model must be loaded. This is a path relative to the "Data Model Loader Tool" folder. You can also specify multiple paths from which the model must be loaded.
+* tenantId: Specify the name of the tenant such as infodev.
+* foldersToRun - Specify a comma separated list of model folder name to load. You can also specify "all", if you wish to load all the models. The recommended sequence of loading the models includes Foundation, Authorization, all other models, and in the last load UI Configuration model. Example: Load "Foundation" before "AuthorizationModel". 
+* fileNamesToRun - Specify a comma separated list of JSON file names within the folder to load only those files, instead of all the files in the folder. If you specify only folder name without file names, then all the files in that folder are loaded. However, you cannot specify only file names, you must specify the folder name too. If the specified file names does not belong to the folder, then the corresponding files are not loaded.
+* fileNamesToExclude - Specify a comma separated list of the JSON file name within the folder that you wish to exclude when loading.
+{% include callout.html content="**Note**: The folder and file names must be the exact names as used in data model folder.
+" type="primary" %}	
+{% highlight json %}
+var quiteLoadConfig = {
+	"enabled": true,
+	"sourcePath": [
+	  "../core-apps-config/",
+	  "../customer-seed-infodev/"
+	],
+	"tenantId": "infodev",
+	"loadOptions": {
+	  "foldersToRun": [
+		"uiconfig"
+	  ],
+	  "fileNamesToRun": [
+		"app-entity-discovery-admin.json"
+	  ],
+	  "fileNamesToExclude": []
+	}
+  }
+{% endhighlight %}
+{:start="6"}
+6. In the Git bash command prompt, navigate to the folder where the data loader tool is present. Execute the command **node index.js** file and enter **Yes** to confirm loading the models. If you have set "enabled" to false in "quiteLoadConfig" then, the command **node index.js** displays an interactive input in the console to enter the tenant and the folder details.  
+{% highlight json %}
+D:\git-ui\dataplatform-sampledata\dataloader>node index.js
+Enter **Yes** to confirm loading the models.
+{% endhighlight %}
+Loading status notifications appears on the screen and once it is loaded successfully, a confirmation message appears.
+
+### Verify the data load in Elasticsearch 
+You can validate data by checking the count in Elasticsearch.
+* Enter the following commands to check whether the same data has reached the Elasticsearch or not.
+{% highlight json %}
+curl elasticsearch1:9200/infodeventitymanagemodelwriteindex/entityModel/_count?pretty
+curl elasticsearch1:9200/infodeventitywriteindex/entity/_count?pretty
+curl elasticsearch1:9200/infodevconfigurationwriteindex/configObject/_count?pretty
+{% endhighlight %}
+
+{% include callout.html content="**Note**: Depending on the type of models, reference-data or configuration, the data flows to the respective elasticsearch indices. Here, the same number of Id count must reflect in Elasticsearch count.
+" type="primary" %} 
+
+### Verify the data model loaded using RESTful APIs
+You can verify the loaded data model using **Data Model Service** APIs. You can use a third party tool such as Postman to send a REST API request and view the response. See [Get Data Model](/{{ site.data.rdp_links_version.SDK}}/api_get_data_model.html){:target="_blank"}, for more information on **Get Data Model Service**.
+
+### Verify the data model loading in Logs
+When you run the load commands, the logs folder is automatically created under dataloader folder locally. You can open individual service log file to verify the process. See [Troubleshooting Tips](/{{ site.data.rdp_links_version.SDK}}/api_troubleshooting_tips.html){:target="_blank"}, for common troubleshooting tips in case of errors.
+

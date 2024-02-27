@@ -1,0 +1,74 @@
+## Scenario
+
+To add a new attribute value to "msrp" for a "SKU" entity "Polo Mens Shirt Blue_Large" in the taxonomy "Product Taxonomy".
+
+{% include snippets/header.html %}
+
+## Request
+
+{%if page.url contains "lqd" %}
+The request object for this scenario is embedded as part of the the liquid - "liquid-entity-setdata". This liquid invokes the corresponding REST API. See [Update an Entity](api_update_entity.html), for more details on the RESTful API for updating entities. In the request, send the following details:
+
+{%elsif page.url contains "api" %}
+To update the above entity, you can use the REST API {{site.data.rdp_glossary.updateentity}}. In the request send the following details:
+{% endif %}
+
+* entity: In the [entity](api_entity_object_structure.html) object, fill the details about the entity identifier, name, type, domain, tenant, and properties. In the context, specify the taxonomy as Product Taxonomy. In the attributes, include the details about new attribute value for "msrp" attribute. 
+Note: You must specify the "Taxonomy" with its external name as defined in your data model. See [Get Data Model](api_get_data_model.html).
+
+{% highlight json %}
+{ 
+  "clientId": "someguid",
+  "clientState": {
+    "someJson": {
+      
+    }
+  },
+  "entity": {
+    "id": "e1",
+    "type": "nart",
+    "data": {
+      "contexts": [{
+        "context": {
+          "taxonomy": "Product Taxonomy"
+        },
+        "attributes": {
+          "msrp": {
+            "values": [{
+              "value": "200",
+              "source": "globalSource",
+              "locale": "en-US"
+            },
+            {
+              "value": "250",
+              "source": "globalSource",
+              "locale": "de-DE"
+            }]
+          }
+        }
+      }]
+    }
+  }
+}
+{% endhighlight %} 
+
+
+## Response
+
+If the entity update request is submitted successfully, then the following response is received from update entity API:
+
+{% highlight json %}
+{
+  "request": {
+    "returnRequest": false,
+    "params": {},
+    "requestId": "bb53ca5a-1954-4d57-8e2e-4c5392cbb012"
+  },
+  "response": {
+    "status": "success",
+    "statusDetail": {
+      "message": "Entity has been submitted for update with entity Id : e1. Please check back after 1 min"
+    }
+  }
+}
+{% endhighlight %}

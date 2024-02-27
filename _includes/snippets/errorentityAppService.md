@@ -1,0 +1,6 @@
+| entityAppService &nbsp; &nbsp; &nbsp; | EA001 | Failed to process entity request {}. Verify previous log messages on the same request for additional information on the error message | ERROR | Exception stack trace is the parameter |
+| | DA001 | Action: 'getcoalesce' returned null entity for following request: {} | INFO | Context model or instance might not be correctly defined |
+| | I0040 | Add Context Instance is not enabled or Context type order not found for Context: {} | INFO | Context model or instance might not be correctly defined |
+| | I0041 | Manage Data in Context is not enabled or Context type order not found for Context: {} | INFO | Context model or instance might not be correctly defined |
+| | I0042 | Action: 'getcoalesce' returned null entity. Returning response from Action: 'get' | INFO | Context model or instance might not be correctly defined |
+| | E0329 | API Host Service Failed. Error Details: java.lang.IllegalArgumentException: Property object invalid type = JsonObject | ERROR | Property object invalid type. |

@@ -1,0 +1,3 @@
+| bulkEventService  | BEV001 | Following Bulk Event Operation Request failed: {} | ERROR | Logged on general exception within the bulk event service |
+| | BEV002 | Could not find 'restUri' or taskType: '{}' for operation type: '{}' in config: '{}' | ERROR | Specific error if specific configuration is missing |
+| | BEV003 | Could not find config for operationType: '{}' in the service: '{}' | ERROR | Error logged if the configuration is missing |

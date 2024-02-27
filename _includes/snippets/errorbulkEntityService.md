@@ -1,0 +1,3 @@
+| bulkEntityService | BE001 | Following Bulk Entity Operation Request failed: {} | ERROR | Exception stack trace is the parameter |
+| | BE002 | Could not find 'restUri' or taskType: '{}' for operation type: '{}' in config: '{}' | ERROR | First parameter is taskType, second is operation type, and third is config fetched |
+| | BE003 | Could not find config for operationType: '{}' in the service: '{}' | ERROR | First parameter is operation type and second is service name |

@@ -1,0 +1,2 @@
+| notificationManageService &nbsp; &nbsp; | I0017 | Sending notification for client {}, clientURI {} | INFO | Has two parameters |
+| | D0017 | Sending notification to clientURI {} and payload is {} | DEBUG | Has two parameters |

@@ -1,0 +1,19 @@
+## Scenario
+
+To update "MSRP" attribute value of a "SKU" entity "Polo Mens Shirt Blue_Large" in "merchandizingTaxonomy" under the classification "apparel>>mens>>shirts". 
+
+{% include snippets/header.html %}
+
+## Request
+{%if page.url contains "lqd" %}
+ 
+The request object for this scenario is embedded as part of the liquid - "liquid-entity-setdata". This liquid invokes the corresponding REST API. See [Update an Entity](api_update_entity.html), for more details on the RESTful API for updating entities. In the request, send the following details:
+
+{%elsif page.url contains "api" %}
+
+To update an entity attribute in a specific context, you can use the REST API {{site.data.rdp_glossary.updateentity}} of the Entity Data Services. See [Update an Entity](api_update_entity.html), for more details on the RESTful API for updating an entity. In the request send the following details:
+{% endif %}
+
+**To be documented**
+
+## Response

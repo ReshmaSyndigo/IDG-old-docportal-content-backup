@@ -1,0 +1,2 @@
+| binaryObjectManagerEngineService | E0001 | Failed to get object for request from storage resource | ERROR | Get object failed in the binary object engine service |
+| | E0002 | Failed to create object for request into storage resource | ERROR | Create object failed in the binary object engine service |

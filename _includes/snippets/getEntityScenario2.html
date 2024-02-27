@@ -1,0 +1,73 @@
+## Scenario
+
+To get all "sku" entities with the "msrp" attribute value equal to 200 in the taxonomy "Product Taxonomy".
+
+{% include snippets/header.html %}
+
+## Request
+
+{%if page.url contains "lqd" %}
+
+The request object for this scenario is embedded as part of the liquid - "liquid-entity-getdata". This liquid invokes the corresponding REST API. See [Get Entities](api_get_entity.html), for more details on the RESTful API for getting the entities. In the request, send the following details:
+
+{%elsif page.url contains "api" %}
+
+To get the above entities, you can use the REST API {{site.data.rdp_glossary.getentity}}. In the request send the following details:
+{% endif %}
+
+* query -> contexts: Specify the "taxonomy" as "Product Taxonomy". You must specify the "Taxonomy" with its external name as defined in your data model. See [Get Data Model](api_get_data_model.html).
+* query -> filters -> attributesCriterion: Specify attribute "mrsp" and set the criteria as "eq" (equal to) 200
+* query -> filters -> typesCriterion: Specify the entity type as "sku"
+
+{% highlight json %}
+POST **{TenantURL or ID}/api/entityservice/get**
+Headers: Content-Type: application/json
+Body:
+{
+  "params": {
+    "query": {
+      "contexts": [
+        {
+          "taxonomy": "Product Taxonomy"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ],
+        "attributesCriterion": [
+          {
+            "msrp": {
+              "eq": 200
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+{% endhighlight %}
+
+## Response
+
+Returns a list of all the "sku" entities in "Product Taxonomy" taxonomy with the "msrp" value equal to 200.
+
+{% highlight json %}
+{
+  "request": {
+    "returnRequest": false,
+    "requestId": "e8a59d23-79fb-4852-be86-466eb0742d71",
+    "maxRecords": 2000  
+  },
+  "response": {
+    "entities": [
+      {
+        "id": "e1",
+        "type": "sku"
+      }
+    ],
+    "status": "success",
+    "totalRecords": 1
+  }
+}
+{% endhighlight %}

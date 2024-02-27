@@ -1,0 +1,54 @@
+This section describes some administrative and prerequisite steps you must follow before launching the Workflow Designer.
+
+**To launch the workflow designer successfully:**
+
+<ol>
+    <li>Open <b>Internet Explorer</b> browser.</li>
+    <li>Click <b>Tools</b> > <b>Internet Options</b>.</li>
+    <p><b>Result</b>: The <b>Internet Options</b> window is displayed.</p>
+
+    {% picture prereq_wk_designer_tools_settings.png alt="Internet Options" %}
+
+    <li>Click <b>Security</b> > <b>Internet</b>, to set the Internet security settings.</li>
+
+    {% picture prereq_wk_designer_tools_settings_security_IE.png alt="Internet security settings" %}
+
+    <li>On clicking the <b>Internet</b> option, click <b>Custom level.</b></li>
+    <p><b>Result</b>: The <b>Security Setting - Internet Zone</b> dialog box is displayed with the default settings.</p>
+   
+    {% picture prereq_wk_designer_tools_settings_security_default.png alt="Security Setting - Internet Zone" %}
+    
+    <li>Under <b>Settings</b> &gt; <b>.NET&#160;Framework</b>, select <b>Enable</b> option (radio button) for <b>Loose XAML</b>, <b>XAML&#160;browser applications</b>, and <b>XPS documents</b>.</li>
+   
+    {% picture prereq_wk_designer_tools_settings_security_IE_XAML.png alt="XAML Settings" %}
+    
+    <li>Under <b>Settings</b> &gt; <b>Downloads</b>, select <b>Enable</b> option (radio button) for <b>File download</b>, <b>Font download</b>, and <b>Enable .NET Framework setup</b>.</li>
+   
+    {% picture prereq_wk_designer_tools_settings_security_IE_download.png alt="IE Download" %}
+    <li>Click <b>OK</b>&#160;to save internet security settings.</li>
+    <li>Click <b>Security</b> &gt; <b>Trusted Sites</b>, to set the security settings for trusted sites</li>
+    {% picture prereq_wk_designer_tools_settings_security.png alt="Trusted Sites Security" %}
+    <li>On clicking the <b>Trusted sites</b>, click <b>Custom level</b>.</li>
+    <p><b>Result</b>: The <b>Security Setting - Trusted Sites Zone</b> dialog box is displayed with the default settings.</p>
+    {% picture wk-trusted-sites.png alt="Security Setting - Trusted Sites Zone" %}
+    <li> Under <b>Settings</b> &gt; <b>.NET&#160;Framework</b>, select <b>Enable</b> option (radio button) for <b>Loose XAML</b>, <b>XAML&#160;browser applications</b>, and <b>XPS documents</b></li>
+    {% picture wk-trusted-sites-dialog.png alt="XAML Setting" %}
+    <li>Under <b>Settings</b> &gt; <b>Downloads</b>, select <b>Enable</b> option (radio button) for <b>File download</b>, <b>Font download</b>, and <b>Enable .NET Framework sites</b>.</li>
+    {% picture wk-trusted-sites-dialog-box.png alt="Trusted Sites Security" %}
+    <li>Click <b>OK</b>&#160;to save security settings on trusted sites.</li>
+    <li>Click <b>Security</b> &gt; <b>Trusted Sites</b>, to set the trusted sites.</li>
+    {% picture prereq_wk_designer_tools_settings_security_trustedsites.png alt="Trusted Sites Security Setting" %}
+    <li>Click <b>Sites</b></li>
+    <p><b>Result</b>: The <b>Trusted sites</b> dialog box is displayed with default settings.</p>
+    {% picture prereq_wk_designer_tools_settings_security_trustedsites_dialog.png alt="Trusted Sites" %}
+    <li>To include current URL of the MDM application to the zone, enter the website address (URL) (example https://mahiweb12), and then click <b>Add</b>.</li>
+    <p><b>Result</b>: The newly added website URL is displayed in <b>Websites</b> list.</p>
+    <li>Click <b>Close</b> to close the <b>Trusted sites</b> dialog box.</li>   
+    <li>Click <b>OK</b> on exit the <b>Internet Options</b> window.</li>
+</ol>
+
+{% include callout.html content="**Notes**: 
+* Make sure to close your Internet Explorer browser and re-open the browser. Then, navigate to the Workflow Designer page. A few warnings produced while processing might appear. Select <b>Yes</b> to continue and it opens the Workflow Designer page.
+* If you see any errors related to user permission, then install the appropriate version software from https://www.microsoft.com/en-us/download/details.aspx?id=30709. Make sure you install 64 or 32-Bit based on your operating system.
+* On completing the installation, restart Internet Explorer again. Note that this resolution works on Internet Explorer, because the Workflow Designer is a Microsoft Component.
+" type="primary" %}

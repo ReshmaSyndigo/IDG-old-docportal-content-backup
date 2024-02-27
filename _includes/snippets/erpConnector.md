@@ -1,0 +1,1 @@
+| ERP Connectors | Net Suite | Customer lookup, Customer UPSERT, Order UPSERT | 

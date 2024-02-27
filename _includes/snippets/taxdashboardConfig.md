@@ -1,0 +1,1 @@
+| [Taxonomy & Classifications App](dm_config_tax_model_app.html) | [Access to Summary Details - Attributes Widget](dm_config_tax_summary_details.html) | Tenant | <a href="files/configs/rock-taxonomymodel-dashboard-widgets_tenant.json" download> rock-taxonomymodel-dashboard-widgets_tenant.json </a> | Set the visibility as required. |
