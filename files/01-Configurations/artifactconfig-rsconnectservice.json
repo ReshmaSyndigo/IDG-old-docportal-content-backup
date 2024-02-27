@@ -1,0 +1,40 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rsConnectService-import_artifactConfig",
+            "name": "rsConnectService-import",
+            "type": "artifactConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "_UNASSIGNED",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "_UNASSIGNED",
+                "createdDate": "2019-12-08T23:54:01.194-0600",
+                "modifiedDate": "2019-12-08T23:54:01.194-0600"
+            },
+            "data": {
+                "jsonData": {
+                    "components": {
+                        "recordExtractors": {
+                            "HUBSTATUSEXCEL": {
+                                "artifact": "hub-commonlib-1.0.0.jar",
+                                "className": "com.riversand.connectors.commonlib.extractors.HubStatusExcelExtractor"
+                            }
+                        },
+                        "recordLoaders": {
+                            "HUBSTATUSJSON": {
+                                "artifact": "hub-commonlib-1.0.0.jar",
+                                "className": "com.riversand.connectors.commonlib.loaders.HubStatusExcelLoader"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
