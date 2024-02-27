@@ -1,0 +1,23 @@
+{
+  "params": {
+    "query": {
+      "id": "Xml_Import_Azure_Blob_Container_PIES",
+      "contexts": [
+        {
+          "app": "RSConnect"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "integrationprofile"
+        ],
+        "excludeNonContextual": true
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    }
+  }
+}

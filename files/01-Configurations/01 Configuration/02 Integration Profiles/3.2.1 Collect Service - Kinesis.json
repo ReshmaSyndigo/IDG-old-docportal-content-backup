@@ -1,0 +1,20 @@
+{
+  "dataObject": {
+    "id": "9b155bf0-0f2e-11e7-be23-5bce07cdca32",
+    "dataObjectInfo": {
+      "dataObjectType": "entityjson"
+    },
+    "properties": {
+      "createdByService": "RDP",
+      "createdBy": "rdpuser",
+      "createdDate": "2017-04-16T18:33:52.412-07:00",
+      "service": "ENTITY_IMPORT",
+      "channel": "Kinesis",
+      "format": "JSON",
+      "source": "internal"
+    },
+    "data": {
+      "blob": ""
+    }
+  }
+}

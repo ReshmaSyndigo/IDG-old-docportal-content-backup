@@ -1,0 +1,23 @@
+{
+  "params": {
+    "query": {
+      "contexts": [
+        {
+          "app": "RSConnect",
+          "service": "ENTITY_IMPORT"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "integrationprofile"
+        ],
+        "excludeNonContextual": true
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    }
+  }
+}

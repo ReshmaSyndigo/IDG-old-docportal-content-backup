@@ -1,0 +1,22 @@
+{
+  "params": {
+    "query": {
+      "contexts": [
+        {
+          "app": "RSConnect"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "integrationprofile"
+        ],
+        "excludeNonContextual": true
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    }
+  }
+}
