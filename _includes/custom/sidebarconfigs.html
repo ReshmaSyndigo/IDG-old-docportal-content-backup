@@ -1,0 +1,47 @@
+{% if page.sidebar == "home_sidebar" %}
+{% assign sidebar = site.data.sidebars.home_sidebar %}
+
+{% elsif page.sidebar == "product1_sidebar" %}
+{% assign sidebar = site.data.sidebars.product1_sidebar %}
+
+{% elsif page.sidebar == "product2_sidebar" %}
+{% assign sidebar = site.data.sidebars.product2_sidebar %}
+
+{% elsif page.sidebar == "mydoc_sidebar" %}
+{% assign sidebar = site.data.sidebars.mydoc_sidebar %}
+
+{% elsif page.sidebar == "rdp_sidebar" %}
+{% assign sidebar = site.data.sidebars.rdp_sidebar %}
+
+{% else %}
+{% assign sidebar = site.data.sidebars.home_sidebar %}
+{% endif %}
+
+{% assign the_sidebar = "sidebar_menu_list_items.liquid" %}
+
+{% comment %}
+sidebar configuration for print files
+{% endcomment %}
+
+{% if site.product == "mydoc" %}
+{% assign sidebar_pdf = site.data.sidebars.mydoc_sidebar %}
+{% endif %}
+
+{% if site.product == "product1" %}
+{% assign sidebar_pdf = site.data.sidebars.product1_sidebar %}
+{% endif %}
+
+{% if site.product == "product2" %}
+{% assign sidebar_pdf = site.data.sidebars.product2_sidebar %}
+{% endif %}
+
+{% assign controllers = '' | split: '' %}
+{% for pg in site.pages %}
+    {% if pg.folder == page.folder %}
+        {% assign controllerName = pg.url | split: ' '  %}
+        {% assign controllers = controllers | concat: controllerName %}
+    {% elsif page.folder contains pg.folder %}
+        {% assign controllerName = pg.url | split: ' '  %}
+        {% assign controllers = controllers | concat: controllerName %}  	
+    {% endif %}
+{% endfor %}
