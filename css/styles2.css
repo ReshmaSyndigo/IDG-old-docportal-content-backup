@@ -1,0 +1,109 @@
+﻿label
+{
+    padding-left: 1.25rem;
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding-bottom:8px;
+}
+
+ul.ui-autocomplete.ui-menu{
+    padding-top:15px;
+}
+
+.ui-widget-content {
+    background: #fff !important;
+    border: 1px solid #dddddd;
+    color: #333333;
+}
+.ui-widget {
+    font-family: "Lato",sans-serif !important;
+    font-size: 14px !important;
+    line-height: 24px;
+    text-align: left;
+    }
+.ui-autocomplete 
+{ 
+	height: 200px; 
+	overflow-y: scroll; 
+	overflow-x: hidden;
+	width: calc(100% - 120px) !important;
+    position: absolute !important;
+    z-index: 10000;
+	padding:10px !important;
+	margin:10px;
+	
+	}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #cbdce8 !important;
+	background: #cbdce8 !important;  
+	font-weight: normal !important;
+	color: #2b5486 !important;
+}
+
+.ui-widget-header 
+{
+    background: #39a2cc !important;
+    border: 1px solid #e4ebf0 !important;
+    color: #ffffff;
+    font-weight: bold;
+ }
+.ui-state-default .ui-icon 
+{
+    background-image: url('images/ui-icons_228ef1_256x240.png') !important;
+}
+.ui-menu .ui-menu-item 
+{
+   padding: 3px 1px 5px 5px !important;
+   }
+.dialog 
+{
+    display:none;
+}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front 
+{
+    border-radius: 0 !important;
+}
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
+    border-radius: 0 !important;
+}
+.ui-dialog .ui-dialog-content 
+{
+	padding: 1px 0 !important;
+}
+.ui-dialog .ui-dialog-titlebar 
+{
+    padding: 2px 1px !important;
+    }
+.ui-dialog .ui-dialog-title 
+{
+    padding-left: 5px;
+    }
+em {
+	font-family: Tahoma;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: underline; 
+	border: 0px currentColor; 
+	vertical-align: baseline; 
+	box-sizing: border-box; 
+	font-size-adjust: inherit; 
+	font-stretch: inherit; 
+	-ms-text-size-adjust: 100%; 
+	-webkit-font-smoothing: antialiased; 
+	-webkit-text-size-adjust: 100%; 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+}
+.ui-widget-overlay.ui-front 
+{
+	background-image:none !important;
+}
+
+.dialogText:hover {
+          background-color: #cde3eb;
+    }

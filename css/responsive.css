@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+@media (min-width: 1200px) {
+	
+}
+@media screen and (max-width:994px){
+}
+@media screen and (max-width:1055px){
+}
+
+@media screen and (max-width:900px){
+}
+@media screen and (max-width:768px){
+	.post-content h2.post-title-main, .post-content h2,
+	.post-title-main, .post-content h1.post-title-main, .post-content h1 {
+    font-size: 20px !important;
+	}
+	.post-content ol li, .post-content ul li,
+	.post-content figure, .post-content p{
+		font-size: 14px;
+	}
+	.right-side,
+	.left-side{
+		width: 100%;
+		height: auto;
+	}
+	#collapse-expand{
+		display: none;
+	}
+	.breadcrumbs > ul > li{
+		line-height: normal;
+	}
+	.breadcrumbs{
+		margin-top: 10px;
+	}
+	.right-panel{
+		width:100%;
+		max-width:inherit;
+		height:auto;
+		display:inline-block;
+		position:static;
+	}
+	.left-panel .welocme-block{
+		padding:15px;
+	}
+	.left-panel .welocme-block figcaption{
+		padding:0;
+	}
+	.left-panel .welocme-block figure {
+		margin-top: 20px;
+		position: static;
+		text-align: center;
+		transform: none;
+		width: 100%;
+	}
+	.left-panel .welocme-block p,
+	.left-panel .welocme-block h2{
+		text-align:center;
+		padding:0;
+	}
+	#paragraphs > div.cascade-div-selected .big-info{
+		padding:30px 15px;
+	}
+	#paragraphs > div h2{
+		font-size:20px;
+	}
+	#paragraphs > div p{
+		font-size:16px;
+	}
+	#paragraphs > div.cascade-div-selected .big-info a{
+		font-size: 16px;
+		padding: 0 42px 0 22px;
+	}
+	.nav-content-holder > div > ul{
+		display:block;
+	}
+	.nav-content-holder > div > ul > li{
+		width:100%;
+		margin-bottom:20px;
+	}
+	header .language-holder,
+	.after-login-holder,
+	header .contact-holder{
+		transform:none;
+	}
+	header .after-login-holder{
+		float: left;
+	}
+	header .contact-holder{
+		float: right;
+	}
+	header .others-holders {
+		display: inline-block;
+		float: none;
+		position: static;
+		width: 100%;
+		margin-top:15px;
+	}
+	header .logo-holder {
+		display: inline-block;
+		float: none;
+		height: auto;
+		position: static;
+		transform: none;
+	}
+	header{
+		padding-top:10px;
+		text-align: center;
+	}
+	#parentHorizontalTab ul.resp-tabs-list{
+		display:none;
+	}
+	.other-infos,
+	.side-nav{
+		width:100%;
+	}
+	#developerTab .resp-tabs-list{
+		display:none;
+	}
+	.sp-table{
+		overflow-x:scroll
+	}
+	.sp-table .table{
+		min-width:800px;
+	}
+	#developerTab .table td, #developerTab .table th,
+	#developerTab .resp-tab-content table thead tr th:nth-child(1),
+	#developerTab .resp-tab-content table thead tr th:nth-child(2),
+	#developerTab .resp-tab-content table tbody tr td{
+		padding:15px;
+	}
+	.get-ul li{
+		width:50%;
+	}
+
+	#top-banner .up-info {
+		width: 100%;
+		display: block;
+		position: relative;
+		left: 0;
+		top: 0;
+		transform: none;
+		margin: 0;
+		color: #FFF;
+		font-size: 24px;
+		z-index: 22;
+		padding: 10px 0;
+	}
+	#top-banner img {
+	width: auto;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.padding-content .get-content h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.38;
+	text-align: left;
+	color: #000;
+	margin: 0 0 15px 0;
+}
+.padding-content .get-content {
+	margin-bottom: 10px;
+}
+.site-footer h2 {
+	padding: 25px 0 15px;
+}
+.footer-widgets > .row {
+	margin: 0;
+}
+.footer-widgets > .row.logo {
+	margin: 25px 0 !important;
+}
+.breadcrumbs > ul{
+	display: none !important;
+}
+.post-content table td, .post-content table th,
+.form-half .cont-primary,
+.post-content strong, .post-content b,
+.post-content a,
+.post-content ol li, .post-content ul li,
+.post-content figure, .post-content p{
+	font-size: 14px !important;
+}
+#see-also{
+	font-size: 16px !important;
+}
+#openFeedbackContainer{
+	z-index: 99999;
+}
+.panel-body {
+	font-size: 14px;
+}
+div.pp_default .pp_expand{
+	display: none !important;
+}
+.contactus-container {
+	margin-top: 20px;
+}
+.contact-header h2 {
+	text-align: center;
+	font-size: 18px;
+	margin: 0 0 20px 0;
+}
+.form-half label {
+	font-size: 14px;
+}
+.after-login-holder .dropdown-menu {
+	left: 0;
+	right: inherit;
+}
+#results-ul-container{
+	max-height: 200px;
+}
+.dropdown-menu{
+	max-height: 200px !important;
+}
+.left-search {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	min-height: 30px;
+	float: none;
+	background: #FFF;
+	margin:0;
+}
+.search-full-box
+{
+    margin:0px !important;
+}
+.loop-box h4
+{
+    font-size:16px;
+}
+.sidebarTitle .dropdown-menu
+{
+    z-index:99999999;
+}
+}
+@media screen and (max-width:500px){
+}
+@media screen and (max-width:340px){
+}
