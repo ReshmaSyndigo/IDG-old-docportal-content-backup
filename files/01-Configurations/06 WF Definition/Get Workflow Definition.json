@@ -1,0 +1,25 @@
+{
+  "params": {
+    "query": {
+      "contexts": [
+        {
+          "self": "self/newProductSetup_workflowDefinition"
+        }
+      ],
+      "id": "newProductSetup_workflowDefinition",
+      "filters": {
+        "typesCriterion": [
+          "workflowDefinition"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    }
+  }
+}

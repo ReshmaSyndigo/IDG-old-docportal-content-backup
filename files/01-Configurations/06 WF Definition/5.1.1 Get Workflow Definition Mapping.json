@@ -1,0 +1,25 @@
+{
+  "params": {
+    "query": {
+      "contexts": [
+        {
+          "self": "self/sku_workflowDefinitionMapping"
+        }
+      ],
+      "id": "sku_workflowDefinitionMapping",
+      "filters": {
+        "typesCriterion": [
+          "workflowDefinitionMapping"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    }
+  }
+}
