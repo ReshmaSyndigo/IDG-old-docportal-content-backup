@@ -1,0 +1,78 @@
+{
+                "id": "1WS_Scheduled_XML_Data_Publish",
+                "name": "1WS_Scheduled_XML_Data_Publish",
+                "type": "integrationprofile",
+                "data": {
+                    "contexts": [
+                        {
+                            "context": {
+                                "app": "RSConnect",
+                                "service": "ENTITY_EXPORT",
+                                "channel": "1WS_SCHEDULE_JOB",
+                                "format": "XML",
+                                "source": "internal",
+                                "role": "admin",
+                                "user": "system",
+                                "subtype": "System",
+                                "order": "10"
+                            },
+                            "jsonData": {
+                                "transform": {
+                                    "settings": {
+                                        "nullRecordTransformer": "true"
+                                    }
+                                },
+                                "integrationType": "System",
+                                "isEnabled": "true",
+                                "publish": {
+                                    "filter": {
+                                        "include": {},
+                                        "exclude": {}
+                                    },
+                                    "channel": [
+                                        {
+                                            "settings": {},
+                                            "type": "folderConnector"
+                                        }
+                                    ],
+                                    "format": {
+                                        "settings": {},
+                                        "type": "RSJSON",
+                                        "batchSize": 1,
+                                        "version": "1.1"
+                                    },
+                                    "isDataPersistent": "false"
+                                },
+                                "collect": {
+                                    "filter": {
+                                        "include": {},
+                                        "exclude": {}
+                                    },
+                                    "channel": [
+                                        {
+                                            "settings": {
+                                                "scheduledPublish": true
+                                            },
+                                            "type": "genericObjectConnector"
+                                        }
+                                    ],
+                                    "format": {
+                                        "settings": {
+                                            "additionalSettings": {
+                                                "supportsCollection": "false",
+                                                "encoding": "utf8",
+                                                "publishSyndicationProfile": "1WS_SFTP_XML_Export_ItemAddRel",
+                                                "includeRelatedEntities": "false"
+                                            }
+                                        },
+                                        "type": "RSJSON",
+                                        "batchSize": 1,
+                                        "version": "1.1"
+                                    },
+                                    "isDataPersistent": "false"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }

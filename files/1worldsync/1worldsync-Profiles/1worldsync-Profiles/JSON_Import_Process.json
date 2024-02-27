@@ -1,0 +1,84 @@
+{
+    "id": "JSON_Import_Process",
+    "name": "JSON_Import_Process",
+    "type": "integrationprofile",
+    "data": {
+        "contexts": [
+            {
+                "context": {
+                    "app": "RSConnect",
+                    "service": "ENTITY_IMPORT",
+                    "channel": "FOLDER",
+                    "format": "JSON",
+                    "source": "internal",
+                    "role": "admin",
+                    "user": "system",
+                    "subtype": "System",
+                    "order": "10"
+                },
+                "jsonData": {
+                    "integrationType": "System",
+                    "isEnabled": "true",
+                    "collect": {
+                        "isDataPersistent": "true",
+                        "channel": [
+                            {
+                                "type": "folderConnector",
+                                "settings": {
+                                    "sourceFolder": "",
+                                    "pattern": ""
+                                }
+                            }
+                        ],
+                        "format": {
+                            "type": "RSJSON",
+                            "version": "1.1",
+                            "settings": {
+                                "additionalSettings": {
+                                    "encoding": "utf8",
+                                    "dateTimeFormat": "yyyy-MM-dd"
+                                }
+                            }
+                        },
+                        "filter": {
+                            "include": {},
+                            "exclude": {}
+                        }
+                    },
+                    "publish": {
+                        "isDataPersistent": "false",
+                        "channel": [
+                            {
+                                "type": "rdpConnector",
+                                "settings": {
+                                    "type": "RSJSON",
+                                    "version": "1.1"
+                                }
+                            }
+                        ],
+                        "format": {
+                            "type": "RSJSON",
+                            "version": "1.1",
+                            "batchSize": 1,
+                            "settings": {
+                                "additionalSettings": {
+                                    "encoding": "utf8",
+                                    "dateTimeFormat": "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+                                }
+                            }
+                        },
+                        "filter": {
+                            "include": {},
+                            "exclude": {}
+                        }
+                    },
+                    "transform": {
+                        "settings": {
+                            "nullRecordTransformer": "true"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

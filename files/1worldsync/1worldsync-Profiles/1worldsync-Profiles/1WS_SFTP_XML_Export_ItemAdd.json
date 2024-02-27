@@ -1,0 +1,419 @@
+{
+                "id": "1WS_SFTP_XML_Export_ItemAdd",
+                "name": "1WS_SFTP_XML_Export_ItemAdd",
+                "type": "integrationprofile",
+                "data": {
+                    "contexts": [
+                        {
+                            "context": {
+                                "app": "RSConnect",
+                                "service": "ENTITY_EXPORT",
+                                "channel": "1WSITEMADD",
+                                "format": "XML",
+                                "source": "internal",
+                                "role": "admin",
+                                "user": "system",
+                                "subtype": "System",
+                                "order": "10"
+                            },
+                            "jsonData": {
+                                "integrationType": "System",
+                                "isEnabled": "true",
+                                "collect": {
+                                    "isDataPersistent": "false",
+                                    "channel": [
+                                        {
+                                            "type": "rdpConnector",
+                                            "settings": {
+                                                "type": "RSJSON",
+                                                "version": "1.1",
+                                                "requestforvaluemapping": "true",
+                                                "includeParent": "false",
+                                                "includeChildren": "false",
+                                                "includeSiblings": "false",
+                                                "includeRelatedEntityExternalIds": "false",
+                                                "includeRelatedEntities": "false",
+                                                "includeRelatedEntitiesRecursive": "true"
+                                            }
+                                        }
+                                    ],
+                                    "format": {
+                                        "settings": {
+                                            "xmlSettings": {
+                                                "xmlElements": [
+                                                    {
+                                                        "name": "Entities/Entity",
+                                                        "nodePath": "Entity",
+                                                        "dataInfo": "entity",
+                                                        "type": "@field(type)"
+                                                    }
+                                                ],
+                                                "relationshipParents": {
+                                                    "relationship": "Entity/Relationships"
+                                                },
+                                                "xsdFileId": [
+                                                    "piesxml_schema"
+                                                ],
+                                                "xsdVersion": [
+                                                    "RSXML4.5"
+                                                ],
+                                                "xmlVersionSource": "Date/Schema",
+                                                "readHeaderInformation": true,
+                                                "rootLine": "<Data Schema=\"RSXML4.5\" xmlns=\"http://schemas.riversand.com/mdmcenter\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://schemas.riversand.com/mdmcenter/RSXml4.5.xsd\">"
+                                            },
+                                            "additionalSettings": {
+                                                "isGetCoalesce": true,
+                                                "isGetNearestAPI": false,
+                                                "dateTimeFormat": "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+                                                "encoding": "utf8",
+                                                "isRelatedEntityGetCoalesce": true
+                                            }
+                                        },
+                                        "type": "RSJSON",
+                                        "batchSize": 100,
+                                        "version": "1.1"
+                                    },
+                                    "filter": {
+                                        "include": {
+                                            "typesCriterion": {
+                                                "case": {
+                                                    "queryFields": {
+                                                        "attributes": [
+                                                            "_ALL"
+                                                        ],
+                                                        "relatedEntitiesRelationships": [
+                                                            "casecontains"
+                                                        ]
+                                                    }
+                                                },
+                                                "pallet": {
+                                                    "queryFields": {
+                                                        "attributes": [
+                                                            "_ALL"
+                                                        ],
+                                                        "relatedEntitiesRelationships": [
+                                                            "palletcontains"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "exclude": {}
+                                    }
+                                },
+                                "publish": {
+                                    "isDataPersistent": "false",
+                                    "channel": [
+                                        {
+                                            "type": "sftpConnector",
+                                            "host": "13.84.151.56",
+                                            "settings": {
+                                                "username": "wsftp",
+                                                "password": "AG4rv5S8ujqeaug6",
+                                                "port": 22,
+                                                "keyPath": "",
+                                                "remotePath": "/",
+                                                "fileType": "xml"
+                                            }
+                                        }
+                                    ],
+                                    "format": {
+                                        "type": "XML",
+                                        "batchSize": 1,
+                                        "version": "1.0",
+                                        "settings": {
+                                            "xmlSettings": {
+                                                "xmlElements": [
+                                                    {
+                                                        "name": "Entities/Entity",
+                                                        "nodePath": "Entity",
+                                                        "dataInfo": "entity",
+                                                        "type": "@field(type)"
+                                                    }
+                                                ],
+                                                "relationshipParents": {
+                                                    "relationship": "Entity/Relationships"
+                                                },
+                                                "xsdFileId": [
+                                                    "rsxml_schema"
+                                                ],
+                                                "xsdVersion": [
+                                                    "RSXML4.5"
+                                                ],
+                                                "xmlVersionSource": "Date/Schema",
+                                                "readHeaderInformation": true,
+                                                "rootLine": "<Data Schema=\"RSXML4.5\" xmlns=\"http://schemas.riversand.com/mdmcenter\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://schemas.riversand.com/mdmcenter/RSXml4.5.xsd\">"
+                                            },
+                                            "extractToCollect": false,
+                                            "additionalSettings": {
+                                                "encoding": "utf8",
+                                                "bulkLoadProfile": "downloadAssetsFromURL",
+                                                "supportsCollection": "false",
+                                                "includeJobDetails": "false",
+                                                "splitRelationships": "true"
+                                            }
+                                        },
+                                        "httpSettings": {
+                                            "bulkLoadAttributes": [
+                                                "URI"
+                                            ],
+                                            "sourceDetailAttributes": [],
+                                            "additionalSettings": {
+                                                "keyValuSeperator": "#=#",
+                                                "attributeSeperator": "#;#"
+                                            }
+                                        }
+                                    },
+                                    "filter": {
+                                        "include": {},
+                                        "exclude": {}
+                                    }
+                                },
+                                "transform": {
+                                    "settings": {
+                                        "entityType": "@field(type)",
+                                        "defaultEntityType": "each",
+                                        "enableDynamicMapping": "true",
+                                        "allowNullValues": "false",
+                                        "clearMissingAttributes": "false",
+                                        "manageSelfDataInContext": true,
+                                        "loadDefaultOverrides": true,
+                                        "collectionSeparator": "||",
+                                        "getFullClassificationPath": true,
+                                        "strategies": [
+                                            {
+                                                "useExternalName": "true",
+                                                "caseFormat": "NONE",
+                                                "removeSpecialCharacters": "false",
+                                                "removeWhitespace": "false",
+                                                "trimLeadingNumbers": "false",
+                                                "trimTrailingNumbers": "false",
+                                                "isDefault": "false"
+                                            }
+                                        ]
+                                    },
+                                    "contexts": [
+                                        {
+                                            "context": {
+                                                "classification": "@fieldExternalName(classification)",
+                                                "taxonomy": "@fieldExternalName(taxonomy)"
+                                            }
+                                        }
+                                    ],
+                                    "fieldMap": [
+                                        {
+                                            "source": "@leafClassification(classification,true)",
+                                            "destination": "@xmlNodeAttr(Entity,CategoryName)",
+                                            "entityType": "each",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        },
+                                        {
+                                            "source": "@leafClassification(classification,true)",
+                                            "destination": "@xmlNodeAttr(Entity,CategoryName)",
+                                            "entityType": "case",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        },
+                                        {
+                                            "source": "@leafClassification(classification,true)",
+                                            "destination": "@xmlNodeAttr(Entity,CategoryName)",
+                                            "entityType": "pallet",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        },
+                                        {
+                                            "source": "@value(ITEM ADD)",
+                                            "destination": "@xmlCdataElement(Entity/Attributes/Attribute[@Name='OneWS_operationType']/Values/Value);@xmlNodeAttr(Entity/Attributes/Attribute[@Name='OneWS_operationType'],LongName,Operation Type);@xmlNodeAttr(Entity/Attributes/Attribute[@Name='OneWS_operationType'],AttributeParentName,OneWS_Global Attributes);@xmlLocaleAttr(Locale,en-US);@xmlAttr(Action,Create)",
+                                            "entityType": "pallet",
+                                            "required": true,
+                                            "enabled": true,
+                                            "locale": "en-US"
+                                        },
+                                        {
+                                            "source": "@attr(onewsgpcbrickattributes)",
+                                            "destination": "@xmlParentNodeAttr(Name=OneWS_gpcBrickAttributes,LongName=GPC Brick Attributes,AttributeParentName=OneWS_CatalogueItemNotification,AttributeDataType=Hierarchical,AttributeType=Complex);@xmlGroupNodeAttr(AttributeDataType=Hierarchical,AttributeParentName=OneWS_CatalogueItemNotification,AttributeType=Complex,Name=OneWS_gpcBrickAttributes Instance Record,Sequence='-1')",
+                                            "entityType": "pallet",
+                                            "type": "nested",
+                                            "isNestedConnectionType": true,
+                                            "required": true,
+                                            "enabled": true,
+                                            "locale": "en-US",
+                                            "childFieldMappings": [
+                                                {
+                                                    "source": "@attr(onewsgpcbrickattributes.group[%d].onewsgpcbrickcode)",
+                                                    "destination": "@xmlChildNodeAttr(AttributeParentName=OneWS_gpcBrickAttributes,LongName=GPC Brick Code,Name=OneWS_gpcBrickCode);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewsgpcbrickattributes.group[%d].onewsgpcbrickattributevalues)",
+                                                    "destination": "@xmlParentNodeAttr(AttributeDataType=Hierarchical,AttributeParentName=OneWS_gpcBrickAttributes,AttributeType=ComplexCollection,LongName=GPC Brick Attribute Values,Name=OneWS_gpcBrickAttributeValues);@xmlGroupNodeAttr(AttributeDataType=Hierarchical,AttributeParentName=OneWS_gpcBrickAttributes,AttributeType=ComplexCollection,LongName=GPC Brick Attribute Values Instance Record,Name=OneWS_gpcBrickAttributeValues Instance Record,Sequence='-1');",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewsgpcbrickattributes.group[%d].onewsgpcbrickattributevalues.group[%d].onewsgpcbrickattribute)",
+                                                    "destination": "@xmlChildNodeAttr(AttributeParentName=OneWS_gpcBrickAttributeValues,LongName=GPC Brick Attribute,Name=OneWS_gpcBrickAttribute);@xmlValue(Locale=en-US,Action=Create);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewsgpcbrickattributes.group[%d].onewsgpcbrickattributevalues.group[%d].onewsgpcbrickattributename)",
+                                                    "destination": "@xmlChildNodeAttr(AttributeParentName=OneWS_gpcBrickAttributeValues,LongName=GPC Brick Attribute Name,Name=OneWS_gpcBrickAttributeName);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewsgpcbrickattributes.group[%d].onewsgpcbrickattributevalues.group[%d].onewsgpcbrickattributedef)",
+                                                    "destination": "@xmlChildNodeAttr(AttributeParentName=OneWS_gpcBrickAttributeValues, LongName=GPC Brick Attribute Definition,Name=OneWS_gpcBrickAttributeDef);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewsgpcbrickattributes.group[%d].onewsgpcbrickattributevalues.group[%d].onewsgpcbrickattributevalue)",
+                                                    "destination": "@xmlChildNodeAttr(AttributeParentName=OneWS_gpcBrickAttributeValues, LongName=GPC Brick Attribute Value,Name=OneWS_gpcBrickAttributeValue);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewsgpcbrickattributes.group[%d].onewsgpcbrickattributevalues.group[%d].onewsgpcbrickattributevaluename)",
+                                                    "destination": "@xmlChildNodeAttr(AttributeParentName=OneWS_gpcBrickAttributeValues, LongName=GPC Brick Attribute Value Name,Name=OneWS_gpcBrickAttributeValueName);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "relationships": {
+                                        "fieldMap": [
+                                            {
+                                                "source": "@relTo(casecontains, id)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToExternalId)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(Case Contains)",
+                                                "destination": "@xmlNodeAttr(Relationship,RelationshipTypeName)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(1WorldSync)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToContainerName)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relTo(casecontains, type)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToEntityTypeName)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(Create)",
+                                                "destination": "@xmlNodeAttr(Relationship,Action)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relProperty(casecontains, direction)",
+                                                "destination": "@xmlNodeAttr(Relationship,Direction)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relAttr(casecontains,onewslinkquantity)",
+                                                "destination": "@xmlCdataElement(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity']/Values/Value);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],LongName,Link Quantity);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],AttributeParentName,OneWS_packagingAttributes);@xmlLocaleAttr(Locale);@xmlAttr(Action,Create)",
+                                                "entityType": "casecontains",
+                                                "enabled": true,
+                                                "locale": "en-US"
+                                            },
+                                            {
+                                                "source": "@relTo(palletcontains, id)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToExternalId)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(Pallet Contains)",
+                                                "destination": "@xmlNodeAttr(Relationship,RelationshipTypeName)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(1WorldSync)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToContainerName)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relTo(palletcontains, type)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToEntityTypeName)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(Create)",
+                                                "destination": "@xmlNodeAttr(Relationship,Action)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relProperty(palletcontains, direction)",
+                                                "destination": "@xmlNodeAttr(Relationship,Direction)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relAttr(palletcontains,onewslinkquantity)",
+                                                "destination": "@xmlCdataElement(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity']/Values/Value);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],LongName,Link Quantity);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],AttributeParentName,OneWS_packagingAttributes);@xmlLocaleAttr(Locale);@xmlAttr(Action,Create)",
+                                                "entityType": "palletcontains",
+                                                "enabled": true,
+                                                "locale": "en-US"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }

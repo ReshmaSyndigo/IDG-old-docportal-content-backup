@@ -1,0 +1,518 @@
+{
+                "id": "1WS_SFTP_XML_Export_ItemPublish",
+                "name": "1WS_SFTP_XML_Export_ItemPublish",
+                "type": "integrationprofile",
+                "data": {
+                    "contexts": [
+                        {
+                            "context": {
+                                "app": "RSConnect",
+                                "service": "ENTITY_EXPORT",
+                                "channel": "1WSITEMPUBLISH",
+                                "format": "XML",
+                                "source": "internal",
+                                "role": "admin",
+                                "user": "system",
+                                "subtype": "System",
+                                "order": "10"
+                            },
+                            "jsonData": {
+                                "integrationType": "System",
+                                "isEnabled": "true",
+                                "collect": {
+                                    "isDataPersistent": "false",
+                                    "channel": [
+                                        {
+                                            "type": "rdpConnector",
+                                            "settings": {
+                                                "type": "RSJSON",
+                                                "version": "1.1",
+                                                "requestforvaluemapping": "true",
+                                                "includeParent": "false",
+                                                "includeChildren": "false",
+                                                "includeSiblings": "false",
+                                                "includeRelatedEntityExternalIds": "false",
+                                                "includeRelatedEntities": "false",
+                                                "includeRelatedEntitiesRecursive": "false"
+                                            }
+                                        }
+                                    ],
+                                    "format": {
+                                        "settings": {
+                                            "xmlSettings": {
+                                                "xmlElements": [
+                                                    {
+                                                        "name": "Entities/Entity",
+                                                        "nodePath": "Entity",
+                                                        "dataInfo": "entity",
+                                                        "type": "@field(type)"
+                                                    }
+                                                ],
+                                                "relationshipParents": {
+                                                    "relationship": "Entity/Relationships"
+                                                },
+                                                "xsdFileId": [
+                                                    "piesxml_schema"
+                                                ],
+                                                "xsdVersion": [
+                                                    "RSXML4.5"
+                                                ],
+                                                "xmlVersionSource": "Date/Schema",
+                                                "readHeaderInformation": true,
+                                                "rootLine": "<Data Schema=\"RSXML4.5\" xmlns=\"http://schemas.riversand.com/mdmcenter\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://schemas.riversand.com/mdmcenter/RSXml4.5.xsd\">"
+                                            },
+                                            "additionalSettings": {
+                                                "isGetCoalesce": true,
+                                                "isGetNearestAPI": false,
+                                                "dateTimeFormat": "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+                                                "encoding": "utf8",
+                                                "isRelatedEntityGetCoalesce": true
+                                            }
+                                        },
+                                        "type": "RSJSON",
+                                        "batchSize": 100,
+                                        "version": "1.1"
+                                    },
+                                    "filter": {
+                                        "include": {
+                                            "typesCriterion": {
+                                                "case": {
+                                                    "queryFields": {
+                                                        "attributes": [
+                                                            "_ALL"
+                                                        ],
+                                                        "relatedEntitiesRelationships": [
+                                                            "casecontains"
+                                                        ]
+                                                    }
+                                                },
+                                                "pallet": {
+                                                    "queryFields": {
+                                                        "attributes": [
+                                                            "_ALL"
+                                                        ],
+                                                        "relatedEntitiesRelationships": [
+                                                            "palletcontains"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "exclude": {}
+                                    }
+                                },
+                                "publish": {
+                                    "isDataPersistent": "false",
+                                    "channel": [
+                                        {
+                                            "type": "sftpConnector",
+                                            "host": "13.84.151.56",
+                                            "settings": {
+                                                "username": "wsftp",
+                                                "password": "AG4rv5S8ujqeaug6",
+                                                "port": 22,
+                                                "keyPath": "",
+                                                "remotePath": "/",
+                                                "fileType": "xml"
+                                            }
+                                        }
+                                    ],
+                                    "format": {
+                                        "type": "XML",
+                                        "batchSize": 1,
+                                        "version": "1.0",
+                                        "settings": {
+                                            "xmlSettings": {
+                                                "xmlElements": [
+                                                    {
+                                                        "name": "Entities/Entity",
+                                                        "nodePath": "Entity",
+                                                        "dataInfo": "entity",
+                                                        "type": "@field(type)"
+                                                    }
+                                                ],
+                                                "relationshipParents": {
+                                                    "relationship": "Entity/Relationships"
+                                                },
+                                                "xsdFileId": [
+                                                    "rsxml_schema"
+                                                ],
+                                                "xsdVersion": [
+                                                    "RSXML4.5"
+                                                ],
+                                                "xmlVersionSource": "Date/Schema",
+                                                "readHeaderInformation": true,
+                                                "rootLine": "<Data Schema=\"RSXML4.5\" xmlns=\"http://schemas.riversand.com/mdmcenter\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://schemas.riversand.com/mdmcenter/RSXml4.5.xsd\">"
+                                            },
+                                            "extractToCollect": false,
+                                            "additionalSettings": {
+                                                "encoding": "utf8",
+                                                "bulkLoadProfile": "downloadAssetsFromURL",
+                                                "supportsCollection": "false",
+                                                "includeJobDetails": "false",
+                                                "splitRelationships": "true"
+                                            }
+                                        },
+                                        "httpSettings": {
+                                            "bulkLoadAttributes": [
+                                                "URI"
+                                            ],
+                                            "sourceDetailAttributes": [],
+                                            "additionalSettings": {
+                                                "keyValuSeperator": "#=#",
+                                                "attributeSeperator": "#;#"
+                                            }
+                                        }
+                                    },
+                                    "filter": {
+                                        "include": {},
+                                        "exclude": {}
+                                    }
+                                },
+                                "transform": {
+                                    "settings": {
+                                        "entityType": "@field(type)",
+                                        "defaultEntityType": "each",
+                                        "enableDynamicMapping": "true",
+                                        "allowNullValues": "false",
+                                        "clearMissingAttributes": "false",
+                                        "manageSelfDataInContext": true,
+                                        "loadDefaultOverrides": true,
+                                        "collectionSeparator": "||",
+                                        "getFullClassificationPath": true,
+                                        "strategies": [
+                                            {
+                                                "useExternalName": "true",
+                                                "caseFormat": "NONE",
+                                                "removeSpecialCharacters": "false",
+                                                "removeWhitespace": "false",
+                                                "trimLeadingNumbers": "false",
+                                                "trimTrailingNumbers": "false",
+                                                "isDefault": "false"
+                                            }
+                                        ]
+                                    },
+                                    "contexts": [
+                                        {
+                                            "context": {
+                                                "classification": "@fieldExternalName(classification)",
+                                                "taxonomy": "@fieldExternalName(taxonomy)"
+                                            }
+                                        }
+                                    ],
+                                    "fieldMap": [
+                                        {
+                                            "source": "@leafClassification(classification,true)",
+                                            "destination": "@xmlNodeAttr(Entity,CategoryName)",
+                                            "entityType": "each",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        },
+                                        {
+                                            "source": "@leafClassification(classification,true)",
+                                            "destination": "@xmlNodeAttr(Entity,CategoryName)",
+                                            "entityType": "case",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        },
+                                        {
+                                            "source": "@leafClassification(classification,true)",
+                                            "destination": "@xmlNodeAttr(Entity,CategoryName)",
+                                            "entityType": "pallet",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        },
+                                        {
+                                            "source": "@value(PUBLICATION ADD)",
+                                            "destination": "@xmlCdataElement(Entity/Attributes/Attribute[@Name='OneWS_operationType']/Values/Value);@xmlNodeAttr(Entity/Attributes/Attribute[@Name='OneWS_operationType'],LongName,Operation Type);@xmlNodeAttr(Entity/Attributes/Attribute[@Name='OneWS_operationType'],AttributeParentName,OneWS_Global Attributes);@xmlLocaleAttr(Locale,en-US);@xmlAttr(Action,Create)",
+                                            "entityType": "pallet",
+                                            "required": true,
+                                            "enabled": true,
+                                            "locale": "en-US"
+                                        },
+                                        {
+                                            "source": "@attr(onewspackaginginformation)",
+                                            "destination": "@xmlParentNodeAttr(Name=OneWS_PackagingInformation,LongName=Packaging Information,AttributeParentName=OneWS_PackagingInformationModule,AttributeDataType=Hierarchical,AttributeType=ComplexCollection);@xmlGroupNodeAttr(Name=OneWS_PackagingInformation Instance Record,Sequence='0',AttributeParentName=OneWS_PackagingInformationModule,AttributeType=Complex,AttributeDataType=Hierarchical)",
+                                            "entityType": "pallet",
+                                            "type": "nested",
+                                            "isNestedConnectionType": true,
+                                            "required": true,
+                                            "enabled": true,
+                                            "locale": "en-US",
+                                            "childFieldMappings": [
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagingtypecode)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_packagingTypeCode,LongName=Packaging Type Code,AttributeParentName=OneWS_PackagingInformation);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagingmaterial)",
+                                                    "destination": "@xmlParentNodeAttr(Name=OneWS_packagingMaterial,LongName=Packaging Material,Sequence='-1',AttributeParentName=OneWS_PackagingInformation,AttributeType=Complex,AttributeDataType=Hierarchical);@xmlGroupNodeAttr(Name=OneWS_packagingMaterial Instance Record,LongName=Packaging Material Instance Record,Sequence='-1',AttributeParentName=OneWS_PackagingInformation,AttributeType=Complex,AttributeDataType=Hierarchical);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagingmaterial.group[%d].onewspackagingmaterialpackagingmaterialtypecode)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_packagingMaterial_packagingMaterialTypeCode,LongName=Packaging Material Type Code,AttributeParentName=OneWS_packagingMaterial);@xmlValue(Locale=en-US,Action=Create);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagingmaterial.group[%d].onewspackagingmaterialpackagingmaterialthickness)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_packagingMaterial_packagingMaterialThickness,LongName=Packaging Material Thickness,AttributeParentName=OneWS_packagingMaterial);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagingmaterial.group[%d].onewscompositematerialdetail)",
+                                                    "destination": "@xmlParentNodeAttr(Name=OneWS_compositeMaterialDetail,LongName=Composite Material Detail,Sequence='-1',AttributeParentName=OneWS_packagingMaterial,AttributeType=Complex,AttributeDataType=Hierarchical);@xmlGroupNodeAttr(Name=OneWS_compositeMaterialDetail Instance Record,LongName=Composite Material Detail Instance Record,Sequence='-1',AttributeParentName=OneWS_packagingMaterial,AttributeType=Complex,AttributeDataType=Hierarchical);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagingmaterial.group[%d].onewscompositematerialdetail.group[%d].onewscompositematerialdetailpackagingmaterialthickness)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_compositeMaterialDetail_packagingMaterialThickness,LongName=Packaging Material Thickness,AttributeParentName=OneWS_compositeMaterialDetail);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagingmaterial.group[%d].onewscompositematerialdetail.group[%d].onewscompositematerialdetailpackagingmaterialtypecode)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_compositeMaterialDetail_packagingMaterialTypeCode,LongName=Packaging Material Type Code,AttributeParentName=OneWS_compositeMaterialDetail);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagedeposit)",
+                                                    "destination": "@xmlParentNodeAttr(Name=OneWS_packagedeposit,LongName=Package Deposit,Sequence='-1',AttributeParentName=OneWS_PackagingInformation,AttributeType=Complex,AttributeDataType=Hierarchical);@xmlGroupNodeAttr(Name=OneWS_packagedeposit Instance Record,LongName=Package Deposit Instance Record,Sequence='-1',AttributeParentName=OneWS_PackagingInformation,AttributeType=Complex,AttributeDataType=Hierarchical);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagedeposit.group[%d].onewspackagedepositdepositvalueeffectivedate)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_packagedeposit_depositValueEffectiveDate,LongName=Deposit Value Effective Date,AttributeParentName=OneWS_packagedeposit);@xmlValue(Locale=en-US,Action=Create);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagedeposit.group[%d].onewspackagedepositdepositvalueenddate)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_packagedeposit_depositValueEndDate,LongName=Deposit Value End Date,AttributeParentName=OneWS_packagedeposit);@xmlValue(Locale=en-US,Action=Create);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagedeposit.group[%d].onewspackagedepositreturnablepackagedepositregion)",
+                                                    "destination": "@xmlParentNodeAttr(Name=OneWS_packagedeposit_returnablePackageDepositRegion,LongName=Returnable Package Deposit Region,Sequence='-1',AttributeParentName=OneWS_packagedeposit,AttributeType=Complex,AttributeDataType=Hierarchicall);@xmlGroupNodeAttr(Name=OneWS_packagedeposit_returnablePackageDepositRegion Instance Record,LongName=Returnable Package Deposit Region Instance Record,Sequence='-1',AttributeParentName=OneWS_packagedeposit,AttributeType=Complex,AttributeDataType=Hierarchical);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagedeposit.group[%d].onewspackagedepositreturnablepackagedepositregion.group[%d].onewspackagedepositreturnablepckgdepositregiondeposittargetmarket)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_packagedeposit_returnablePckgDepositRegion_depositTargetMarket,LongName=Deposit Target Market,AttributeParentName=OneWS_packagedeposit_returnablePackageDepositRegion);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewspackagedeposit.group[%d].onewspackagedepositreturnablepackagedepositregion.group[%d].onewspackagedepositreturnablepckgdepositregiondeposittargetmarketsubdivision)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_packagedeposit_returnablePckgDepositRegion_depositTargetMarketSubdivision,LongName=Deposit Target Market Subdivision,AttributeParentName=OneWS_packagedeposit_returnablePackageDepositRegion);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewsreturnableasset)",
+                                                    "destination": "@xmlParentNodeAttr(Name=OneWS_returnableAsset,LongName=Returnable Asset,Sequence='-1',AttributeParentName=OneWS_PackagingInformation,AttributeType=Complex,AttributeDataType=Hierarchical);@xmlGroupNodeAttr(Name=OneWS_returnableAsset Instance Record,LongName=Returnable Asset Instance Record,Sequence='-1',AttributeParentName=OneWS_PackagingInformation,AttributeType=Complex,AttributeDataType=Hierarchical);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewsreturnableasset.group[%d].onewsgrai)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_grai,LongName=GRAI,AttributeParentName=OneWS_returnableAsset);@xmlValue(Locale=en-US,Action=Create);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewsreturnableasset.group[%d].onewsisreturnableassetempty)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_isReturnableAssetEmpty,LongName=Is Returnable Asset Empty,AttributeParentName=OneWS_returnableAsset);@xmlValue(Locale=en-US,Action=Create);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewsreturnableasset.group[%d].onewsalternateid)",
+                                                    "destination": "@xmlParentNodeAttr(Name=OneWS_alternateID,LongName=Alternate ID,Sequence='-1',AttributeParentName=OneWS_returnableAsset,AttributeType=Complex,AttributeDataType=Hierarchical);@xmlGroupNodeAttr(Name=OneWS_alternateID Instance Record,LongName=Alternate ID Instance Record,Sequence='-1',AttributeParentName=OneWS_returnableAsset,AttributeType=Complex,AttributeDataType=Hierarchical);",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                },
+                                                {
+                                                    "source": "@attr(onewspackaginginformation.group[%d].onewsreturnableasset.group[%d].onewsalternateid.group[%d].onewsalternativereturnableassetidentification)",
+                                                    "destination": "@xmlChildNodeAttr(Name=OneWS_alternativeReturnableAssetIdentification,LongName=Alternative Returnable Asset Identification,AttributeParentName=OneWS_alternateID);@xmlValue(Locale=en-US,Action=Create)",
+                                                    "entityType": "pallet",
+                                                    "hasUOM": false,
+                                                    "locale": "en-US",
+                                                    "required": true,
+                                                    "enabled": true
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "relationships": {
+                                        "fieldMap": [
+                                            {
+                                                "source": "@relTo(casecontains, id)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToExternalId)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(Case Contains)",
+                                                "destination": "@xmlNodeAttr(Relationship,RelationshipTypeName)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(1WorldSync)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToContainerName)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relTo(casecontains, type)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToEntityTypeName)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(Create)",
+                                                "destination": "@xmlNodeAttr(Relationship,Action)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relProperty(casecontains, direction)",
+                                                "destination": "@xmlNodeAttr(Relationship,Direction)",
+                                                "entityType": "casecontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relAttr(casecontains,onewslinkquantity)",
+                                                "destination": "@xmlCdataElement(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity']/Values/Value);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],LongName,Link Quantity);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],AttributeParentName,OneWS_packagingAttributes);@xmlLocaleAttr(Locale);@xmlAttr(Action,Create)",
+                                                "entityType": "casecontains",
+                                                "enabled": true,
+                                                "locale": "en-US"
+                                            },
+                                            {
+                                                "source": "@relTo(palletcontains, id)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToExternalId)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(Pallet Contains)",
+                                                "destination": "@xmlNodeAttr(Relationship,RelationshipTypeName)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(1WorldSync)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToContainerName)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relTo(palletcontains, type)",
+                                                "destination": "@xmlNodeAttr(Relationship,ToEntityTypeName)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@value(Create)",
+                                                "destination": "@xmlNodeAttr(Relationship,Action)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relProperty(palletcontains, direction)",
+                                                "destination": "@xmlNodeAttr(Relationship,Direction)",
+                                                "entityType": "palletcontains",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "source": "@relAttr(palletcontains,onewslinkquantity)",
+                                                "destination": "@xmlCdataElement(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity']/Values/Value);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],LongName,Link Quantity);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],AttributeParentName,OneWS_packagingAttributes);@xmlLocaleAttr(Locale);@xmlAttr(Action,Create)",
+                                                "entityType": "palletcontains",
+                                                "enabled": true,
+                                                "locale": "en-US"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }

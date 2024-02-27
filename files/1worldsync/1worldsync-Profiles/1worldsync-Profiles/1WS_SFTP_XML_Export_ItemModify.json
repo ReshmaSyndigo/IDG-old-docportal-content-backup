@@ -1,0 +1,360 @@
+{
+                "id": "1WS_SFTP_XML_Export_ItemModify",
+                "name": "1WS_SFTP_XML_Export_ItemModify",
+                "type": "integrationprofile",
+                "data": {
+                    "contexts": [
+                        {
+                            "context": {
+                                "app": "RSConnect",
+                                "service": "ENTITY_EXPORT",
+                                "channel": "1WSITEMMODIFY",
+                                "format": "XML",
+                                "source": "internal",
+                                "role": "admin",
+                                "user": "system",
+                                "subtype": "System",
+                                "order": "10"
+                            },
+                            "jsonData": {
+                                "transform": {
+                                    "settings": {
+                                        "defaultEntityType": "each",
+                                        "allowNullValues": "false",
+                                        "loadDefaultOverrides": true,
+                                        "clearMissingAttributes": "false",
+                                        "getFullClassificationPath": true,
+                                        "strategies": [
+                                            {
+                                                "caseFormat": "NONE",
+                                                "trimTrailingNumbers": "false",
+                                                "isDefault": "false",
+                                                "removeSpecialCharacters": "false",
+                                                "removeWhitespace": "false",
+                                                "useExternalName": "true",
+                                                "trimLeadingNumbers": "false"
+                                            }
+                                        ],
+                                        "entityType": "@field(type)",
+                                        "enableDynamicMapping": "true",
+                                        "manageSelfDataInContext": true,
+                                        "collectionSeparator": "||"
+                                    },
+                                    "relationships": {
+                                        "fieldMap": [
+                                            {
+                                                "entityType": "casecontains",
+                                                "destination": "@xmlNodeAttr(Relationship,ToExternalId)",
+                                                "source": "@relTo(casecontains, id)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "casecontains",
+                                                "destination": "@xmlNodeAttr(Relationship,RelationshipTypeName)",
+                                                "source": "@value(Case Contains)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "casecontains",
+                                                "destination": "@xmlNodeAttr(Relationship,ToContainerName)",
+                                                "source": "@value(1WorldSync)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "casecontains",
+                                                "destination": "@xmlNodeAttr(Relationship,ToEntityTypeName)",
+                                                "source": "@relTo(casecontains, type)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "casecontains",
+                                                "destination": "@xmlNodeAttr(Relationship,Action)",
+                                                "source": "@value(Create)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "casecontains",
+                                                "destination": "@xmlNodeAttr(Relationship,Direction)",
+                                                "source": "@relProperty(casecontains, direction)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "casecontains",
+                                                "destination": "@xmlCdataElement(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity']/Values/Value);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],LongName,Link Quantity);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],AttributeParentName,OneWS_packagingAttributes);@xmlLocaleAttr(Locale);@xmlAttr(Action,Create)",
+                                                "source": "@relAttr(casecontains,onewslinkquantity)",
+                                                "locale": "en-US",
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "palletcontains",
+                                                "destination": "@xmlNodeAttr(Relationship,ToExternalId)",
+                                                "source": "@relTo(palletcontains, id)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "palletcontains",
+                                                "destination": "@xmlNodeAttr(Relationship,RelationshipTypeName)",
+                                                "source": "@value(Pallet Contains)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "palletcontains",
+                                                "destination": "@xmlNodeAttr(Relationship,ToContainerName)",
+                                                "source": "@value(1WorldSync)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "palletcontains",
+                                                "destination": "@xmlNodeAttr(Relationship,ToEntityTypeName)",
+                                                "source": "@relTo(palletcontains, type)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "palletcontains",
+                                                "destination": "@xmlNodeAttr(Relationship,Action)",
+                                                "source": "@value(Create)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "palletcontains",
+                                                "destination": "@xmlNodeAttr(Relationship,Direction)",
+                                                "source": "@relProperty(palletcontains, direction)",
+                                                "required": true,
+                                                "enabled": true
+                                            },
+                                            {
+                                                "entityType": "palletcontains",
+                                                "destination": "@xmlCdataElement(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity']/Values/Value);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],LongName,Link Quantity);@xmlNodeAttr(Relationship/Attributes/Attribute[@Name='OneWS_linkQuantity'],AttributeParentName,OneWS_packagingAttributes);@xmlLocaleAttr(Locale);@xmlAttr(Action,Create)",
+                                                "source": "@relAttr(palletcontains,onewslinkquantity)",
+                                                "locale": "en-US",
+                                                "enabled": true
+                                            }
+                                        ]
+                                    },
+                                    "fieldMap": [
+                                        {
+                                            "entityType": "each",
+                                            "destination": "@xmlNodeAttr(Entity,CategoryName)",
+                                            "source": "@leafClassification(classification,true)",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        },
+                                        {
+                                            "entityType": "case",
+                                            "destination": "@xmlNodeAttr(Entity,CategoryName)",
+                                            "source": "@leafClassification(classification,true)",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        },
+                                        {
+                                            "entityType": "pallet",
+                                            "destination": "@xmlNodeAttr(Entity,CategoryName)",
+                                            "source": "@leafClassification(classification,true)",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        },
+                                        {
+                                            "entityType": "pallet",
+                                            "destination": "@xmlCdataElement(Entity/Attributes/Attribute[@Name='OneWS_operationType']/Values/Value);@xmlNodeAttr(Entity/Attributes/Attribute[@Name='OneWS_operationType'],LongName,Operation Type);@xmlNodeAttr(Entity/Attributes/Attribute[@Name='OneWS_operationType'],AttributeParentName,OneWS_Global Attributes);@xmlAttr(Locale,en-US);@xmlAttr(Action,Create)",
+                                            "source": "@value(ITEM MODIFY)",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        },
+                                        {
+                                            "entityType": "case",
+                                            "destination": "@xmlCdataElement(Entity/Attributes/Attribute[@Name='OneWS_operationType']/Values/Value);@xmlNodeAttr(Entity/Attributes/Attribute[@Name='OneWS_operationType'],LongName,Operation Type);@xmlNodeAttr(Entity/Attributes/Attribute[@Name='OneWS_operationType'],AttributeParentName,OneWS_Global Attributes);@xmlAttr(Locale,en-US);@xmlAttr(Action,Create)",
+                                            "source": "@value(ITEM MODIFY)",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        },
+                                        {
+                                            "entityType": "each",
+                                            "destination": "@xmlCdataElement(Entity/Attributes/Attribute[@Name='OneWS_operationType']/Values/Value);@xmlNodeAttr(Entity/Attributes/Attribute[@Name='OneWS_operationType'],LongName,Operation Type);@xmlNodeAttr(Entity/Attributes/Attribute[@Name='OneWS_operationType'],AttributeParentName,OneWS_Global Attributes);@xmlAttr(Locale,en-US);@xmlAttr(Action,Create)",
+                                            "source": "@value(ITEM MODIFY)",
+                                            "locale": "en-US",
+                                            "required": true,
+                                            "enabled": true
+                                        }
+                                    ],
+                                    "contexts": [
+                                        {
+                                            "context": {
+                                                "taxonomy": "@fieldExternalName(taxonomy)",
+                                                "classification": "@fieldExternalName(classification)"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "integrationType": "System",
+                                "isEnabled": "true",
+                                "publish": {
+                                    "filter": {
+                                        "include": {},
+                                        "exclude": {}
+                                    },
+                                    "channel": [
+                                        {
+                                            "settings": {
+                                                "password": "AG4rv5S8ujqeaug6",
+                                                "remotePath": "/",
+                                                "port": 22,
+                                                "keyPath": "",
+                                                "fileType": "xml",
+                                                "username": "wsftp"
+                                            },
+                                            "host": "13.84.151.56",
+                                            "type": "sftpConnector"
+                                        }
+                                    ],
+                                    "format": {
+                                        "settings": {
+                                            "extractToCollect": false,
+                                            "additionalSettings": {
+                                                "supportsCollection": "false",
+                                                "bulkLoadProfile": "downloadAssetsFromURL",
+                                                "splitRelationships": "true",
+                                                "encoding": "utf8",
+                                                "includeJobDetails": "false"
+                                            },
+                                            "xmlSettings": {
+                                                "xsdVersion": [
+                                                    "RSXML4.5"
+                                                ],
+                                                "readHeaderInformation": true,
+                                                "xsdFileId": [
+                                                    "rsxml_schema"
+                                                ],
+                                                "relationshipParents": {
+                                                    "relationship": "Entity/Relationships"
+                                                },
+                                                "xmlElements": [
+                                                    {
+                                                        "dataInfo": "entity",
+                                                        "name": "Entities/Entity",
+                                                        "nodePath": "Entity",
+                                                        "type": "@field(type)"
+                                                    }
+                                                ],
+                                                "rootLine": "<Data Schema=\"RSXML4.5\" xmlns=\"http://schemas.riversand.com/mdmcenter\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://schemas.riversand.com/mdmcenter/RSXml4.5.xsd\">",
+                                                "xmlVersionSource": "Date/Schema"
+                                            }
+                                        },
+                                        "httpSettings": {
+                                            "sourceDetailAttributes": [],
+                                            "bulkLoadAttributes": [
+                                                "URI"
+                                            ],
+                                            "additionalSettings": {
+                                                "attributeSeperator": "#;#",
+                                                "keyValuSeperator": "#=#"
+                                            }
+                                        },
+                                        "type": "XML",
+                                        "batchSize": 1,
+                                        "version": "1.0"
+                                    },
+                                    "isDataPersistent": "false"
+                                },
+                                "collect": {
+                                    "filter": {
+                                        "include": {
+                                            "typesCriterion": {
+                                                "pallet": {
+                                                    "queryFields": {
+                                                        "relatedEntitiesRelationships": [
+                                                            "palletcontains"
+                                                        ],
+                                                        "attributes": [
+                                                            "_ALL"
+                                                        ]
+                                                    }
+                                                },
+                                                "case": {
+                                                    "queryFields": {
+                                                        "relatedEntitiesRelationships": [
+                                                            "casecontains"
+                                                        ],
+                                                        "attributes": [
+                                                            "_ALL"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "exclude": {}
+                                    },
+                                    "channel": [
+                                        {
+                                            "settings": {
+                                                "includeParent": "false",
+                                                "includeChildren": "false",
+                                                "includeSiblings": "false",
+                                                "includeRelatedEntities": "false",
+                                                "includeRelatedEntitiesRecursive": "false",
+                                                "type": "RSJSON",
+                                                "version": "1.1",
+                                                "includeRelatedEntityExternalIds": "false",
+                                                "requestforvaluemapping": "true"
+                                            },
+                                            "type": "rdpConnector"
+                                        }
+                                    ],
+                                    "format": {
+                                        "settings": {
+                                            "additionalSettings": {
+                                                "isGetNearestAPI": false,
+                                                "dateTimeFormat": "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+                                                "encoding": "utf8",
+                                                "isGetCoalesce": true,
+                                                "isRelatedEntityGetCoalesce": true
+                                            },
+                                            "xmlSettings": {
+                                                "xsdVersion": [
+                                                    "RSXML4.5"
+                                                ],
+                                                "readHeaderInformation": true,
+                                                "xsdFileId": [
+                                                    "piesxml_schema"
+                                                ],
+                                                "relationshipParents": {
+                                                    "relationship": "Entity/Relationships"
+                                                },
+                                                "xmlElements": [
+                                                    {
+                                                        "dataInfo": "entity",
+                                                        "name": "Entities/Entity",
+                                                        "nodePath": "Entity",
+                                                        "type": "@field(type)"
+                                                    }
+                                                ],
+                                                "rootLine": "<Data Schema=\"RSXML4.5\" xmlns=\"http://schemas.riversand.com/mdmcenter\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://schemas.riversand.com/mdmcenter/RSXml4.5.xsd\">",
+                                                "xmlVersionSource": "Date/Schema"
+                                            }
+                                        },
+                                        "type": "RSJSON",
+                                        "batchSize": 100,
+                                        "version": "1.1"
+                                    },
+                                    "isDataPersistent": "false"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
