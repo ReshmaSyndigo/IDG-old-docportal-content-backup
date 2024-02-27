@@ -1,0 +1,22 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "matchConfig"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "properties": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "totalRecords": 100
+    }
+  }
+}
