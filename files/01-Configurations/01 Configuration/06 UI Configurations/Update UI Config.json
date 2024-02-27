@@ -1,0 +1,91 @@
+{
+  "configObject": {
+    "id": "sys_rock-entity-search-result_requestobject_uiConfig",
+    "name": "sys_rock-entity-search-result_requestobject",
+    "version": "1.0",
+    "type": "uiConfig",
+    "properties": {
+      "createdByService": "system",
+      "createdBy": "system"
+    },
+    "data": {
+      "contexts": [
+        {
+          "context": {
+            "component": "rock-entity-search-result",
+            "sysDomain": "systemEvent",
+            "sysApp": "_DEFAULT",
+            "sysEntityType": "requestobject",
+            "sysRelationship": "_DEFAULT"
+          },
+          "jsonData": {
+            "config": {
+              "dataIndex": "requestTracking",
+              "dataSubIndex": "requestTracking",
+              "gridConfig": {
+                "itemConfig": {
+                  "fields": {
+                    "entityAction": {
+                      "header": "Profile Type",
+                      "name": "profileType",
+                      "sortable": true,
+                      "filterable": false,
+                      "visible": true,
+                      "isMetaDataColumn": false,
+                      "displaySequence": 80
+                    },
+                    "entityId": {
+                      "header": "Entity Id",
+                      "name": "entityId",
+                      "sortable": true,
+                      "filterable": false,
+                      "visible": true,
+                      "isMetaDataColumn": false,
+                      "displaySequence": 90
+                    },
+                    "requestId": {
+                      "header": "Request Id",
+                      "name": "requestId",
+                      "sortable": true,
+                      "filterable": false,
+                      "visible": true,
+                      "isMetaDataColumn": false,
+                      "displaySequence": 100
+                    },
+                    "taskId": {
+                      "header": "Task Id",
+                      "name": "taskId",
+                      "sortable": true,
+                      "filterable": false,
+                      "visible": true,
+                      "isMetaDataColumn": false,
+                      "displaySequence": 110
+                    },
+                    "requestGroupId": {
+                      "header": "Request Group Id",
+                      "name": "requestGroupId",
+                      "sortable": true,
+                      "filterable": false,
+                      "visible": true,
+                      "isMetaDataColumn": false,
+                      "displaySequence": 120
+                    },
+                    "requestStatus": {
+                      "header": "Request Status",
+                      "name": "requestStatus",
+                      "sortable": true,
+                      "filterable": false,
+                      "visible": true,
+                      "isMetaDataColumn": false,
+                      "displaySequence": 130
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
