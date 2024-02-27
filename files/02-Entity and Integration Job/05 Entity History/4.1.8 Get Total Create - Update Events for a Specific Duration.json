@@ -1,0 +1,32 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "entitymanageevent"
+        ],
+        "propertiesCriterion": [
+          {
+            "modifiedDate": {
+              "lte": "2018-04-07T23:59:59.000-0500",
+              "type": "_DATETIME"
+            }
+          }
+        ],
+        "attributesCriterion": [
+          {
+            "entityAction": {
+             "exact":"create"
+            }
+          }
+        ]
+      }
+    },
+    "fields":{
+      "attributes":["_ALL"]
+    },
+    "options":{
+      "maxRecords":1
+    }
+  }
+}

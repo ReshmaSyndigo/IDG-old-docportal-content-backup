@@ -1,0 +1,23 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ],
+        "attributesCriterion": [
+          {
+            "identifier": {
+              "exact": "ppr5007678795"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    }
+  }
+}

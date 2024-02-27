@@ -1,0 +1,27 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ],
+        "attributesCriterion": [
+          {
+            "mdmname": {
+              "contains": "rworkUniversity001*",
+              "type": "_STRING"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "mdmname"
+      ]
+    },
+    "options": {
+     "maxRecords": 1
+    }
+  }
+}

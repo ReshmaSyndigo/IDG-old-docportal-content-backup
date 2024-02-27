@@ -1,0 +1,27 @@
+{
+  "params": {
+    "query": {
+      "contexts": [
+        {
+          "context": {
+            "classification": "FURNITURE>>ACCENT FURNITURE"
+          },
+          "action": "delete"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}

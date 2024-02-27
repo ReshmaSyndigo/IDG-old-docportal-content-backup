@@ -1,0 +1,1620 @@
+{
+  "entity": {
+    "id": "googleshopping04",
+    "type": "sku",
+    "properties": {
+      "createdService": "entityManageService",
+      "createdBy": "mary.jane@riversand.com",
+      "modifiedService": "entityManageService",
+      "modifiedBy": "mary.jane@riversand.com",
+      "createdDate": "2018-03-09T07:02:26.742-0600",
+      "modifiedDate": "2018-03-09T07:02:26.742-0600"
+    },
+    "data": {
+      "attributes": {
+        "gstitle": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "googleshopping04"
+            }
+          ]
+        },
+        "producttitle": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "googleshopping04"
+            }
+          ]
+        },
+        "gslink": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "http://smbpoc.riversand.com/MDMConnect768/MDMCenter/CustomJSCoverageReport.html"
+            }
+          ]
+        },
+        "gscolor": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "non"
+            }
+          ]
+        },
+        "gsdescription": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "usecase1 GS Title"
+            }
+          ]
+        },
+        "gsimagelink": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "http://smbpoc.riversand.com/MDMConnect768/Images/babywatch.jpg"
+            }
+          ]
+        },
+        "gscontentlanguage": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "en"
+            }
+          ]
+        },
+        "gstargetcountry": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "US"
+            }
+          ]
+        },
+        "gschannel": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "online"
+            }
+          ]
+        },
+        "gsadult": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": true
+            }
+          ]
+        },
+        "gsavailability": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "preorder"
+            }
+          ]
+        },
+        "gscondition": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "new"
+            }
+          ]
+        },
+        "gsgtin": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "9780007350896"
+            }
+          ]
+        },
+        "gsmpn": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "GO12345OOGLE"
+            }
+          ]
+        },
+        "gsprice": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": 34.56
+            }
+          ]
+        },
+        "gspricecurrency": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "USD"
+            }
+          ]
+        },
+        "gsshippingprice": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": 34
+            }
+          ]
+        },
+        "gspricevalue": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": 341
+            }
+          ]
+        },
+        "rmsskuid": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "googleshopping04"
+            }
+          ]
+        },
+        "orin": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "googleshopping04"
+            }
+          ]
+        },
+        "upcbarcode": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "googleshopping04"
+            }
+          ]
+        },
+        "whseprocessingfee1": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": 123.34
+            }
+          ]
+        },
+        "shippointcity": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Tumkur"
+            }
+          ]
+        },
+        "channel": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "eComm"
+            }
+          ]
+        },
+        "whsesupplier1": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "AB/PROSPERITY"
+            }
+          ]
+        },
+        "skuitemtype": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Factory Ship"
+            }
+          ]
+        },
+        "season": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Annual"
+            }
+          ]
+        },
+        "protectionplan": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "No"
+            }
+          ]
+        },
+        "ecomhangingindicator": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "No"
+            }
+          ]
+        },
+        "alternatesupplierid": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "123"
+            }
+          ]
+        },
+        "orderableflag": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Yes"
+            }
+          ]
+        },
+        "continentalprepaid": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Not Prepaid"
+            }
+          ]
+        },
+        "maxbackorderdays": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": 7
+            }
+          ]
+        },
+        "storepurchasetype": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "BASIC"
+            }
+          ]
+        },
+        "sellinguom": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "EA"
+            }
+          ]
+        },
+        "suppliersitenumber": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "345"
+            }
+          ]
+        },
+        "shippointstate": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "KAR"
+            }
+          ]
+        },
+        "whsesuppliershippoint1": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "12.35"
+            }
+          ]
+        },
+        "haslot": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": false
+            }
+          ]
+        },
+        "fashionpyramid": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "CORE"
+            }
+          ]
+        },
+        "sellableflag": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Yes"
+            }
+          ]
+        },
+        "estimatedupsshippingcharge": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "7.51"
+            }
+          ]
+        },
+        "shippinginforequired": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "No"
+            }
+          ]
+        },
+        "specialprogramtype": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "NORMAL MERCHANDISE"
+            }
+          ]
+        },
+        "storejcpstatus": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Active"
+            }
+          ]
+        },
+        "creationdate": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "2017-10-04T00:00:00.000+0000"
+            }
+          ]
+        },
+        "specialitemcode": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Not a special Item"
+            }
+          ]
+        },
+        "source": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "RMS"
+            }
+          ]
+        },
+        "enterpriseinventoryindicator": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "No"
+            }
+          ]
+        },
+        "ecommoosdate": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "01/01/9999"
+            }
+          ]
+        },
+        "storeoosdate": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "01/01/9999"
+            }
+          ]
+        },
+        "noncontinentalprepaid": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "nonPrepaid"
+            }
+          ]
+        },
+        "standarduom": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "EA"
+            }
+          ]
+        },
+        "storeset": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "ALL"
+            }
+          ]
+        },
+        "unusualdemandquantity": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": 11
+            }
+          ]
+        },
+        "packagetype": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Each"
+            }
+          ]
+        },
+        "ecommpurchasetype": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "FS Basic"
+            }
+          ]
+        },
+        "suppliernumbername": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Adidas"
+            }
+          ]
+        },
+        "effindicator": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "No"
+            }
+          ]
+        },
+        "description": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "CAPRI XXLARGE"
+            }
+          ]
+        },
+        "skunumber": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "901"
+            }
+          ]
+        },
+        "deliveryinstructions": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "SHIP TO/MARK FOR"
+            }
+          ]
+        },
+        "inventoryflag": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Yes"
+            }
+          ]
+        },
+        "ticketstockno": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "THERE IS NO DESCRIPTION"
+            }
+          ]
+        },
+        "willcallfactoryshipind": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "No"
+            }
+          ]
+        },
+        "internationalshippable": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "No"
+            }
+          ]
+        },
+        "storesubset": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "ALL"
+            }
+          ]
+        },
+        "lifestyle": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "MODERN"
+            }
+          ]
+        },
+        "pricetier": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "BETTER"
+            }
+          ]
+        },
+        "ecommjcpstatus": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Active"
+            }
+          ]
+        },
+        "ecomminnerpack": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": 1
+            }
+          ]
+        },
+        "christmasindicator": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "No"
+            }
+          ]
+        },
+        "lifecyclestage": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Draft"
+            }
+          ]
+        },
+        "pid": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "PVKS8097DS"
+            }
+          ]
+        },
+        "skustatuscode": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Active"
+            }
+          ]
+        },
+        "size": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "XX-LARGE"
+            }
+          ]
+        },
+        "displayname": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "1MarRMSFAFEntity001"
+            }
+          ]
+        },
+        "ecomprimarysupplierid": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "No"
+            }
+          ]
+        },
+        "ecomprimarysupplieridcolor": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Yes"
+            }
+          ]
+        },
+        "ecommsuppliershippoint": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "sPoint1"
+            }
+          ]
+        },
+        "sourcingpartner": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "JCP"
+            }
+          ]
+        },
+        "storeprimarysupplierid": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Yes"
+            }
+          ]
+        },
+        "storeprimarysupplieridcolor": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Yes"
+            }
+          ]
+        },
+        "supplierchannel": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Enterprise"
+            }
+          ]
+        },
+        "supplierleadtime": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": 123
+            }
+          ]
+        },
+        "suppliermfrshippoint": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "mPoint1"
+            }
+          ]
+        },
+        "shape": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "FULL"
+            }
+          ]
+        },
+        "bedsize": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "BASSINET"
+            }
+          ]
+        },
+        "fabric": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "FLAT BACK RIB"
+            }
+          ]
+        },
+        "vendorbedding": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "NOT APPLICABLE"
+            }
+          ]
+        },
+        "intendedgender": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "MISSES"
+            }
+          ]
+        },
+        "programname": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "pName"
+            }
+          ]
+        },
+        "physicaldefectivecode": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "E"
+            }
+          ]
+        },
+        "assembly": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "UNASSEMBLED"
+            }
+          ]
+        },
+        "rfid": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "YES"
+            }
+          ]
+        },
+        "deliverytype": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "THRESHOLD"
+            }
+          ]
+        },
+        "collection": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "MOTION CUSTOM"
+            }
+          ]
+        },
+        "piecesinset": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "32"
+            }
+          ]
+        },
+        "giftstrategy": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "GIFT ITEM"
+            }
+          ]
+        },
+        "silhouette": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "DRESS SHIRT"
+            }
+          ]
+        },
+        "ecommshortdescattr": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "eDesc"
+            }
+          ]
+        },
+        "lastflow": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "N"
+            }
+          ]
+        },
+        "sscmanualprocesing": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "NO"
+            }
+          ]
+        },
+        "material": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "BAMBOO"
+            }
+          ]
+        },
+        "customerassmblyrta": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "YES"
+            }
+          ]
+        },
+        "basematerial": {
+          "group": [
+            {
+              "basematerialvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": 50
+                  }
+                ]
+              },
+              "basematerialtype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "BAMBOO"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            },
+            {
+              "basematerialvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": 25
+                  }
+                ]
+              },
+              "basematerialtype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "ALUMINUM"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            },
+            {
+              "basematerialvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": 25
+                  }
+                ]
+              },
+              "basematerialtype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "BRONZE"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            }
+          ]
+        },
+        "agegroup": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "NOT AGE RATED"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "40S"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "6-8 YEARS"
+            }
+          ]
+        },
+        "disclaimers": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "MEMORY FOAM TIPS 3"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "MODERN BRIDE SIGN 2"
+            }
+          ]
+        },
+        "features": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "ADJUSTABLE LEGS"
+            }
+          ]
+        },
+        "intendedroom": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "NOT APPLICABLE"
+            }
+          ]
+        },
+        "toolsrequired": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "PHILLIPS (INCLUDED)"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "SCREWS (INCLUDED)"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "HAMMER (INCLUDED)"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "PHILLIPS SCREWDRIVER (INCLUDED)"
+            }
+          ]
+        },
+        "woodfinish": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "PAINTED"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "UNFINISHED"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "EBONY"
+            }
+          ]
+        },
+        "bedmeasurements": {
+          "group": [
+            {
+              "bedmeasurementstype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "HEIGHT/INCHES"
+                  }
+                ]
+              },
+              "bedmeasurementsvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": 123
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            }
+          ]
+        },
+        "care": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "COOL IRON"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "DO NOT STEAM"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "DISHWASHER SAFE"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "DRY CLEAN"
+            }
+          ]
+        },
+        "chestmeasurements": {
+          "group": [
+            {
+              "chestmeasurementsvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": 123
+                  }
+                ]
+              },
+              "chestmeasurementstype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "DEPTH/INCHES"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            },
+            {
+              "chestmeasurementsvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": 456
+                  }
+                ]
+              },
+              "chestmeasurementstype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "WIDTH/INCHES"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            }
+          ]
+        },
+        "dressermeasurements": {
+          "group": [
+            {
+              "dressermeasurementstype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "HEIGHT/INCHES"
+                  }
+                ]
+              },
+              "dressermeasurementsvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": 123
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            },
+            {
+              "dressermeasurementstype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "NOT APPLICABLE"
+                  }
+                ]
+              },
+              "dressermeasurementsvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": 678
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            }
+          ]
+        },
+        "fillingcontent": {
+          "group": [
+            {
+              "fillingcontentvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "V1"
+                  }
+                ]
+              },
+              "fillingcontenttype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "COTTON"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            },
+            {
+              "fillingcontentvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "V2"
+                  }
+                ]
+              },
+              "fillingcontenttype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "VISCOELASTIC POLY-FOAM"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            },
+            {
+              "fillingcontentvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "V3"
+                  }
+                ]
+              },
+              "fillingcontenttype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "GOOSE FEATHERS"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            }
+          ]
+        },
+        "included": {
+          "group": [
+            {
+              "includedtype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "3.5 QT. COVERED DUTCH OVEN(S)"
+                  }
+                ]
+              },
+              "includedvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "A1"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            },
+            {
+              "includedtype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "16X12 INCH DECORATIVE PILLOW(S)"
+                  }
+                ]
+              },
+              "includedvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "A2"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            }
+          ]
+        },
+        "joinery": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "F INGER JOINT"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "FLUSH JOINT"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "BIRDSMOUTH JOINT"
+            }
+          ]
+        },
+        "metalfinish": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "SATIN COPPER"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "BLACK"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "STAINLESS STEEL"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "SILVER"
+            },
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "COPPER"
+            }
+          ]
+        },
+        "mirrormeasurements": {
+          "group": [
+            {
+              "mirrormeasurementstype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "WIDTH/INCHES"
+                  }
+                ]
+              },
+              "mirrormeasurementsvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "B1"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            },
+            {
+              "mirrormeasurementstype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "DEPTH/INCHES"
+                  }
+                ]
+              },
+              "mirrormeasurementsvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "B2"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            },
+            {
+              "mirrormeasurementstype": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "NOT APPLICABLE"
+                  }
+                ]
+              },
+              "mirrormeasurementsvalue": {
+                "values": [
+                  {
+                    "source": "internal",
+                    "locale": "en-US",
+                    "value": "B3"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            }
+          ]
+        },
+        "factoryshipleadtime": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": 2
+            }
+          ]
+        },
+        "sizecase": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "1"
+            }
+          ]
+        },
+        "sizeinner": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "1"
+            }
+          ]
+        },
+        "weightunitofmeasure": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Pounds",
+              "properties": {
+                "referenceData": "weightuomvalues/ff298551-57ca-4c20-8d1a-052832c94a7f",
+                "referenceDataIdentifier": "LBS"
+              }
+            }
+          ]
+        },
+        "factoryshipuom": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Days",
+              "properties": {
+                "referenceData": "factoryshipuomvalues/a803ccf0-e239-4dc7-b7fd-c9af114814e0",
+                "referenceDataIdentifier": "D"
+              }
+            }
+          ]
+        },
+        "factoryshiplimitedinvind": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "Yes",
+              "properties": {
+                "referenceData": "rmsbooleanonezerovalues/37fd4cc8-3048-4ab2-a36c-cce2b00e3a65",
+                "referenceDataIdentifier": "1"
+              }
+            }
+          ]
+        },
+        "ecommminorderqty": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": 1
+            }
+          ]
+        },
+        "orinfetchrequestbody": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "{\\\"UserID\\\":\\\"PimUser\\\",\\\"ItemCount\\\":\\\"1\\\",\\\"RequestID\\\":\\\"TOKEN\\\"}"
+            }
+          ]
+        },
+        "hidesku": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": false
+            }
+          ]
+        },
+        "username": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "mary.jane@riversand.com"
+            }
+          ]
+        },
+        "skuupcs": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "value": "1MarRMSFAFEntity001"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

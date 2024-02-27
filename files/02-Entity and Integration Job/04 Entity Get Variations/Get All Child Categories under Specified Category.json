@@ -1,0 +1,27 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "classification"
+        ],
+        "attributesCriterion": [
+          {
+            "externalnamepath": {
+              "eq": "Product Classifications>>Hardware",
+              "type": "_STRING"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    }
+  }
+}

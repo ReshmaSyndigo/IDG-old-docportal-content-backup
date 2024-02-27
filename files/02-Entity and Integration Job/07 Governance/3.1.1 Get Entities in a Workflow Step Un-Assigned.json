@@ -1,0 +1,31 @@
+{
+  "params": {
+    "query": {
+      "contexts": [
+        {
+          "workflow": "newProductSetup"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ],
+        "attributesCriterion": [
+          {
+            "activities/assignedUser": {
+              "eq": "_UNASSIGNED"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}

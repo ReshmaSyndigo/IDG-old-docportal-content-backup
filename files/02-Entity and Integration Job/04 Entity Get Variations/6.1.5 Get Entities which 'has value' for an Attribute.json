@@ -1,0 +1,27 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "product"
+        ],
+        "attributesCriterion": [
+          {
+            "brand": {
+              "hasvalue": true,
+              "type": "_STRING"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "brand"
+      ]
+    },
+    "options": {
+     "maxRecords": 1
+    }
+  }
+}

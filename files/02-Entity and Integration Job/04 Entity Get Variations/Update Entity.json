@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "id": "UseCaseA2",
+    "type": "sku",
+    "data": {
+      "attributes": {
+        "gsimagelink": {
+          "values": [
+            {
+              "source": "internal",
+              "locale": "en-US",
+              "id": "27a7f489-10c1-4742-aff3-f575aaef31d1",
+              "value": "jhvjh"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

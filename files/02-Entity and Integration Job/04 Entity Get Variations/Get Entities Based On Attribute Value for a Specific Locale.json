@@ -1,0 +1,29 @@
+{
+  "params": {
+    "query": {
+      "valueContexts": [
+        {
+          "locale": "de-DE",
+          "source": "internal"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ],
+        "attributesCriterion": [
+          {
+            "identifier": {
+              "exact": "ppr5007678795"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    }
+  }
+}

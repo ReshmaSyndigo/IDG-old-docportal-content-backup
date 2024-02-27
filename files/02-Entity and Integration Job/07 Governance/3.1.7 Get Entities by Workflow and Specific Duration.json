@@ -1,0 +1,34 @@
+{
+  "params": {
+    "query": {
+      "contexts": [
+        {
+          "workflow": "newDigitalAsset"
+        }
+      ],
+      "filters": {
+        "attributesCriterion": [
+          {
+            "activities/activityName": {
+              "eq": "invalidAssets"
+            }
+          },
+           {
+            "startDateTime": {
+              "gt": "2018-04-09T00:00:00.000+0500",
+              "type": "_DATETIME"
+            }
+          }
+        ],
+        "typesCriterion": [
+          "sku"
+          
+        ]
+      }
+    },
+     
+    "options": {
+      "maxRecords":2000
+    }
+  }
+}

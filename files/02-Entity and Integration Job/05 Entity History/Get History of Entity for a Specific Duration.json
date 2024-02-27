@@ -1,0 +1,26 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ],
+        "propertiesCriterion": [
+          {
+            "modifiedDate": {
+              "gte": "2018-04-14T02:30:00.000-0500",
+              "lte": "2018-05-14T02:30:00.000-0500",
+              "type": "_DATETIME"
+            }
+          }
+        ]
+      }
+    },
+    "fields":{
+      "attributes":["_ALL"]
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "product"
+        ],
+        "relationshipsCriterion": [
+          {
+            "ischildof": {
+              "relTo": {
+                "type": "sku"
+              },
+              "query": {
+                "filters": {
+                  "typesCriterion": [
+                    "sku"
+                  ],
+                  "attributesCriterion": [
+                    {
+                      "description": {
+                        "exact": "Riversand RDW Sanity Testing prd",
+                        "type": "_STRING"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ],
+      "reltionshipAttributes": [
+        "ischlidof"
+      ]
+    },
+    "options": {
+      "maxRecords": 10
+    },
+    "isRelatedEntitySearch": true
+  }
+}

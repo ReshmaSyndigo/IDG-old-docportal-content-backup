@@ -1,0 +1,27 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "classification"
+        ],
+        "attributesCriterion": [
+          {
+            "rootexternalname": {
+              "exact": "Product Classifications",
+              "type": "_STRING"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    }
+  }
+}

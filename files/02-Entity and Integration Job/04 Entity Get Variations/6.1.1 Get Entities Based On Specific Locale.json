@@ -1,0 +1,26 @@
+{
+  "params": {
+    "query": {
+      "id": "jhdjsdvsvhj",
+      "valueContexts": [
+        {
+          "source": "internal",
+          "locale": "de-DE"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}

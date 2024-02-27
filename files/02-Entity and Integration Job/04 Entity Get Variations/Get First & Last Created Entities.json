@@ -1,0 +1,27 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    },
+    "sort": {
+      "properties": [
+        {
+          "createdDate": "_ASC",
+          "sortType": "_DATETIME"
+        }
+      ]
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ],
+        "relationshipsCriterion": [
+          {
+            "ischildof": {
+              "relTo": {
+                "type": "lot"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "relationships": [
+        "ischildof"
+      ]
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}

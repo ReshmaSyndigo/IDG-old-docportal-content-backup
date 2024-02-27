@@ -1,0 +1,19 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "product"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "entity": {
+    "type": "sku",
+    "properties": {},
+    "data": {
+      "relationships": {
+        "hasimages": [
+          {
+            "relTo": {
+              "id": "GfF2UhH5TO6IBkRRXmMvhg",
+              "type": "image"
+            },
+            "action": "delete"
+          }
+        ]
+      }
+    }
+  }
+}

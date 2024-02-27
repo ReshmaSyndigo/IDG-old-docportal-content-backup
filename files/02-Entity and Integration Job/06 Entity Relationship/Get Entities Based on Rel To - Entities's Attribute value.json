@@ -1,0 +1,32 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ],
+        "relationshipsCriterion": [
+          {
+            "ischildof": {
+              "relTo": {
+                "type": "product"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "reltionshipAttributes": [
+        "ischlidof"
+      ]
+    },
+    "options": {
+      "maxRecords": 10
+    },
+    "isRelatedEntitySearch": true
+  }
+}

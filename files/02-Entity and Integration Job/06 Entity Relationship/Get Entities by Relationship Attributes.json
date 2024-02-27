@@ -1,0 +1,19 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ]
+      }
+    },
+    "fields": {
+      "relationships": [
+        "_ALL"
+      ],
+      "relationshipAttributes": [
+        "ischildof"
+      ]
+    }
+  }
+}

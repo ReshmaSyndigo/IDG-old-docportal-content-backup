@@ -1,0 +1,17 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ]
+      }
+    },
+    "fields":{
+      "attributes":["_ALL"]
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}

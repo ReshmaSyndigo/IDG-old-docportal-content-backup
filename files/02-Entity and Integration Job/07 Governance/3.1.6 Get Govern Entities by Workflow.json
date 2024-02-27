@@ -1,0 +1,21 @@
+{
+  "params": {
+    "query": {
+      "contexts": [
+        {
+          "workflow": "ensembleCreateWorkflow"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ],
+        "excludeNonContextual": true
+      }
+    },
+    "options":{
+      "maxRecords":1,
+      "from":0
+    }
+  }
+}

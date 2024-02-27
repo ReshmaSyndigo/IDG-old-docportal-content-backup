@@ -1,0 +1,20 @@
+{
+  "params": {
+    "query": {
+      "name": "hardware",
+      "filters": {
+        "typesCriterion": [
+          "classification"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    }
+  }
+}

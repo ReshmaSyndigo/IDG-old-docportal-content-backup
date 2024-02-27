@@ -1,0 +1,22 @@
+{
+  "params": {
+    "query": {
+      "contexts": [
+        {
+          "channel": "Germany Web"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ]
+      },
+      "id": "apiTC002"
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    }
+  }
+}

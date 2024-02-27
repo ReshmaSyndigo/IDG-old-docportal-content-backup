@@ -1,0 +1,29 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "classification"
+        ],
+        "relationshipsCriterion": [
+          {
+            "belongsto": {
+              "relTo": {
+                "type": "classification",
+                "id": "hardware"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    }
+  }
+}

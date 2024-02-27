@@ -1,0 +1,28 @@
+{
+  "params": {
+    "query": {
+      "id": "RDWSanityTest01",
+      "contexts": [
+        {
+          "channel": "Germany Web"
+        },
+        {
+          "country": "Germany"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}

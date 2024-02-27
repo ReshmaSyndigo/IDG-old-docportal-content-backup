@@ -1,0 +1,23 @@
+{
+  "params": {
+    "query": {
+      "ids": [
+        "entityid1",
+        "entityid1"
+      ],
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}

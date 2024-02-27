@@ -1,0 +1,25 @@
+{
+  "params": {
+    "query": {
+      "valueContexts": [
+        {
+          "source": "internal",
+          "locale": "de-DE"
+        }
+      ],
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ]
+      }
+    },
+    "fields": {
+      "relationships": [
+        "_ALL"
+      ],
+      "relationshipAttributes": [
+        "ischildof"
+      ]
+    }
+  }
+}

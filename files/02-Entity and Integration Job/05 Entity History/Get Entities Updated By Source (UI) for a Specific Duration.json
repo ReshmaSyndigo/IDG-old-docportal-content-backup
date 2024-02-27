@@ -1,0 +1,42 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "entitymanageevent"
+        ],
+         "propertiesCriterion": [
+          {
+            "modifiedDate": {
+              "gte": "2018-05-02T06:00:00.000-0500",
+               "lte": "2018-05-02T19:00:00.000-0500",
+              "type": "_DATETIME"
+            }
+          }
+        ],
+        "attributesCriterion": [
+          {
+            "eventType": {
+             "exact":"EntityUpdate"
+            }
+          },
+           {
+            "clientId": {
+             "exact":"rufClient"
+             
+            }
+          }
+          
+        ]
+      }
+       
+    },
+    "fields":{
+      "attributes":["_ALL"]
+    },
+  
+    "options":{
+      "maxRecords":1
+    }
+  }
+}

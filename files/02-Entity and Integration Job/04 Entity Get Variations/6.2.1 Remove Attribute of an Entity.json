@@ -1,0 +1,26 @@
+{
+  "entity": {
+    "id": "",
+    "type": "sku",
+    "properties": {
+      "source": "internal",
+      "createdByService": "entityservice",
+      "createdBy": "Miriam Pott",
+      "modifiedByService": "entityservice"
+    },
+    "data": {
+      "attributes": {
+        "upcbarcode": {
+          "values": [
+            {
+              "value": "85",
+              "source": "internal",
+              "locale": "en-US",
+              "action": "delete"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
