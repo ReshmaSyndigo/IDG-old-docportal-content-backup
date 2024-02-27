@@ -1,0 +1,9 @@
+{
+  "name": "open-app-entity-manage",
+  "detail": {
+    "queryParams": {
+      "id": "",
+      "type": ""
+    }
+  }
+}  

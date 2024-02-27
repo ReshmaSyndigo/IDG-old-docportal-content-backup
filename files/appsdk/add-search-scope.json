@@ -1,0 +1,14 @@
+{
+    "name": "add-search-scope",
+    "detail": {
+        "data": {
+            "scopeId": "classification filter",
+            "searchScope": {
+              "keywordCriterion": [],
+              "propertiesCriterion": [],
+              "attributesCriterion": [],
+              "relationshipsCriterion": []
+            }        
+        }
+    }
+}

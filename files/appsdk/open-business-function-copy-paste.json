@@ -1,0 +1,6 @@
+{
+    "action": "open-app-task-detail",
+    "data": {
+        "contextData": {}
+    }
+}

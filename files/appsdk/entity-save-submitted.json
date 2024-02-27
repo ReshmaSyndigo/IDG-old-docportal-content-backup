@@ -1,0 +1,58 @@
+{
+  "name": "entity-save-submitted",
+  "detail": {
+    "data": {
+      "entityInfo": [
+        {
+          "id": "ZKih-E5tTgWUlT4Eiv5LGw",
+          "type": "sku"
+        }
+      ],
+      "contextData": {
+        "ItemContexts": [
+          {
+            "id": "ZKih-E5tTgWUlT4Eiv5LGw",
+            "type": "sku",
+            "attributeNames": [
+              "mdmid",
+              "mdmname",
+              "description",
+              "productid",
+              "upc",
+              "color",
+              "size"
+            ],
+            "name": "june24th40k1strun19049",
+            "domain": {},
+            "permissionContext": {
+              "readPermission": true,
+              "writePermission": true
+            }
+          }
+        ],
+        "ValContexts": [
+          {
+            "source": "internal",
+            "locale": "en-US"
+          }
+        ],
+        "Contexts": [],
+        "DomainContexts": [
+          {
+            "domain": "thing"
+          }
+        ],
+        "UserContexts": [
+          {
+            "roles": [
+              "admin"
+            ],
+            "user": "anushree.bagchi@riversand.com_user",
+            "tenant": "rwtestedev",
+            "defaultRole": "admin"
+          }
+        ]
+      }
+    }
+  }
+}

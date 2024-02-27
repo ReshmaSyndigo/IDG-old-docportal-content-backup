@@ -1,0 +1,14 @@
+{
+  "name": "entity-loaded",
+  "detail": {
+    "data": {
+      "entityInfo": [
+        {
+          "id": "",
+          "type": ""
+        }
+      ],
+      "contextData": {}
+    }
+  }
+}

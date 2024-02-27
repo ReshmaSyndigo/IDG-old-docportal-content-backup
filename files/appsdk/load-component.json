@@ -1,0 +1,13 @@
+{
+    "name": "load-component",
+    "detail": {
+        "name": "",
+        "text": "",
+        "componentName": "",
+        "sharedData": {
+            "parentComponent": ""
+        },
+        "dockingPoint": "",
+        "contextData": {}
+     }
+}

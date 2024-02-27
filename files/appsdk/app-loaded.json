@@ -1,0 +1,8 @@
+{
+    "name": "app-loaded",
+    "detail": {
+        "data": {
+            "app-name": "app-entity-manage"
+        }
+    }
+}

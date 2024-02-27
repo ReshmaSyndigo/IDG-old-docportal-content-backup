@@ -1,0 +1,32 @@
+{
+  "metaInfo": {
+    "dataIndex": "genericObject",
+    "collectionName": "genericObjects",
+    "responseObjectName": "response"
+  },
+  "genericObjects": [
+    {
+      "id": "TestGenericObject113",
+      "name": "TestGenericObject113",
+      "type": "genericObject",
+      "data": {
+        "attributes": {
+          "dataObjectId": {
+            "values": [
+              {
+                "value": "testing123"
+              }
+            ]
+          },
+          "status": {
+            "values": [
+              {
+                "value": "COMPLETED"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "entity-details-tab-changed",
+  "detail": {
+    "data": {
+      "entityInfo": [
+        {
+          "id": "KbGyqWciS8mi9PXWlJL3Qg",
+          "type": "sku"
+        }
+      ],
+      "contextData": {
+        "UserContexts": [
+          {
+            "roles": [
+              "admin"
+            ],
+            "user": "anushree.bagchi@riversand.com_user",
+            "tenant": "rwtestedev",
+            "defaultRole": "admin"
+          }
+        ],
+        "ItemContexts": [
+          {
+            "id": "KbGyqWciS8mi9PXWlJL3Qg",
+            "type": "sku",
+            "attributeNames": [
+              "productclassification",
+              "mdmid",
+              "mdmname",
+              "brand",
+              "color",
+              "testnrdecimalcollection",
+              "printspeed",
+              "bagwidth"
+            ],
+            "name": "june24th40k1strun19103",
+            "domain": {},
+            "permissionContext": {
+              "readPermission": true,
+              "writePermission": true
+            }
+          }
+        ],
+        "NavigationContexts": [
+          {
+            "rock-context-selector": {
+              "source": [
+                {
+                  "id": "internal",
+                  "title": "Internal",
+                  "type": "source"
+                }
+              ],
+              "locale": [
+                {
+                  "id": "en-US",
+                  "title": "English - United States",
+                  "type": "locale"
+                }
+              ]
+            },
+            "rock-entity-header": {
+              "headerCollapse": false
+            },
+            "rock-entity-detail-tabs": {
+              "rock-tabs": {
+                "viewMode": "attributes",
+                "viewModeSubMenu": "",
+                "targetId": "rockTabs"
+              }
+            },
+            "rock-entity-sidebar": {
+              "rock-tabs": {
+                "viewMode": "actions",
+                "viewModeSubMenu": "",
+                "targetId": "sidebarTabs"
+              }
+            }
+          }
+        ],
+        "DomainContexts": [
+          {
+            "domain": "thing"
+          }
+        ],
+        "Contexts": [],
+        "GlobalContexts": [],
+        "ValContexts": [
+          {
+            "source": "internal",
+            "locale": "en-US"
+          }
+        ]
+      },
+      "previousTabName": "attributes",
+      "selectedTabName": "relationships"
+    }
+  }
+}

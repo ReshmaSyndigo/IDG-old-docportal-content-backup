@@ -1,0 +1,31 @@
+{
+  "name": "workflow-assignment-complete",
+  "detail": {
+    "data": {
+      "operation": 2,
+      "showNotificationToUser": false,
+      "context": {
+        "appInstanceId": "app-entity-discovery-component-rspN0VorZk1PgJxIH4",
+        "workflowName": "NewSKUIntroduction",
+        "workflowActivityName": "buyerApproval",
+        "workflowAction": "Approve",
+        "id": "ers2zrDdW911cag",
+        "type": false
+      },
+      "id": "9bc2fe41962e69bc",
+      "timeStamp": "2019-12-13T09:22:50.088Z",
+      "source": "ui",
+      "userId": "username@riversand.com_user",
+      "connectionId": "",
+      "requestStatus": "success",
+      "taskId": false,
+      "taskType": false,
+      "requestId": "14c7f805-ef20-41c3-9b71-4a8f6a448cb2",
+      "action": 9,
+      "dataIndex": "entityData",
+      "description": "System Manage Complete",
+      "status": "success",
+      "tenantId": "rwtestedev"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "govern-complete",
+  "detail": {
+    "data": {
+      "showNotificationToUser": true,
+      "context": {
+        "appInstanceId": "app-entity-discovery-component-rsgvrPzZLyoassbTlT",
+        "type": "sku",
+        "dataIndex": "entityData"
+      },
+      "id": "bc946481ebfba70a",
+      "timeStamp": "2019-12-11T05:47:29.062Z",
+      "source": "ui",
+      "userId": "anushree.bagchi@riversand.com_user",
+      "connectionId": "",
+      "requestStatus": "success",
+      "taskId": false,
+      "taskType": false,
+      "requestId": "14c7f805-ef20-41c3-9b71-4a8f6a448cb2",
+      "operation": false,
+      "action": 5,
+      "dataIndex": "entityData",
+      "description": "",
+      "status": "success",
+      "tenantId": "rwtestedev"
+    }
+  }
+} 

@@ -1,0 +1,21 @@
+{
+    "name": "search-scope-changed",
+    "detail": {
+        "searchScope": {
+            "coreScope": {
+                "criteria": {
+                    "params": {
+                        "typesCrtierion": {}
+                    }
+                }
+            },
+            "scopeid1": {
+                "criteria": {}
+            },
+            "scopeid2": {
+                "criteria": {}
+            },
+            "mergedScope": {}
+        }
+    }
+}

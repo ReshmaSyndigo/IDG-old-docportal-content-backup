@@ -1,0 +1,41 @@
+{
+  "name": "context-loaded",
+  "details": {
+    "data": {
+      "selectedContextData": {
+        "country": [],
+        "channel": [
+          {
+            "entityId": "Ima-sMTJSRKdDeGviTFfQA",
+            "id": "Belgium Web",
+            "title": "Belgium Web",
+            "subtitle": "Channel",
+            "type": "channel"
+          }
+        ],
+        "global": [],
+        "source": [
+          {
+            "id": "internal",
+            "title": "Internal",
+            "type": "source"
+          }
+        ],
+        "locale": [
+          {
+            "entityId": "xNpSAFQ4Q9mAJliaCmuebQ",
+            "id": "fr-FR",
+            "title": "French - France",
+            "subtitle": "Locales",
+            "type": "locale"
+          }
+        ],
+        "PreSelectedItems": {
+          "locale": [
+            "xNpSAFQ4Q9mAJliaCmuebQ"
+          ]
+        }
+      }
+    }
+  }
+}

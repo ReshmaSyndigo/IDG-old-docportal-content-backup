@@ -1,0 +1,108 @@
+{
+  "name": "entity-workflow-assignment-submitted",
+  "detail": {
+    "data": {
+      "entityInfo": [
+        {
+          "id": "uPsTh3flTfi0MXyltA8oiw",
+          "type": "sku"
+        }
+      ],
+      "contextData": {
+        "UserContexts": [
+          {
+            "roles": [
+              "admin"
+            ],
+            "user": "username@riversand.com_user",
+            "tenant": "rwtestedev",
+            "defaultRole": "admin"
+          }
+        ],
+        "ItemContexts": [
+          {
+            "id": "uPsTh3flTfi0MXyltA8oiw",
+            "type": "sku",
+            "attributeNames": [
+              "productclassification",
+              "mdmid",
+              "mdmname",
+              "brand",
+              "color",
+              "testnrdecimalcollection",
+              "printspeed",
+              "bagwidth"
+            ],
+            "name": "Mar22run5Kperf314",
+            "domain": {},
+            "permissionContext": {
+              "readPermission": true,
+              "writePermission": true
+            },
+            "workflowNames": [
+              "NewSKUIntroduction"
+            ]
+          }
+        ],
+        "NavigationContexts": [
+          {
+            "rock-context-selector": {
+              "source": [
+                {
+                  "id": "internal",
+                  "title": "Internal",
+                  "type": "source"
+                }
+              ],
+              "locale": [
+                {
+                  "id": "en-US",
+                  "title": "English - United States",
+                  "type": "locale"
+                }
+              ]
+            },
+            "rock-entity-sidebar": {
+              "rock-tabs": {
+                "viewMode": "workflow",
+                "viewModeSubMenu": "",
+                "targetId": "sidebarTabs"
+              }
+            }
+          }
+        ],
+        "DomainContexts": [
+          {
+            "domain": "thing"
+          }
+        ],
+        "Contexts": [],
+        "GlobalContexts": [],
+        "ValContexts": [
+          {
+            "source": "internal",
+            "locale": "en-US"
+          }
+        ]
+      },
+      "workflowInfo": {
+        "workflowName": "NewSKUIntroduction",
+        "activity": {
+          "activityName": "rollupToProduct",
+          "newlyAssignedUserName": "username@riversand.com"
+        }
+      },
+      "response": {
+        "status": "success",
+        "statusDetail": {
+          "messages": [
+            {
+              "message": "ChangeAssignmnent operation is ignored for user 'username@riversand.com', workflow 'NewSKUIntroduction' & activity 'rollupToProduct' as it is already assigned to requested user."
+            }
+          ]
+        },
+        "totalRecords": 0
+      }
+    }
+  }
+}

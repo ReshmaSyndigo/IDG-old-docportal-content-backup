@@ -1,0 +1,8 @@
+{
+  "name": "open-app-entity-create",
+  "detail": {
+    "queryParams": {
+      "type": ""
+    }
+  }
+}

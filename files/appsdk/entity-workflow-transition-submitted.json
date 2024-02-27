@@ -1,0 +1,12 @@
+{
+    "action": "entity-workflow-transition-submitted",
+    "data": {
+        "entityInfo": {
+          "id": "uPsTh3flTfi0MXyltA8oiw",
+          "type": "sku"
+        },       
+        "contextData": {},
+        "workflowInfo": {},
+        "response": {}
+    }
+}

@@ -1,0 +1,81 @@
+{
+  "name": "entity-sidebar-loading",
+  "detail": {
+    "data": {
+      "entityInfo": [
+        {
+          "id": "uPsTh3flTfi0MXyltA8oiw",
+          "type": "sku"
+        }
+      ],
+      "contextData": {
+        "UserContexts": [
+          {
+            "roles": [
+              "admin"
+            ],
+            "user": "username@riversand.com_user",
+            "tenant": "rwtestedev",
+            "defaultRole": "admin"
+          }
+        ],
+        "ItemContexts": [
+          {
+            "id": "uPsTh3flTfi0MXyltA8oiw",
+            "type": "sku",
+            "attributeNames": [
+              "mdmname",
+              null
+            ],
+            "name": "Mar22run5Kperf314",
+            "domain": {},
+            "permissionContext": {
+              "readPermission": true,
+              "writePermission": true
+            }
+          }
+        ],
+        "NavigationContexts": [
+          {
+            "rock-context-selector": {
+              "source": [
+                {
+                  "id": "internal",
+                  "title": "Internal",
+                  "type": "source"
+                }
+              ],
+              "locale": [
+                {
+                  "id": "en-US",
+                  "title": "English - United States",
+                  "type": "locale"
+                }
+              ]
+            },
+            "rock-entity-sidebar": {
+              "rock-tabs": {
+                "viewMode": "actions",
+                "viewModeSubMenu": "",
+                "targetId": "sidebarTabs"
+              }
+            }
+          }
+        ],
+        "DomainContexts": [
+          {
+            "domain": "thing"
+          }
+        ],
+        "Contexts": [],
+        "GlobalContexts": [],
+        "ValContexts": [
+          {
+            "source": "internal",
+            "locale": "en-US"
+          }
+        ]
+      }
+    }
+  }
+}
