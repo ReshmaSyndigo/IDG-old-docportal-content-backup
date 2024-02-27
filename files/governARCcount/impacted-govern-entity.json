@@ -1,0 +1,110 @@
+{
+  "id": "sku001",
+  "type": "sku",
+  "properties": {
+    "createdService": "entityGovernService",
+    "createdBy": "system_user",
+    "modifiedService": "entityGovernService",
+    "modifiedBy": "system_user",
+    "createdDate": "2021-06-20T14:02:58.249-0500",
+    "modifiedDate": "2021-06-20T14:02:58.249-0500"
+  },
+  "data": {
+    "attributes": {
+      "createdate": {
+        "values": [
+          {
+            "id": "60ee93aa-b64e-41c3-ae32-f3a695a1a0d7",
+            "value": "valueIds/ac9a0b73-509a-498b-b5ad-524da21af150",
+            "properties": {
+              "messages": [
+                {
+                  "messageType": "error",
+                  "messageCode": "InvalidVal001",
+                  "businessRule": "invalidValueRule"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "brand": {
+        "properties": {
+          "messages": [
+            {
+              "messageType": "error",
+              "messageCode": "Req001",
+              "businessRule": "requiredAttributeValidationRule"
+            }
+          ]
+        }
+      },
+      "merchantname": {
+        "properties": {
+          "messages": [
+            {
+              "messageType": "error",
+              "messageCode": "GEN001",
+              "businessRule": "addcontexerrorfromself_businessRule",
+              "messageParams": "Merchant Name is not populated"
+            }
+          ]
+        }
+      }
+    },
+    "relationships": {
+      "hasimages": [
+        {
+          "id": "img1",
+          "relTo": {
+            "id": "img1",
+            "type": "image"
+          },
+          "attributes": {
+            "isprimary": {
+              "values": [
+                {
+                  "id": "f896039c-e03e-4b2b-b49b-e9fdd2642df8",
+                  "value": "valueIds/d77602f1-7764-4d08-aa9c-398ca33e75f3",
+                  "properties": {
+                    "messages": [
+                      {
+                        "messageType": "error",
+                        "messageCode": "MaxLen001",
+                        "businessRule": "maxLengthValidationRule",
+                        "messageParams": 0
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "order": {
+              "properties": {
+                "messages": [
+                  {
+                    "messageType": "error",
+                    "messageCode": "Req001",
+                    "businessRule": "requiredAttributeValidationRule"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "contexts": [
+      {
+        "context": {
+          "country": "America"
+        }
+      },
+      {
+        "context": {
+          "country": "Germany"
+        }
+      }
+    ]
+  }
+}

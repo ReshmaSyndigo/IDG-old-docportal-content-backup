@@ -1,0 +1,65 @@
+{
+  "id": "sku_entityDefaultValuesModel",
+  "name": "sku",
+  "type": "entityDefaultValuesModel",
+  "domain": "generic",
+  "source": "internal",
+  "properties": {
+    "createdService": "entityManageModelService",
+    "createdBy": "system_user",
+    "modifiedService": "entityManageModelService",
+    "modifiedBy": "system_user",
+    "createdDate": "2021-06-18T03:24:52.590-0500",
+    "modifiedDate": "2021-06-18T03:24:52.590-0500"
+  },
+  "data": {
+    "attributes": {
+      "createdate": {
+        "properties": {
+          "defaultValues": "[[systemdatetime]]"
+        }
+      },
+      "enabled": {
+        "properties": {
+          "defaultValues": false
+        }
+      },
+      "alternatevendor": {
+        "group": [
+          {
+            "id": "0cdf7510-c52f-4f31-95be-7c718b9b4932",
+            "vendorpartnumber": {
+              "properties": {
+                "defaultValues": 232138
+              }
+            }
+          }
+        ]
+      }
+    },
+    "relationships": {
+      "hasimages": [
+        {
+          "id": "hasimagesowned",
+          "properties": {
+            "externalName": "Images",
+            "relationshipType": "association",
+            "relationshipOwnership": "owned",
+            "relatedEntityInfo": [
+              {
+                "relEntityType": "image"
+              }
+            ]
+          },
+          "attributes": {
+            "isprimary": {
+              "properties": {
+                "defaultValues": true
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

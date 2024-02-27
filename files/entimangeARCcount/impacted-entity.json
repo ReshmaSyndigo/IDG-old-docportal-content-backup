@@ -1,0 +1,184 @@
+{
+  "request": {
+    "returnRequest": false,
+    "requestId": "b47b6e87-8ecd-4ef4-bffc-56abd5dcf993",
+    "maxRecords": 2000,
+    "taskId": "b47b6e87-8ecd-4ef4-bffc-56abd5dcf993"
+  },
+  "response": {
+    "entities": [
+      {
+        "id": "sku002",
+        "name": "_EMPTY",
+        "type": "sku",
+        "properties": {
+          "createdService": "entityManageService",
+          "createdBy": "system_user",
+          "modifiedService": "entityManageService",
+          "modifiedBy": "system_user",
+          "createdDate": "2021-06-20T09:53:50.535-0500",
+          "modifiedDate": "2021-06-20T09:53:50.535-0500"
+        },
+        "data": {
+          "attributes": {
+            "color": {
+              "values": [
+                {
+                  "id": "df3ff3c5-a5c0-42ba-98f8-74af633d54c3",
+                  "value": "gfsfejsdh",
+                  "locale": "en-US",
+                  "source": "internal"
+                }
+              ]
+            },
+            "featurespecs": {
+              "values": [
+                {
+                  "id": "22038098-02fe-4eea-b9c0-54c845824284",
+                  "value": "gfejsdh",
+                  "locale": "en-US",
+                  "source": "internal"
+                }
+              ]
+            },
+            "manufacturernamedetails": {
+              "group": [
+                {
+                  "id": "6abed022-a460-48b4-8c0e-0927e6cf97bd",
+                  "locale": "en-US",
+                  "source": "internal",
+                  "genericnameofproduct": {
+                    "values": [
+                      {
+                        "id": "1e0ef47b-3823-497c-9142-e7fef7f88d78",
+                        "value": "val4",
+                        "locale": "en-US",
+                        "source": "internal"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "92cc6545-9597-44af-a5fa-dda6cc1d5903",
+                  "locale": "en-US",
+                  "os": "businessRule",
+                  "osid": "setnewdatevaluebr_businessRule",
+                  "ostype": "businessRule",
+                  "source": "internal",
+                  "genericnameofproduct": {
+                    "values": [
+                      {
+                        "id": "4d571329-58a8-4a9f-80f6-a699eb8c2c83",
+                        "value": "val2",
+                        "locale": "en-US",
+                        "os": "businessRule",
+                        "osid": "setnewdatevaluebr_businessRule",
+                        "ostype": "businessRule",
+                        "source": "internal"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "createdate": {
+              "values": [
+                {
+                  "id": "2aa26949-32c5-475c-a176-bbe08965b8ac",
+                  "value": "02:00:00:00:000",
+                  "locale": "en-US",
+                  "invalidValue": "02:00:00:00:000",
+                  "os": "businessRule",
+                  "osid": "setapimcscofurnishdatetimeattributevaluebr_businessRule",
+                  "ostype": "businessRule",
+                  "source": "internal"
+                }
+              ]
+            },
+            "enabled": {
+              "values": [
+                {
+                  "id": "61647349-a33f-4697-9d56-222d82ccd544",
+                  "value": false,
+                  "locale": "en-US",
+                  "os": "defaults",
+                  "osid": "sku_entityDefaultValuesModel",
+                  "ostype": "entityDefaultValuesModel",
+                  "source": "internal"
+                }
+              ]
+            }
+          },
+          "relationships": {
+            "hasimages": [
+              {
+                "id": "img1",
+                "relTo": {
+                  "id": "img1",
+                  "type": "image"
+                },
+                "attributes": {
+                  "assetsequence": {
+                    "values": [
+                      {
+                        "id": "046507dc-62e3-4479-a970-e6481e2b73cf",
+                        "value": 2,
+                        "locale": "en-US",
+                        "source": "internal"
+                      }
+                    ]
+                  },
+                  "isprimary": {
+                    "values": [
+                      {
+                        "id": "110f2ebf-e8f4-464e-8f9d-cb896b4ea10f",
+                        "value": "true",
+                        "locale": "en-US",
+                        "os": "defaults",
+                        "osid": "sku_entityDefaultValuesModel",
+                        "ostype": "entityDefaultValuesModel",
+                        "source": "internal"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "contexts": [
+            {
+              "context": {
+                "country": "America"
+              },
+              "attributes": {
+                "testattrname": {
+                  "values": [
+                    {
+                      "id": "cb43cc37-3bdf-4b5d-b8bc-4e7c39100dbe",
+                      "value": "",
+                      "locale": "en-US",
+                      "os": "businessRule",
+                      "osid": "getattributevaluefromcontext_businessRule",
+                      "ostype": "businessRule",
+                      "source": "internal"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "context": {
+                "country": "Germany"
+              },
+              "os": "businessRule",
+              "osid": "addtocontext_businessRule",
+              "ostype": "businessRule"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "success",
+    "totalRecords": 1
+  }
+}

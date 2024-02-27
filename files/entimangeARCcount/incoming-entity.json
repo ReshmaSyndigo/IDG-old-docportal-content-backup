@@ -1,0 +1,68 @@
+{
+  "entity": {
+    "id": "sku001",
+    "name": "sku001",
+    "type": "sku",
+    "data": {
+      "attributes": {
+        "color": {
+          "values": [
+            {
+              "value": "gfsfejsdh",
+              "locale": "en-US",
+              "source": "internal"
+            }
+          ]
+        },
+        "featurespecs": {
+          "values": [
+            {
+              "value": "gfejsdh",
+              "locale": "en-US",
+              "source": "internal"
+            }
+          ]
+        },
+        "manufacturernamedetails": {
+          "group": [
+            {
+              "genericnameofproduct": {
+                "values": [
+                  {
+                    "value": "val4",
+                    "locale": "en-US",
+                    "source": "internal"
+                  }
+                ]
+              },
+              "locale": "en-US",
+              "source": "internal"
+            }
+          ]
+        }
+      },
+      "relationships": {
+        "hasimages": [
+          {
+            "id": "img1",
+            "relTo": {
+              "id": "img1",
+              "type": "image"
+            },
+            "attributes": {
+              "assetsequence": {
+                "values": [
+                  {
+                    "value": 2,
+                    "locale": "en-US",
+                    "source": "internal"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

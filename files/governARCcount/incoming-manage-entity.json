@@ -1,0 +1,170 @@
+{
+  "id": "sku001",
+  "name": "_EMPTY",
+  "type": "sku",
+  "properties": {
+    "createdService": "entityManageService",
+    "createdBy": "system_user",
+    "modifiedService": "entityManageService",
+    "modifiedBy": "system_user",
+    "createdDate": "2021-06-20T14:02:58.107-0500",
+    "modifiedDate": "2021-06-20T14:02:58.107-0500"
+  },
+  "data": {
+    "attributes": {
+      "color": {
+        "values": [
+          {
+            "id": "442d7bea-6cea-4918-8583-aab6812c5bda",
+            "value": "gfsfejsdh",
+            "locale": "en-US",
+            "source": "internal"
+          }
+        ]
+      },
+      "featurespecs": {
+        "values": [
+          {
+            "id": "78d791fa-8391-45c9-a7ed-46361cec0061",
+            "value": "gfejsdh",
+            "locale": "en-US",
+            "source": "internal"
+          }
+        ]
+      },
+      "manufacturernamedetails": {
+        "group": [
+          {
+            "id": "d1e659cf-a864-4e75-974f-f354653126ae",
+            "locale": "en-US",
+            "source": "internal",
+            "genericnameofproduct": {
+              "values": [
+                {
+                  "id": "625b5b67-d13d-4b48-ac44-dca3af6607b6",
+                  "value": "val4",
+                  "locale": "en-US",
+                  "source": "internal"
+                }
+              ]
+            }
+          },
+          {
+            "id": "964d5706-c4f0-41db-9b8c-d8590b4ecf36",
+            "locale": "en-US",
+            "os": "businessRule",
+            "osid": "setnewdatevaluebr_businessRule",
+            "ostype": "businessRule",
+            "source": "internal",
+            "genericnameofproduct": {
+              "values": [
+                {
+                  "id": "f5f12904-5bde-4ab9-8272-02e544823e54",
+                  "value": "val2",
+                  "locale": "en-US",
+                  "os": "businessRule",
+                  "osid": "setnewdatevaluebr_businessRule",
+                  "ostype": "businessRule",
+                  "source": "internal"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "createdate": {
+        "values": [
+          {
+            "id": "ac9a0b73-509a-498b-b5ad-524da21af150",
+            "value": "02:00:00:00:000",
+            "locale": "en-US",
+            "invalidValue": "02:00:00:00:000",
+            "os": "businessRule",
+            "osid": "setapimcscofurnishdatetimeattributevaluebr_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "enabled": {
+        "values": [
+          {
+            "id": "e1eada38-0783-4046-ae3c-19f7ba5318f7",
+            "value": false,
+            "locale": "en-US",
+            "os": "defaults",
+            "osid": "sku_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      }
+    },
+    "relationships": {
+      "hasimages": [
+        {
+          "id": "img1",
+          "relTo": {
+            "id": "img1",
+            "type": "image"
+          },
+          "attributes": {
+            "assetsequence": {
+              "values": [
+                {
+                  "id": "e3127ea4-42ca-4cc6-bb28-a8330424369a",
+                  "value": 2,
+                  "locale": "en-US",
+                  "source": "internal"
+                }
+              ]
+            },
+            "isprimary": {
+              "values": [
+                {
+                  "id": "d77602f1-7764-4d08-aa9c-398ca33e75f3",
+                  "value": "true",
+                  "locale": "en-US",
+                  "os": "defaults",
+                  "osid": "sku_entityDefaultValuesModel",
+                  "ostype": "entityDefaultValuesModel",
+                  "source": "internal"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "contexts": [
+      {
+        "context": {
+          "country": "America"
+        },
+        "attributes": {
+          "testattrname": {
+            "values": [
+              {
+                "id": "13918101-06a3-48b3-a346-b115b413d854",
+                "value": "",
+                "locale": "en-US",
+                "os": "businessRule",
+                "osid": "getattributevaluefromcontext_businessRule",
+                "ostype": "businessRule",
+                "source": "internal"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "context": {
+          "country": "Germany"
+        },
+        "os": "businessRule",
+        "osid": "addtocontext_businessRule",
+        "ostype": "businessRule"
+      }
+    ]
+  }
+}

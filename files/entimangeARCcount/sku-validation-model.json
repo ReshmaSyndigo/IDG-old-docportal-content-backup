@@ -1,0 +1,148 @@
+{
+  "id": "sku_entityValidationModel",
+  "name": "sku",
+  "type": "entityValidationModel",
+  "domain": "generic",
+  "source": "internal",
+  "properties": {
+    "createdService": "entityManageModelService",
+    "createdBy": "system_user",
+    "createdDate": "2021-06-16T04:50:40.470-0500",
+    "modifiedService": "entityManageModelService",
+    "modifiedBy": "system_user",
+    "modifiedDate": "2021-06-16T07:05:28.482-0500"
+  },
+  "data": {
+    "attributes": {
+      "createdate": {
+        "properties": {
+          "isLocalizable": false,
+          "required": true
+        }
+      },
+      "discount": {
+        "properties": {
+          "precision": 2,
+          "isLocalizable": false,
+          "range": [
+            {
+              "rangeTo": "083249923479234",
+              "rangeFrom": "0100"
+            }
+          ]
+        }
+      },
+      "brand": {
+        "properties": {
+          "maxLength": 1000,
+          "isLocalizable": false,
+          "required": true
+        }
+      },
+      "alternatevendor": {
+        "group": [
+          {
+            "id": "09abd892-f563-49f6-9860-36e20ebf4c37",
+            "vendorcost": {
+              "properties": {
+                "isLocalizable": false
+              }
+            },
+            "vendorid": {
+              "properties": {
+                "isLocalizable": false,
+                "pattern": [
+                  {
+                    "regexPattern": "[A-Za-z][0-9]{4}"
+                  }
+                ]
+              }
+            },
+            "vendorpartnumber": {
+              "properties": {
+                "isLocalizable": false
+              }
+            }
+          }
+        ],
+        "properties": {
+          "isLocalizable": true
+        }
+      }
+    },
+    "relationships": {
+      "hasimages": [
+        {
+          "id": "hasimagesowned",
+          "properties": {
+            "relationshipType": "association",
+            "relationshipOwnership": "owned",
+            "relatedEntityInfo": [
+              {
+                "relEntityType": "image"
+              }
+            ],
+            "cardinality": [
+              {
+                "minimum": 1,
+                "maximum": 1
+              }
+            ]
+          },
+          "attributes": {
+            "automergereldec": {
+              "properties": {
+                "precision": 3
+              }
+            },
+            "automergerelstringrefcol": {
+              "properties": {
+                "isCollection": true
+              }
+            },
+            "automergerelstringcol": {
+              "properties": {
+                "isCollection": true
+              }
+            },
+            "automergeignoremerge": {
+              "properties": {
+                "isCollection": true
+              }
+            },
+            "apiscochbrandsize": {
+              "properties": {
+                "isLocalizable": false,
+                "isCollection": true
+              }
+            },
+            "order": {
+              "properties": {
+                "required": true
+              }
+            },
+            "sbrandsize": {
+              "properties": {
+                "isLocalizable": false,
+                "isCollection": true
+              }
+            },
+            "assetsequence": {
+              "properties": {
+                "isLocalizable": false
+              }
+            },
+            "isprimary": {
+              "properties": {
+                "minLength": 0,
+                "maxLength": 0,
+                "isLocalizable": false,
+                "required": true
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
