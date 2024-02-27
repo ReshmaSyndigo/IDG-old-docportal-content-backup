@@ -1,0 +1,11 @@
+{
+  "adminObject": {
+    "id": "someguid",
+    "type": "adminObject",
+    "properties": {
+      "storageType": "stream",
+      "objectKey": "core-apps-config-1.47.0.1031.zip",
+      "tenantId": "rdw"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "entityValidationModel"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "authorizationModel"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [ 
+        "_ALL"
+      ]
+    }
+  }
+} 

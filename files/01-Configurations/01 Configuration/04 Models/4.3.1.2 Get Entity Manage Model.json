@@ -1,0 +1,19 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "entityManageModel"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    }
+  }
+}

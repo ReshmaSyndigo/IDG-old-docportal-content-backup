@@ -1,0 +1,20 @@
+{
+  "params": {
+    "query": {
+      "id": "sku",
+      "filters": {
+        "typesCriterion": [
+          "_ALL"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "adminObject": {
+    "id": "someguid",
+    "type": "adminObject",
+    "properties": {
+      "storageType": "stream",
+      "objectKey": "rdw-config-1.1.1730-test.zip",
+      "tenantId": "rdw"
+    }
+  }
+}

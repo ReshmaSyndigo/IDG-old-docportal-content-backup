@@ -1,0 +1,23 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "entityManageModel"
+        ]
+      },
+      "id": "hardware_entityManageModel"
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}
