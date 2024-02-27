@@ -1,0 +1,14 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "businessCondition"
+        ]
+      }
+    },
+    "options": {
+      "maxRecords": 1
+    }
+  }
+}
