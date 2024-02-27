@@ -1,0 +1,343 @@
+{
+    "id": "sampleEntity1",
+    "name": "sampleEntity1",
+    "type": "sku",
+    "data": {
+        "attributes": {
+            "string1": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "http://violetautonode3/Images/LenovoLaptop0.jpg"
+                    }
+                ]
+            },
+            "string2": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "sampleEntity1"
+                    }
+                ]
+            },
+            "string3": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "L X W X H"
+                    }
+                ]
+            },
+            "boolean": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": true
+                    }
+                ]
+            },
+            "integerwithuom": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": 100,
+                        "uom": "Hz"
+                    }
+                ]
+            },
+            "decimalwithuom": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": 100.555,
+                        "uom": "Wh"
+                    }
+                ]
+            },
+            "decimal": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": 99.00
+                    }
+                ]
+            },
+            "integer": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": 35
+                    }
+                ]
+            },
+            "date": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "7/31/2018"
+                    }
+                ]
+            },
+            "stringcollection": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "Attractive design"
+                    },
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "Metal Wall Scone with 4 Tea Light Candle Holder"
+                    }
+                ]
+            },
+            "string4": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "6238238888212"
+                    }
+                ]
+            },
+            "path": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "ACCESSORIES>>DECORATIVE ACCESSORIES>>RIBBONS"
+                    }
+                ]
+            },
+            "reference1": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "United States of America"
+                    }
+                ]
+            },
+            "referencecollection": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "Small"
+                    },
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "Medium"
+                    }
+                ]
+            },
+            "reference2": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "1/4 ZIP FLEECE"
+                    }
+                ]
+            },
+            "datetime": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "2018-07-30T23:01:36.338-0500"
+                    }
+                ]
+            },
+            "string5": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "en-US",
+                        "value": "Perf - ExclusiveLane Home Decorative Metal Wall Scone with 4 Tea Light Candle Holders (Gold)"
+                    }
+                ]
+            },
+            "referencelocalizable": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "fr-FR",
+                        "value": "Rouge"
+                    },
+                    {
+                        "source": "internal",
+                        "locale": "fr-FR",
+                        "value": "Blanche"
+                    }
+                ]
+            },
+            "stringlocalized": {
+                "values": [
+                    {
+                        "source": "internal",
+                        "locale": "fr-FR",
+                        "value": "ExclusiveLane Scone mural en métal avec 4 bougeoirs (or)"
+                    },
+                    {
+                        "source": "internal",
+                        "locale": "de-DE",
+                        "value": "ExclusiveLane Scone Wandleuchte aus Metall mit 4 Kerzenhaltern (Gold)"
+                    }
+                ]
+            },
+            "nested": {
+                "group": [
+                    {
+                        "nestedchildinteger": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "en-US",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "nestedchildstring1": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "en-US",
+                                    "value": "Vendor12"
+                                }
+                            ]
+                        },
+                        "nestedchildstring2": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "en-US",
+                                    "value": "34628892"
+                                }
+                            ]
+                        },
+                        "nestedchilddecimal": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "en-US",
+                                    "value": 12.99
+                                }
+                            ]
+                        },
+                        "locale": "en-US",
+                        "source": "internal"
+                    }
+                ]
+            },
+            "nestedlocalized": {
+                "group": [
+                    {
+                        "nestedchildinteger": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "fr-FR",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "nestedchildstring1": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "fr-FR",
+                                    "value": "Lavez le mesclun."
+                                }
+                            ]
+                        },
+                        "nestedchildstring2": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "fr-FR",
+                                    "value": "1 min"
+                                }
+                            ]
+                        },
+                        "locale": "fr-FR",
+                        "source": "internal"
+                    },
+                    {
+                        "nestedchildinteger": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "fr-FR",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        "nestedchildstring1": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "fr-FR",
+                                    "value": "Lavez et couper les poivrons."
+                                }
+                            ]
+                        },
+                        "nestedchildstring2": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "fr-FR",
+                                    "value": "1 min"
+                                }
+                            ]
+                        },
+                        "locale": "fr-FR",
+                        "source": "internal"
+                    },
+                    {
+                        "nestedchildinteger": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "fr-FR",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        "nestedchildstring1": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "fr-FR",
+                                    "value": "Lavez les tomates et ajoutez les, les olives, les oeufs durs, le thon et les anchois à la salade."
+                                }
+                            ]
+                        },
+                        "nestedchildstring2": {
+                            "values": [
+                                {
+                                    "source": "internal",
+                                    "locale": "fr-FR",
+                                    "value": "3 min"
+                                }
+                            ]
+                        },
+                        "locale": "fr-FR",
+                        "source": "internal"
+                    }
+                ]
+            }
+        }
+    }
+}

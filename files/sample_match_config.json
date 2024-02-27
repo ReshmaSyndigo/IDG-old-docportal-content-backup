@@ -1,0 +1,64 @@
+{
+  "id": "{{Type}}_matchConfig",
+  "name": "{{Type}}_matchConfig",
+  "type": "matchConfig",
+  "data": {
+    "jsonData": {
+      "matchRules": [
+        {
+          "matchType": "deterministic",
+          "searchQuery": {
+            "query": {
+              "filters": {
+                "attributesCriterion": [
+                  {
+                    "dataObjectId": {
+                      "exact": "{{dataObjectId}}",
+                      "type": "_STRING"
+                    }
+                  },
+                  {
+                    "dataObjectType": {
+                      "exact": "{{dataObjectType}}",
+                      "type": "_STRING"
+                    }
+                  }
+                ],
+                "propertiesCriterion": [
+                  {
+                    "entityId": {
+                      "exact": "{{entityId}}",
+                      "type": "_STRING"
+                    }
+                  },
+                  {
+                    "entityType": {
+                      "exact": "{{entityType}}",
+                      "type": "_STRING"
+                    }
+                  },
+                  {
+                    "channelId": {
+                      "exact": "{{channelId}}",
+                      "type": "_STRING"
+                    }
+                  }
+                ],
+                "typesCriterion": [
+                  "connectorstate"
+                ]
+              },
+              "valueContexts": [
+                {
+                  "source": "internal",
+                  "locale": "en-US"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "type": "config"
+    }
+  }
+}

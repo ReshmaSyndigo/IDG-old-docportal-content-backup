@@ -1,0 +1,110 @@
+{
+  "id": "organization_entityManageModel",
+  "name": "organization",
+  "type": "entityManageModel",
+  "domain": "generic",
+  "source": "internal",
+  "properties": {
+    "createdService": "entityManageModelService",
+    "createdBy": "system_user",
+    "createdDate": "2021-06-07T05:28:05.176-0500",
+    "mergeMatrix": [
+      {
+        "mergeSequence": "IC>>BB>>SAP",
+        "ignoreMergeMatrix": false
+      }
+    ],
+    "modifiedService": "entityManageModelService",
+    "modifiedBy": "system_user",
+    "modifiedDate": "2021-08-18T08:00:23.918-0500"
+  },
+  "data": {
+    "attributes": {
+      "siccode": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "inheritedemployeecount": {
+        "properties": {
+          "dataType": "integer"
+        }
+      },
+      "companyid": {
+        "properties": {
+          "isEntityIdentifier": true,
+          "dataType": "string"
+        }
+      },
+      "invoicename": {
+        "properties": {
+          "dataType": "string",
+          "mergeMatrix": [
+            {
+              "mergeSequence": "BB>>IC",
+              "ignoreMergeMatrix": false
+            }
+          ]
+        }
+      },
+      "orgname": {
+        "properties": {
+          "isExternalName": true,
+          "isLocalizable": true,
+          "dataType": "string"
+        }
+      },
+      "street": {
+        "properties": {
+          "dataType": "string",
+          "mergeMatrix": [
+            {
+              "mergeSequence": "BB>>IC",
+              "ignoreMergeMatrix": false
+            }
+          ]
+        }
+      },
+      "alternatename": {
+        "properties": {
+          "isLocalizable": true,
+          "dataType": "string",
+          "mergeMatrix": [
+            {
+              "mergeSequence": "BB>>IC",
+              "ignoreMergeMatrix": false
+            }
+          ]
+        }
+      }
+    },
+    "contexts": [
+      {
+        "context": {
+          "country": "Germany"
+        },
+        "properties": {
+          "mergeMatrix": [
+            {
+              "mergeSequence": "IC>>BB>>SAP",
+              "ignoreMergeMatrix": false
+            }
+          ]
+        },
+        "attributes": {
+          "accountsite": {
+            "properties": {
+              "dataType": "string",
+              "mergeMatrix": [
+                {
+                  "mergeSequence": "BB>>IC",
+                  "ignoreMergeMatrix": false
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

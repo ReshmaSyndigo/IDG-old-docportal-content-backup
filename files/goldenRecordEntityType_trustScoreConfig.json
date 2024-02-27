@@ -1,0 +1,15 @@
+{
+  "configObject": {
+    "id": "organization_trustScoreConfig",
+    "type": "trustScoreConfig",
+    "data": {
+      "jsonData": {
+        "bb": 50,
+        "erp": 30,
+        "sap": 20,
+        "legacyx": 20.5,
+        "ic": 100
+      }
+    }
+  }
+}

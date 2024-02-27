@@ -1,0 +1,136 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "sys_import_genericobject_excel_ui_task_base",
+      "name": "sys_import_genericobject_excel_ui_task_base",
+      "type": "integrationprofile",
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "RSConnect",
+              "service": "ENTITY_IMPORT",
+              "channel": "UI",
+              "format": "GENERIC_OBJECT_EXCEL",
+              "source": "{{TENANT_SOURCE}}",
+              "subtype": "User",
+              "user": "system",
+              "role": "admin",
+              "order": "10"
+            },
+            "jsonData": {
+              "statusEventEnabled": false,
+              "transform": {
+                "settings": {
+                  "defaultEntityType": "rsunknown",
+                  "allowNullValues": "false",
+                  "loadDefaultOverrides": true,
+                  "clearMissingAttributes": "false",
+                  "strategies": [
+                    {
+                      "caseFormat": "NONE",
+                      "trimTrailingNumbers": "false",
+                      "isDefault": "false",
+                      "removeSpecialCharacters": "false",
+                      "removeWhitespace": "false",
+                      "useExternalName": "true",
+                      "trimLeadingNumbers": "false"
+                    }
+                  ],
+                  "entityType": "@field(Type)",
+                  "excludeMappingHeaders": [
+                    "Action",
+                    "Type",
+                    "ID",
+                    "Name"
+                  ],
+                  "enableDynamicMapping": "true",
+                  "useDefaultContext": false,
+                  "collectionSeparator": "||"
+                }
+              },
+              "integrationType": "User",
+              "isEnabled": "true",
+              "publish": {
+                "filter": {
+                  "include": {},
+                  "exclude": {}
+                },
+                "isBinaryStreamPersistent": "false",
+                "channel": [
+                  {
+                    "settings": {
+                      "requestforvaluemapping": "false"
+                    },
+                    "type": "genericObjectConnector"
+                  }
+                ],
+                "format": {
+                  "settings": {
+                    "additionalSettings": {
+                      "supportsCollection": "true",
+                      "encoding": "utf8"
+                    }
+                  },
+                  "type": "GENERIC_OBJECT_JSON",
+                  "batchSize": 1,
+                  "version": "1.1"
+                }
+              },
+              "isMergeableWithCustom": true,
+              "collect": {
+                "filter": {
+                  "include": {},
+                  "exclude": {}
+                },
+                "isBinaryStreamPersistent": "true",
+                "channel": [
+                  {
+                    "settings": {
+                      "sourceFolder": "",
+                      "pattern": "*"
+                    },
+                    "type": "folderConnector"
+                  }
+                ],
+                "format": {
+                  "settings": {
+                    "sheets": [
+                      {
+                        "dataInfo": "help",
+                        "name": "Help",
+                        "headerRowNumber": 4
+                      },
+                      {
+                        "headerRow": "@rowHeader(Id,Type)",
+                        "dataInfo": "entity",
+                        "name": "Connector State",
+                        "headerRowNumber": 2
+                      },
+                      {
+                        "headerRow": "@rowHeader(Id,Type)",
+                        "dataInfo": "entity",
+                        "name": "Scheduled Request Object",
+                        "headerRowNumber": 2
+                      }
+                    ],
+                    "additionalSettings": {
+                      "tenantIdCellAddress": "B8"
+                    }
+                  },
+                  "type": "GENERIC_OBJECT_EXCEL",
+                  "version": "1.1"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "organization_mergeModel",
+  "name": "organizationmergemodel",
+  "type": "mergeModel",
+  "data": {
+    "attributes": {
+      "siccode": {
+        "properties": {
+          "strategy": "longest"
+        }
+      },
+      "accountsite": {
+        "properties": {
+          "strategy": "longest"
+        }
+      },
+      "invoicename": {
+        "properties": {
+          "strategy": "longest"
+        }
+      }
+    },
+    "contexts": [
+      {
+        "context": {
+          "country": "Germany"
+        },
+        "attributes": {
+          "city": {
+            "properties": {
+              "strategy": "longest"
+            }
+          },
+          "parentdunsnumber": {
+            "properties": {
+              "strategy": "longest"
+            }
+          }
+        },
+        "relationships": {
+          "ischildof": [
+            {
+              "attributes": {
+                "reldec": {
+                  "properties": {
+                    "strategy": "longest"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

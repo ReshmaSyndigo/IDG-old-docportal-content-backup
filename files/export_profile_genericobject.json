@@ -1,0 +1,117 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "sys_export_genericobject_data_excel_ui_task_base",
+      "name": "sys_export_genericobject_data_excel_ui_task_base",
+      "type": "integrationprofile",
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "RSConnect",
+              "channel": "JOB",
+              "format": "GENERIC_OBJECT_EXCEL",
+              "order": "10",
+              "role": "admin",
+              "service": "ENTITY_EXPORT",
+              "source": "internal",
+              "subtype": "User",
+              "user": "system"
+            },
+            "jsonData": {
+              "statusEventEnabled": false,
+              "integrationType": "User",
+              "isEnabled": "true",
+              "isMergeableWithCustom": true,
+              "collect": {
+                "filter": {
+                  "include": {
+                    "typesCriterion": {}
+                  },
+                  "exclude": {
+                    "typesCriterion": {
+                      "queryFilters": {}
+                    }
+                  }
+                },
+                "isBinaryStreamPersistent": "true",
+                "channel": [
+                  {
+                    "settings": {
+                      "additionalSettings": {
+                        "isGenericObjectPublish": true
+                      }
+                    },
+                    "type": "genericObjectConnector"
+                  }
+                ],
+                "format": {
+                  "settings": {
+                    "supportsCollection": true,
+                    "additionalSettings": {},
+                    "encoding": "utf8"
+                  },
+                  "type": "GENERIC_OBJECT_JSON",
+                  "batchSize": 100,
+                  "version": "1.1"
+                }
+              },
+              "publish": {
+                "filter": {
+                  "include": {},
+                  "exclude": {}
+                },
+                "isBinaryStreamPersistent": "true",
+                "channel": [
+                  {
+                    "settings": {
+                      "mode": "ASYNC"
+                    },
+                    "type": "presentationConnector"
+                  }
+                ],
+                "format": {
+                  "settings": {
+                    "additionalSettings": {
+                      "tenantIdCellAddress": "B7",
+                      "metaInfoSheet": "Help"
+                    },
+                    "encoding": "utf8"
+                  },
+                  "type": "GENERIC_OBJECT_EXCEL",
+                  "batchSize": 1000,
+                  "version": "1.1"
+                }
+              },
+              "transform": {
+                "settings": {
+                  "allowNullValues": false,
+                  "clearMissingAttributes": false,
+                  "strategies": [
+                    {
+                      "caseFormat": "NONE",
+                      "trimTrailingNumbers": false,
+                      "isDefault": false,
+                      "removeSpecialCharacters": false,
+                      "removeWhitespace": false,
+                      "useExternalName": true,
+                      "trimLeadingNumbers": false
+                    }
+                  ],
+                  "entityType": "@field(type)",
+                  "enableDynamicMapping": true,
+                  "source": "rms"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

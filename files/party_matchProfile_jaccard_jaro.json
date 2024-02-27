@@ -1,0 +1,45 @@
+{
+    "id": "party_matchProfile",
+    "name": "party_matchProfile",
+    "type": "matchProfile",
+    "data": {
+        "jsonData": {
+            "algorithms": {
+                "SOR": "sorensen",
+                "RAT": "ratcliff",
+                "CDS": "combinedDistanceSequential",
+                "OLV": "overlapLevenshtein",
+                "OMP": "overlapMetaphone",
+                "JLV": "jaccardLevenshtein",
+                "JMP": "jaccardMetaphone",
+                "WJJ": "weightedJaccardJarowinkler"
+            },
+            "familyRules": [
+                {
+                    "name": "system_businessname",
+                    "algorithms": [
+                        "WJJ"
+                    ]
+                },
+                {
+                    "name": "system_address",
+                    "algorithms": [
+                        "WJJ"
+                    ]
+                },
+                {
+                    "name": "system_country",
+                    "algorithms": [
+                        "OLV"
+                    ]
+                },
+                {
+                    "name": "system_zipcode",
+                    "algorithms": [
+                        "OLV"
+                    ]
+                }
+            ]
+        }
+    }
+}

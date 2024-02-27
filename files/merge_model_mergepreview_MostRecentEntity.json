@@ -1,0 +1,66 @@
+{
+  "entityModel": {
+    "id": "organization_mergeModel",
+    "name": "organizationmergemodel",
+    "type": "mergeModel",
+    "data": {
+      "attributes": {
+        "siccode": {
+          "properties": {
+            "strategy": "MostRecentEntity"
+          }
+        }
+      },
+      "relationships": {
+        "ischildof": [
+          {
+            "attributes": {
+              "relAttribute": {
+                "properties": {
+                  "strategy": "MostRecentEntity",
+                  "fallback": [
+                    {
+                      "strategy": "SourceBasedScore"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      },
+      "contexts": [
+        {
+          "context": {
+            "country": "Germany"
+          },
+          "attributes": {
+            "siccode": {
+              "properties": {
+                "strategy": "MostRecentEntity"
+              }
+            }
+          },
+          "relationships": {
+            "ischildof": [
+              {
+                "attributes": {
+                  "relAttribute": {
+                    "properties": {
+                      "strategy": "MostRecentEntity",
+                      "fallback": [
+                        {
+                          "strategy": "SourceBasedScore"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

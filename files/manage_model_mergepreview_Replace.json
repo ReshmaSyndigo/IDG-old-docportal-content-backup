@@ -1,0 +1,65 @@
+{
+  "entityModel": {
+    "id": "organizaion_entityManageModel",
+    "name": "organization",
+    "data": {
+      "attributes": {
+        "nested1": {
+          "properties": {
+            "dataType": "nested",
+            "mergeMatrix": [
+              {
+                "mergeSequence": "BB>>IC>>SAP",
+                "replace": true
+              }
+            ]
+          }
+        },
+        "nested2": {
+          "properties": {
+            "dataType": "nested",
+            "mergeMatrix": [
+              {
+                "mergeSequence": "BB>>IC",
+                "ignoreMergeMatrix": false,
+                "replace": true
+              }
+            ]
+          }
+        }
+      },
+      "contexts": [
+        {
+          "context": {
+            "country": "Germany"
+          },
+          "attributes": {
+            "nested3": {
+              "properties": {
+                "dataType": "nested",
+                "mergeMatrix": [
+                  {
+                    "mergeSequence": "BB>>IC>>SAP",
+                    "replace": true
+                  }
+                ]
+              }
+            },
+            "nested4": {
+              "properties": {
+                "dataType": "nested",
+                "mergeMatrix": [
+                  {
+                    "mergeSequence": "BB>>IC",
+                    "ignoreMergeMatrix": false,
+                    "replace": true
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

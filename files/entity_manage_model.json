@@ -1,0 +1,1476 @@
+{
+  "id": "organization_entityManageModel",
+  "timestamp": 1650957159205,
+  "name": "organization",
+  "type": "entityManageModel",
+  "domain": "generic",
+  "source": "internal",
+  "systemInfo": {
+    "tenantId": "t1"
+  },
+  "version": 10,
+  "properties": {
+    "mergeMatrix": [
+      {
+        "mergeSequence": "ERP>>FIN>>MKTG>>CRM"
+      }
+    ]
+  },
+  "data": {
+    "attributes": {
+      "country": {
+        "properties": {
+          "sortSequence": 20,
+          "dataType": "string",
+          "isReferenceType": true,
+          "referenceEntityInfo": [
+            {
+              "refEntityType": "addresscountry",
+              "isReferenceType": true,
+              "refRelationshipName": "hasReferenceTo"
+            }
+          ]
+        }
+      },
+      "siccode": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "city": {
+        "properties": {
+          "sortSequence": 50,
+          "dataType": "string",
+          "isReferenceType": true,
+          "referenceEntityInfo": [
+            {
+              "refEntityType": "city",
+              "isReferenceType": true,
+              "refRelationshipName": "hasReferenceTo"
+            }
+          ]
+        }
+      },
+      "industry": {
+        "properties": {
+          "dataType": "string",
+          "isReferenceType": true,
+          "referenceEntityInfo": [
+            {
+              "refEntityType": "industry",
+              "isReferenceType": true,
+              "refRelationshipName": "hasReferenceTo"
+            }
+          ]
+        }
+      },
+      "inheritedemployeecount": {
+        "properties": {
+          "dataType": "integer",
+          "mergeMatrix": [
+            {
+              "mergeSequence": "FIN>>ERP>>CRM>>MKTG"
+            }
+          ]
+        }
+      },
+      "inheritedemployeesizecategory": {
+        "properties": {
+          "dataType": "string",
+          "isReferenceType": true,
+          "referenceEntityInfo": [
+            {
+              "refEntityType": "employeesizecategory",
+              "isReferenceType": true,
+              "refRelationshipName": "hasReferenceTo"
+            }
+          ]
+        }
+      },
+      "globalultimatedunsnumber": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "companyid": {
+        "properties": {
+          "isEntityIdentifier": true,
+          "dataType": "string"
+        }
+      },
+      "invoicename": {
+        "properties": {
+          "dataType": "string",
+          "mergeMatrix": [
+            {
+              "ignoreMergeMatrix": false,
+              "mergeSequence": "BB>>IC"
+            }
+          ]
+        }
+      },
+      "orgname": {
+        "properties": {
+          "isExternalName": true,
+          "isLocalizable": true,
+          "dataType": "string"
+        }
+      },
+      "parentdunsnumber": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "street": {
+        "properties": {
+          "sortSequence": 20,
+          "dataType": "string",
+          "mergeMatrix": [
+            {
+              "ignoreMergeMatrix": false,
+              "mergeSequence": "BB>>IC"
+            }
+          ]
+        }
+      },
+      "alternatename": {
+        "properties": {
+          "isLocalizable": true,
+          "dataType": "string",
+          "mergeMatrix": [
+            {
+              "ignoreMergeMatrix": false,
+              "mergeSequence": "BB>>IC"
+            }
+          ]
+        }
+      },
+      "accountsite": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "state": {
+        "properties": {
+          "sortSequence": 60,
+          "dataType": "string",
+          "isReferenceType": true,
+          "referenceEntityInfo": [
+            {
+              "refEntityType": "state",
+              "isReferenceType": true,
+              "refRelationshipName": "hasReferenceTo"
+            }
+          ]
+        }
+      },
+      "fax": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "dnbindustry": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "termsandconditions": {
+        "properties": {
+          "dataType": "string",
+          "isReferenceType": true,
+          "referenceEntityInfo": [
+            {
+              "refEntityType": "document",
+              "isReferenceType": true,
+              "refRelationshipName": "hasReferenceTo"
+            }
+          ]
+        }
+      },
+      "dunsnumber": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "website": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "address": {
+        "group": [
+          {
+            "id": "b2f5a27c-8b9f-4f7e-a21e-561e8a30fed5",
+            "otheraddressstreet": {
+              "properties": {
+                "isAttributeIdentifier": true,
+                "dataType": "string"
+              }
+            },
+            "otheraddresscity": {
+              "properties": {
+                "dataType": "string",
+                "isReferenceType": true,
+                "referenceEntityInfo": [
+                  {
+                    "refEntityType": "city",
+                    "isReferenceType": true,
+                    "refRelationshipName": "hasReferenceTo"
+                  }
+                ]
+              }
+            },
+            "otheraddressstate": {
+              "properties": {
+                "dataType": "string",
+                "isReferenceType": true,
+                "referenceEntityInfo": [
+                  {
+                    "refEntityType": "state",
+                    "isReferenceType": true,
+                    "refRelationshipName": "hasReferenceTo"
+                  }
+                ]
+              }
+            },
+            "otheraddresscountry": {
+              "properties": {
+                "dataType": "string",
+                "isReferenceType": true,
+                "referenceEntityInfo": [
+                  {
+                    "refEntityType": "country",
+                    "isReferenceType": true,
+                    "refRelationshipName": "hasReferenceTo"
+                  }
+                ]
+              }
+            },
+            "otheraddresszipcode": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "addresstype": {
+              "properties": {
+                "dataType": "string",
+                "isReferenceType": true,
+                "referenceEntityInfo": [
+                  {
+                    "refEntityType": "addresstype",
+                    "isReferenceType": true,
+                    "refRelationshipName": "hasReferenceTo"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "emailid": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "label": {
+        "properties": {
+          "dataType": "string",
+          "mergeMatrix": [
+            {
+              "mergeSequence": "CRM>>ERP>>MKTG>>FIN"
+            }
+          ]
+        }
+      },
+      "tradestyle": {
+        "properties": {
+          "dataType": "string",
+          "mergeMatrix": [
+            {
+              "mergeSequence": "FIN>>ERP>>CRM>>MKTG"
+            }
+          ]
+        }
+      },
+      "zipcode": {
+        "properties": {
+          "sortSequence": 70,
+          "dataType": "string"
+        }
+      },
+      "parentaccount": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "phone": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "focusindustry": {
+        "properties": {
+          "dataType": "string",
+          "isReferenceType": true,
+          "referenceEntityInfo": [
+            {
+              "refEntityType": "industry",
+              "isReferenceType": true,
+              "refRelationshipName": "hasReferenceTo"
+            }
+          ]
+        }
+      },
+      "domesticultimatedunsnumber": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "phone1": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "rssysmatch_orgname": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "recordstatus": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "rsexternalsource": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "rssysmatch_dunsnumber": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "rssysmatch_siccode": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "rssysmatch_companyid": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "rssysmatch_phone": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "rssysmatch_label": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "paymentmethods": {
+        "properties": {
+          "dataType": "string",
+          "mergeMatrix": [
+            {
+              "mergeSequence": "MKTG>>ERP>>FIN>>CRM"
+            }
+          ],
+          "isReferenceType": true,
+          "referenceEntityInfo": [
+            {
+              "refEntityType": "paymentmethodsref",
+              "isReferenceType": true,
+              "refRelationshipName": "hasReferenceTo"
+            }
+          ]
+        }
+      },
+      "zippostcode": {
+        "properties": {
+          "dataType": "integer"
+        }
+      },
+      "orgFoundedYear": {
+        "properties": {
+          "dataType": "date"
+        }
+      },
+      "orgdescription": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "tags": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "employeerating": {
+        "properties": {
+          "dataType": "decimal"
+        }
+      },
+      "countriesEstablishedin": {
+        "properties": {
+          "dataType": "string",
+          "isReferenceType": true,
+          "referenceEntityInfo": [
+            {
+              "refEntityType": "addresscountry",
+              "isReferenceType": true,
+              "refRelationshipName": "hasReferenceTo"
+            }
+          ]
+        }
+      },
+      "orgMergedDateTime": {
+        "properties": {
+          "dataType": "datetime"
+        }
+      },
+      "rspartyFoundedYear": {
+        "properties": {
+          "dataType": "date",
+          "mergeMatrix": [
+            {
+              "mergeSequence": "CRM>>MKTG>>FIN>>ERP"
+            }
+          ]
+        }
+      },
+      "orgexceptionalitems": {
+        "properties": {
+          "dataType": "decimal",
+          "mergeMatrix": [
+            {
+              "mergeSequence": "CRM>>ERP>>MKTG>>FIN"
+            }
+          ],
+          "uomEntityInfo": [
+            {
+              "uomRelationshipName": "hasUnits",
+              "uomEntityType": "uomLength"
+            }
+          ]
+        }
+      },
+      "streetone": {
+        "properties": {
+          "dataType": "string"
+        }
+      },
+      "orggamingoperations": {
+        "properties": {
+          "dataType": "decimal",
+          "uomEntityInfo": [
+            {
+              "uomRelationshipName": "hasUnits",
+              "uomEntityType": "uomWeight"
+            }
+          ]
+        }
+      },
+      "onsocialmedia": {
+        "properties": {
+          "dataType": "boolean",
+          "mergeMatrix": [
+            {
+              "mergeSequence": "CRM>>ERP>>MKTG>>FIN"
+            }
+          ]
+        }
+      }
+    },
+    "relationships": {
+      "ischildof": [
+        {
+          "relTo": {
+            "type": "organization"
+          },
+          "attributes": {
+            "country": {
+              "properties": {
+                "dataType": "string",
+                "isReferenceType": true,
+                "referenceEntityInfo": [
+                  {
+                    "refEntityType": "addresscountry",
+                    "isReferenceType": true,
+                    "refRelationshipName": "hasReferenceTo"
+                  }
+                ]
+              }
+            },
+            "siccode": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "city": {
+              "properties": {
+                "dataType": "string",
+                "isReferenceType": true,
+                "referenceEntityInfo": [
+                  {
+                    "refEntityType": "city",
+                    "isReferenceType": true,
+                    "refRelationshipName": "hasReferenceTo"
+                  }
+                ]
+              }
+            },
+            "industry": {
+              "properties": {
+                "dataType": "string",
+                "isReferenceType": true,
+                "referenceEntityInfo": [
+                  {
+                    "refEntityType": "industry",
+                    "isReferenceType": true,
+                    "refRelationshipName": "hasReferenceTo"
+                  }
+                ]
+              }
+            },
+            "inheritedemployeecount": {
+              "properties": {
+                "dataType": "integer"
+              }
+            },
+            "inheritedemployeesizecategory": {
+              "properties": {
+                "dataType": "string",
+                "isReferenceType": true,
+                "referenceEntityInfo": [
+                  {
+                    "refEntityType": "employeesizecategory",
+                    "isReferenceType": true,
+                    "refRelationshipName": "hasReferenceTo"
+                  }
+                ]
+              }
+            },
+            "globalultimatedunsnumber": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "companyid": {
+              "properties": {
+                "isEntityIdentifier": true,
+                "dataType": "string"
+              }
+            },
+            "invoicename": {
+              "properties": {
+                "dataType": "string",
+                "mergeMatrix": [
+                  {
+                    "mergeSequence": "BB>>IC",
+                    "ignoreMergeMatrix": false
+                  }
+                ]
+              }
+            },
+            "vleadtime": {
+              "properties": {
+                "dataType": "integer",
+                "mergeMatrix": [
+                  {
+                    "mergeSequence": "BB>>IC",
+                    "ignoreMergeMatrix": false
+                  }
+                ]
+              }
+            },
+            "vvendorcost": {
+              "properties": {
+                "dataType": "decimal",
+                "mergeMatrix": [
+                  {
+                    "mergeSequence": "BB>>IC",
+                    "ignoreMergeMatrix": false
+                  }
+                ]
+              }
+            },
+            "orgname": {
+              "properties": {
+                "isExternalName": true,
+                "isLocalizable": true,
+                "dataType": "string"
+              }
+            },
+            "parentdunsnumber": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "street": {
+              "properties": {
+                "dataType": "string",
+                "mergeMatrix": [
+                  {
+                    "mergeSequence": "BB>>IC",
+                    "ignoreMergeMatrix": false
+                  }
+                ]
+              }
+            },
+            "alternatename": {
+              "properties": {
+                "isLocalizable": true,
+                "dataType": "string",
+                "mergeMatrix": [
+                  {
+                    "mergeSequence": "BB>>IC",
+                    "ignoreMergeMatrix": false
+                  }
+                ]
+              }
+            },
+            "accountsite": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "state": {
+              "properties": {
+                "dataType": "string",
+                "isReferenceType": true,
+                "referenceEntityInfo": [
+                  {
+                    "refEntityType": "state",
+                    "isReferenceType": true,
+                    "refRelationshipName": "hasReferenceTo"
+                  }
+                ]
+              }
+            },
+            "fax": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "dnbindustry": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "termsandconditions": {
+              "properties": {
+                "dataType": "string",
+                "isReferenceType": true,
+                "referenceEntityInfo": [
+                  {
+                    "refEntityType": "document",
+                    "isReferenceType": true,
+                    "refRelationshipName": "hasReferenceTo"
+                  }
+                ]
+              }
+            },
+            "dunsnumber": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "website": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "address": {
+              "group": [
+                {
+                  "id": "b2f5a27c-8b9f-4f7e-a21e-561e8a30fed5",
+                  "otheraddressstreet": {
+                    "properties": {
+                      "isAttributeIdentifier": true,
+                      "dataType": "string"
+                    }
+                  },
+                  "otheraddresscity": {
+                    "properties": {
+                      "dataType": "string",
+                      "isReferenceType": true,
+                      "referenceEntityInfo": [
+                        {
+                          "refEntityType": "city",
+                          "isReferenceType": true,
+                          "refRelationshipName": "hasReferenceTo"
+                        }
+                      ]
+                    }
+                  },
+                  "otheraddressstate": {
+                    "properties": {
+                      "dataType": "string",
+                      "isReferenceType": true,
+                      "referenceEntityInfo": [
+                        {
+                          "refEntityType": "state",
+                          "isReferenceType": true,
+                          "refRelationshipName": "hasReferenceTo"
+                        }
+                      ]
+                    }
+                  },
+                  "otheraddresscountry": {
+                    "properties": {
+                      "dataType": "string",
+                      "isReferenceType": true,
+                      "referenceEntityInfo": [
+                        {
+                          "refEntityType": "country",
+                          "isReferenceType": true,
+                          "refRelationshipName": "hasReferenceTo"
+                        }
+                      ]
+                    }
+                  },
+                  "otheraddresszipcode": {
+                    "properties": {
+                      "dataType": "string"
+                    }
+                  },
+                  "addresstype": {
+                    "properties": {
+                      "dataType": "string",
+                      "isReferenceType": true,
+                      "referenceEntityInfo": [
+                        {
+                          "refEntityType": "addresstype",
+                          "isReferenceType": true,
+                          "refRelationshipName": "hasReferenceTo"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "properties": {
+                "dataType": "nested"
+              }
+            },
+            "emailid": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "label": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "tradestyle": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "zipcode": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "parentaccount": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "phone": {
+              "properties": {
+                "dataType": "string"
+              }
+            },
+            "focusindustry": {
+              "properties": {
+                "dataType": "string",
+                "isReferenceType": true,
+                "referenceEntityInfo": [
+                  {
+                    "refEntityType": "industry",
+                    "isReferenceType": true,
+                    "refRelationshipName": "hasReferenceTo"
+                  }
+                ]
+              }
+            },
+            "domesticultimatedunsnumber": {
+              "properties": {
+                "dataType": "string"
+              }
+            }
+          },
+          "properties": {
+            "relationshipType": "association"
+          }
+        }
+      ]
+    },
+    "contexts": [
+      {
+        "context": {
+          "country": "Germany"
+        },
+        "properties": {
+          "mergeMatrix": [
+            {
+              "mergeSequence": "IC>>BB>>SAP",
+              "ignoreMergeMatrix": false
+            }
+          ]
+        },
+        "attributes": {
+          "country": {
+            "properties": {
+              "dataType": "string",
+              "isReferenceType": true,
+              "referenceEntityInfo": [
+                {
+                  "refEntityType": "addresscountry",
+                  "isReferenceType": true,
+                  "refRelationshipName": "hasReferenceTo"
+                }
+              ]
+            }
+          },
+          "siccode": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "city": {
+            "properties": {
+              "dataType": "string",
+              "isReferenceType": true,
+              "referenceEntityInfo": [
+                {
+                  "refEntityType": "city",
+                  "isReferenceType": true,
+                  "refRelationshipName": "hasReferenceTo"
+                }
+              ]
+            }
+          },
+          "industry": {
+            "properties": {
+              "dataType": "string",
+              "isReferenceType": true,
+              "referenceEntityInfo": [
+                {
+                  "refEntityType": "industry",
+                  "isReferenceType": true,
+                  "refRelationshipName": "hasReferenceTo"
+                }
+              ]
+            }
+          },
+          "inheritedemployeecount": {
+            "properties": {
+              "dataType": "integer"
+            }
+          },
+          "inheritedemployeesizecategory": {
+            "properties": {
+              "dataType": "string",
+              "isReferenceType": true,
+              "referenceEntityInfo": [
+                {
+                  "refEntityType": "employeesizecategory",
+                  "isReferenceType": true,
+                  "refRelationshipName": "hasReferenceTo"
+                }
+              ]
+            }
+          },
+          "globalultimatedunsnumber": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "companyid": {
+            "properties": {
+              "isEntityIdentifier": true,
+              "dataType": "string"
+            }
+          },
+          "invoicename": {
+            "properties": {
+              "dataType": "string",
+              "mergeMatrix": [
+                {
+                  "mergeSequence": "BB>>IC",
+                  "ignoreMergeMatrix": false
+                }
+              ]
+            }
+          },
+          "vleadtime": {
+            "properties": {
+              "dataType": "integer",
+              "mergeMatrix": [
+                {
+                  "mergeSequence": "BB>>IC",
+                  "ignoreMergeMatrix": false
+                }
+              ]
+            }
+          },
+          "vvendorcost": {
+            "properties": {
+              "dataType": "decimal",
+              "mergeMatrix": [
+                {
+                  "mergeSequence": "BB>>IC",
+                  "ignoreMergeMatrix": false
+                }
+              ]
+            }
+          },
+          "orgname": {
+            "properties": {
+              "isExternalName": true,
+              "isLocalizable": true,
+              "dataType": "string"
+            }
+          },
+          "parentdunsnumber": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "street": {
+            "properties": {
+              "dataType": "string",
+              "mergeMatrix": [
+                {
+                  "mergeSequence": "BB>>IC",
+                  "ignoreMergeMatrix": false
+                }
+              ]
+            }
+          },
+          "alternatename": {
+            "properties": {
+              "isLocalizable": true,
+              "dataType": "string",
+              "mergeMatrix": [
+                {
+                  "mergeSequence": "BB>>IC",
+                  "ignoreMergeMatrix": false
+                }
+              ]
+            }
+          },
+          "accountsite": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "state": {
+            "properties": {
+              "dataType": "string",
+              "isReferenceType": true,
+              "referenceEntityInfo": [
+                {
+                  "refEntityType": "state",
+                  "isReferenceType": true,
+                  "refRelationshipName": "hasReferenceTo"
+                }
+              ]
+            }
+          },
+          "fax": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "dnbindustry": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "termsandconditions": {
+            "properties": {
+              "dataType": "string",
+              "isReferenceType": true,
+              "referenceEntityInfo": [
+                {
+                  "refEntityType": "document",
+                  "isReferenceType": true,
+                  "refRelationshipName": "hasReferenceTo"
+                }
+              ]
+            }
+          },
+          "dunsnumber": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "website": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "address": {
+            "group": [
+              {
+                "id": "b2f5a27c-8b9f-4f7e-a21e-561e8a30fed5",
+                "otheraddressstreet": {
+                  "properties": {
+                    "isAttributeIdentifier": true,
+                    "dataType": "string"
+                  }
+                },
+                "otheraddresscity": {
+                  "properties": {
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refEntityType": "city",
+                        "isReferenceType": true,
+                        "refRelationshipName": "hasReferenceTo"
+                      }
+                    ]
+                  }
+                },
+                "otheraddressstate": {
+                  "properties": {
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refEntityType": "state",
+                        "isReferenceType": true,
+                        "refRelationshipName": "hasReferenceTo"
+                      }
+                    ]
+                  }
+                },
+                "otheraddresscountry": {
+                  "properties": {
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refEntityType": "country",
+                        "isReferenceType": true,
+                        "refRelationshipName": "hasReferenceTo"
+                      }
+                    ]
+                  }
+                },
+                "otheraddresszipcode": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "addresstype": {
+                  "properties": {
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refEntityType": "addresstype",
+                        "isReferenceType": true,
+                        "refRelationshipName": "hasReferenceTo"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "properties": {
+              "dataType": "nested"
+            }
+          },
+          "emailid": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "label": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "tradestyle": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "zipcode": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "parentaccount": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "phone": {
+            "properties": {
+              "dataType": "string"
+            }
+          },
+          "focusindustry": {
+            "properties": {
+              "dataType": "string",
+              "isReferenceType": true,
+              "referenceEntityInfo": [
+                {
+                  "refEntityType": "industry",
+                  "isReferenceType": true,
+                  "refRelationshipName": "hasReferenceTo"
+                }
+              ]
+            }
+          },
+          "domesticultimatedunsnumber": {
+            "properties": {
+              "dataType": "string"
+            }
+          }
+        },
+        "relationships": {
+          "ischildof": [
+            {
+              "relTo": {
+                "type": "organization"
+              },
+              "attributes": {
+                "country": {
+                  "properties": {
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refEntityType": "addresscountry",
+                        "isReferenceType": true,
+                        "refRelationshipName": "hasReferenceTo"
+                      }
+                    ]
+                  }
+                },
+                "siccode": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "city": {
+                  "properties": {
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refEntityType": "city",
+                        "isReferenceType": true,
+                        "refRelationshipName": "hasReferenceTo"
+                      }
+                    ]
+                  }
+                },
+                "industry": {
+                  "properties": {
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refEntityType": "industry",
+                        "isReferenceType": true,
+                        "refRelationshipName": "hasReferenceTo"
+                      }
+                    ]
+                  }
+                },
+                "inheritedemployeecount": {
+                  "properties": {
+                    "dataType": "integer"
+                  }
+                },
+                "inheritedemployeesizecategory": {
+                  "properties": {
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refEntityType": "employeesizecategory",
+                        "isReferenceType": true,
+                        "refRelationshipName": "hasReferenceTo"
+                      }
+                    ]
+                  }
+                },
+                "globalultimatedunsnumber": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "companyid": {
+                  "properties": {
+                    "isEntityIdentifier": true,
+                    "dataType": "string"
+                  }
+                },
+                "invoicename": {
+                  "properties": {
+                    "dataType": "string",
+                    "mergeMatrix": [
+                      {
+                        "mergeSequence": "BB>>IC",
+                        "ignoreMergeMatrix": false
+                      }
+                    ]
+                  }
+                },
+                "vleadtime": {
+                  "properties": {
+                    "dataType": "integer",
+                    "mergeMatrix": [
+                      {
+                        "mergeSequence": "BB>>IC",
+                        "ignoreMergeMatrix": false
+                      }
+                    ]
+                  }
+                },
+                "vvendorcost": {
+                  "properties": {
+                    "dataType": "decimal",
+                    "mergeMatrix": [
+                      {
+                        "mergeSequence": "BB>>IC",
+                        "ignoreMergeMatrix": false
+                      }
+                    ]
+                  }
+                },
+                "orgname": {
+                  "properties": {
+                    "isExternalName": true,
+                    "isLocalizable": true,
+                    "dataType": "string"
+                  }
+                },
+                "parentdunsnumber": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "street": {
+                  "properties": {
+                    "dataType": "string",
+                    "mergeMatrix": [
+                      {
+                        "mergeSequence": "BB>>IC",
+                        "ignoreMergeMatrix": false
+                      }
+                    ]
+                  }
+                },
+                "alternatename": {
+                  "properties": {
+                    "isLocalizable": true,
+                    "dataType": "string",
+                    "mergeMatrix": [
+                      {
+                        "mergeSequence": "BB>>IC",
+                        "ignoreMergeMatrix": false
+                      }
+                    ]
+                  }
+                },
+                "accountsite": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "state": {
+                  "properties": {
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refEntityType": "state",
+                        "isReferenceType": true,
+                        "refRelationshipName": "hasReferenceTo"
+                      }
+                    ]
+                  }
+                },
+                "fax": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "dnbindustry": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "termsandconditions": {
+                  "properties": {
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refEntityType": "document",
+                        "isReferenceType": true,
+                        "refRelationshipName": "hasReferenceTo"
+                      }
+                    ]
+                  }
+                },
+                "dunsnumber": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "website": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "address": {
+                  "group": [
+                    {
+                      "id": "b2f5a27c-8b9f-4f7e-a21e-561e8a30fed5",
+                      "otheraddressstreet": {
+                        "properties": {
+                          "isAttributeIdentifier": true,
+                          "dataType": "string"
+                        }
+                      },
+                      "otheraddresscity": {
+                        "properties": {
+                          "dataType": "string",
+                          "isReferenceType": true,
+                          "referenceEntityInfo": [
+                            {
+                              "refEntityType": "city",
+                              "isReferenceType": true,
+                              "refRelationshipName": "hasReferenceTo"
+                            }
+                          ]
+                        }
+                      },
+                      "otheraddressstate": {
+                        "properties": {
+                          "dataType": "string",
+                          "isReferenceType": true,
+                          "referenceEntityInfo": [
+                            {
+                              "refEntityType": "state",
+                              "isReferenceType": true,
+                              "refRelationshipName": "hasReferenceTo"
+                            }
+                          ]
+                        }
+                      },
+                      "otheraddresscountry": {
+                        "properties": {
+                          "dataType": "string",
+                          "isReferenceType": true,
+                          "referenceEntityInfo": [
+                            {
+                              "refEntityType": "country",
+                              "isReferenceType": true,
+                              "refRelationshipName": "hasReferenceTo"
+                            }
+                          ]
+                        }
+                      },
+                      "otheraddresszipcode": {
+                        "properties": {
+                          "dataType": "string"
+                        }
+                      },
+                      "addresstype": {
+                        "properties": {
+                          "dataType": "string",
+                          "isReferenceType": true,
+                          "referenceEntityInfo": [
+                            {
+                              "refEntityType": "addresstype",
+                              "isReferenceType": true,
+                              "refRelationshipName": "hasReferenceTo"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "properties": {
+                    "dataType": "nested"
+                  }
+                },
+                "emailid": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "label": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "tradestyle": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "zipcode": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "parentaccount": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "phone": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                },
+                "focusindustry": {
+                  "properties": {
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refEntityType": "industry",
+                        "isReferenceType": true,
+                        "refRelationshipName": "hasReferenceTo"
+                      }
+                    ]
+                  }
+                },
+                "domesticultimatedunsnumber": {
+                  "properties": {
+                    "dataType": "string"
+                  }
+                }
+              },
+              "properties": {
+                "relationshipType": "association"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
