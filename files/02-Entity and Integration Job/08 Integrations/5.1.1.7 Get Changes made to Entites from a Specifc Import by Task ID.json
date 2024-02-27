@@ -1,0 +1,29 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "attributesCriterion": [
+          {
+            "taskId": {
+              "exact": "ce5f64ba-cd27-41f8-9d2a-7669bb9b6a32"
+            }
+          }
+        ],
+        "typesCriterion": [
+          "entitymanageevent"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "maxRecords": 12
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "adminexternalevent"
+        ],
+        "attributesCriterion": [
+          {
+            "taskId": {
+              "exact": "e00f73a9-0c1a-41f1-b398-005669d22d08"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "maxRecords": 100
+    }
+  }
+}

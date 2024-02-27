@@ -1,0 +1,35 @@
+{
+  "params": {
+    "query": {
+      "id": "b2bfitnessequipmentaccessories51",
+      "filters": {
+        "typesCriterion": [
+          "classification"
+        ]
+      }
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    },
+    "rsconnect": {
+      "profilecontexts": [
+        {
+          "app": "RSConnect",
+          "service": "ENTITY_EXPORT",
+          "channel": "AZURE_BLOB_CONTAINER",
+          "format": "JSON",
+          "source": "internal",
+          "role": "admin",
+          "user": "system",
+          "subtype": "System",
+          "order": "10"
+        }
+      ]
+    }
+  }
+}

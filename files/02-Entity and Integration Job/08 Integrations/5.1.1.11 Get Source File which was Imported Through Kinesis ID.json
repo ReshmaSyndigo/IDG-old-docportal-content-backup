@@ -1,0 +1,15 @@
+{
+  "params": {
+    "query": {
+     "id": "K_49577598346597737883215912406803041383866912442436026370",
+       "filters": {
+        "typesCriterion": [
+          "entity"
+        ]
+      }
+    },
+    "options": {
+      "maxRecords":10
+    }
+  }
+}

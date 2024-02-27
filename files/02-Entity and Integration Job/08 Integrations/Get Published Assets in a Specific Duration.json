@@ -1,0 +1,41 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "externalevent"
+        ],
+        "propertiesCriterion": [
+          {
+            "createdDate": {
+              "lt": "2018-02-01T00:00:00.000-0000"
+            }
+          }
+          ],
+        "attributesCriterion": [
+          {
+            "profileName": {
+            "exact":  "kinesis_Assets_Export_Scene7"
+            }
+          },
+          {
+            "eventSubType": {
+              "exact":"PROCESSING_COMPLETED"
+            }
+          },
+          {
+            "eventType": {
+              "exact": "BATCH_PUBLISH_ENTITY_EXPORT"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": ["_ALL"]
+    },
+    "options":{
+      "maxRecords":100
+    }
+  }
+}

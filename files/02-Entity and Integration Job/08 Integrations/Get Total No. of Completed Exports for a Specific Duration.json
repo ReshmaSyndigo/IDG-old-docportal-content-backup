@@ -1,0 +1,43 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "externalevent"
+        ],
+        "propertiesCriterion": [
+          {
+            "modifiedDate": {
+              "gte": "2018-05-02T06:00:00.000-0500",
+               "lte": "2018-05-02T19:00:00.000-0500",
+              "type": "_DATETIME"
+            }
+          }
+        ],
+        "attributesCriterion": [
+          {
+            "eventSubType": {
+              "exact":"PROCESSING_COMPLETED"
+            }
+          },
+           {
+            "profileType": {
+              "exact": "ENTITY_EXPORT"
+            }
+          },
+           {
+            "eventType": {
+              "exact": "BATCH_COLLECT_ENTITY_EXPORT"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": ["_ALL"]
+    },
+    "options":{
+      "maxRecords":1
+    }
+  }
+}

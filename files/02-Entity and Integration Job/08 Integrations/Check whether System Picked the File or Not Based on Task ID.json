@@ -1,0 +1,31 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "externalevent"
+        ],
+        "attributesCriterion": [
+          {
+            "eventtype": {
+              "exact": "BATCH_COLLECT_ENTITY_IMPORT"
+            }
+          },
+          {
+            "taskId": {
+              "exact": "252a5b85-d374-479c-a49a-802fe1400322"
+            }
+          },
+          {
+            "profileType": {
+              "exact": "ENTITY_IMPORT"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": ["_ALL"]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "externalevent"
+        ],
+        "attributesCriterion": [
+          {
+            "taskId": {
+              "exact": "8bfbd6f0-9e4d-4933-b49d-ee60a8c64516"
+            }
+          }
+        ]
+      }
+    },
+     "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "maxRecords": 70
+    },
+     "sort": {
+      "properties": [
+        {
+          "createdDate": "_DES",
+          "sortType": "_DATETIME"
+        }
+      ]
+    }
+  }
+}

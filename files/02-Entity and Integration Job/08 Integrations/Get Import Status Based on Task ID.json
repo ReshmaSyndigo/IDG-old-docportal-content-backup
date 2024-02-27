@@ -1,0 +1,29 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "tasksummaryobject"
+        ],
+        "attributesCriterion": [
+          {
+            "taskType": {
+             "exact":"ENTITY_IMPORT"
+            }
+          },
+          {
+            "taskId": {
+             "exact":"e283b9d0-47a6-4008-9731-ca63b474c537"
+            }
+          }
+        ]
+      }
+    },
+    "fields":{
+      "attributes":["_ALL"]
+    },
+    "options":{
+      "maxRecords":1
+    }
+  }
+}

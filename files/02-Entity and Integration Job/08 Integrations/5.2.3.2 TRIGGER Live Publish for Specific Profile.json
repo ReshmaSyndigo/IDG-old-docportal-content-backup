@@ -1,0 +1,25 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "sku"
+        ]
+      },
+      "id": "gy4txj8rSlW3JxVGHncDwA"
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ],
+      "relationships": [
+        "_ALL"
+      ]
+    },
+    "rsconnect": {
+      "profiles": [
+        "EventHub_JSON_Export_Process"
+      ]
+    }
+  }
+}

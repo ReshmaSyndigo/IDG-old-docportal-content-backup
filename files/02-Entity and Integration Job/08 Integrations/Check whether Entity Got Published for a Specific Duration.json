@@ -1,0 +1,47 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "externalevent"
+        ],
+        "propertiesCriterion": [
+          {
+            "modifiedDate": {
+              "gte": "2018-05-03T09:00:00.000-0500",
+              "type": "_DATETIME"
+            }
+          }
+        ],
+        "attributesCriterion": [
+          {
+            "eventSubType": {
+              "exact":"PROCESSING_COMPLETED"
+            }
+          },
+          {
+            "eventType": {
+              "exact": "BATCH_PUBLISH_ENTITY_EXPORT"
+            }
+          },
+           {
+            "entityId": {
+              "exact": "5314d918-c42b-4863-9329-08ae5e260f1d"
+            }
+          }
+        ]
+      }
+    },
+    "fields": {
+      "attributes": ["_ALL"]
+    },
+     "sort": {
+      "properties": [
+        {
+          "createdDate": "_DESC",
+          "sortType": "_DATETIME"
+        }
+      ]
+    }
+  }
+}

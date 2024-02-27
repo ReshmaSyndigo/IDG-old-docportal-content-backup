@@ -1,0 +1,26 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "externalevent"
+        ],
+        "attributesCriterion": [
+          {
+            "taskId": {
+              "exact": "0239c614-fe09-412a-96a5-2357442ac3ae"
+            }
+          }
+        ]
+      }
+    },
+     "fields": {
+      "attributes": [
+        "fileName"
+      ]
+    },
+    "options": {
+      "maxRecords": 2000
+    }
+  }
+}

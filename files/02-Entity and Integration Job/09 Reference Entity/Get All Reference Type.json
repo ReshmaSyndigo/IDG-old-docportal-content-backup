@@ -1,0 +1,15 @@
+{
+  "params": {
+    "query": {
+      "domain": "referenceData",
+      "filters": {
+        "typesCriterion": [
+          "entityType"
+        ]
+      }
+    },
+    "options": {
+      "maxRecords": 100
+    }
+  }
+}
